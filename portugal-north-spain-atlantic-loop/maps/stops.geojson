@@ -1,0 +1,31 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"order":1,"name":"Faro","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-7.9304,37.0194]}},
+    {"type":"Feature","properties":{"order":2,"name":"Lagos","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-8.6730,37.1028]}},
+    {"type":"Feature","properties":{"order":3,"name":"Lisbon","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-9.1393,38.7223]}},
+    {"type":"Feature","properties":{"order":4,"name":"Sintra","country":"Portugal","role":"day trip"},"geometry":{"type":"Point","coordinates":[-9.3817,38.8029]}},
+    {"type":"Feature","properties":{"order":5,"name":"Coimbra","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-8.4103,40.2033]}},
+    {"type":"Feature","properties":{"order":6,"name":"Porto","country":"Portugal","role":"car pickup/return"},"geometry":{"type":"Point","coordinates":[-8.6291,41.1579]}},
+    {"type":"Feature","properties":{"order":7,"name":"Viana do Castelo","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-8.8329,41.6932]}},
+    {"type":"Feature","properties":{"order":8,"name":"Vigo","country":"Spain"},"geometry":{"type":"Point","coordinates":[-8.7207,42.2406]}},
+    {"type":"Feature","properties":{"order":9,"name":"Cíes Islands","country":"Spain","role":"ferry day trip"},"geometry":{"type":"Point","coordinates":[-8.9020,42.2250]}},
+    {"type":"Feature","properties":{"order":10,"name":"Santiago de Compostela","country":"Spain"},"geometry":{"type":"Point","coordinates":[-8.5448,42.8782]}},
+    {"type":"Feature","properties":{"order":11,"name":"Fisterra / Costa da Morte","country":"Spain"},"geometry":{"type":"Point","coordinates":[-9.2639,42.9049]}},
+    {"type":"Feature","properties":{"order":12,"name":"A Coruña","country":"Spain"},"geometry":{"type":"Point","coordinates":[-8.4115,43.3623]}},
+    {"type":"Feature","properties":{"order":13,"name":"Praia das Catedrais / Ribadeo","country":"Spain"},"geometry":{"type":"Point","coordinates":[-7.1575,43.5539]}},
+    {"type":"Feature","properties":{"order":14,"name":"Cudillero","country":"Spain"},"geometry":{"type":"Point","coordinates":[-6.1454,43.5623]}},
+    {"type":"Feature","properties":{"order":15,"name":"Oviedo","country":"Spain"},"geometry":{"type":"Point","coordinates":[-5.8494,43.3619]}},
+    {"type":"Feature","properties":{"order":16,"name":"Covadonga / Cangas de Onís","country":"Spain"},"geometry":{"type":"Point","coordinates":[-5.1260,43.3500]}},
+    {"type":"Feature","properties":{"order":17,"name":"Arenas de Cabrales / Ruta del Cares","country":"Spain"},"geometry":{"type":"Point","coordinates":[-4.8170,43.3030]}},
+    {"type":"Feature","properties":{"order":18,"name":"Potes / Picos de Europa","country":"Spain"},"geometry":{"type":"Point","coordinates":[-4.6200,43.1546]}},
+    {"type":"Feature","properties":{"order":19,"name":"Santillana del Mar","country":"Spain"},"geometry":{"type":"Point","coordinates":[-4.1082,43.3896]}},
+    {"type":"Feature","properties":{"order":20,"name":"Santander","country":"Spain"},"geometry":{"type":"Point","coordinates":[-3.80998,43.4623]}},
+    {"type":"Feature","properties":{"order":21,"name":"Bilbao","country":"Spain"},"geometry":{"type":"Point","coordinates":[-2.9350,43.2630]}},
+    {"type":"Feature","properties":{"order":22,"name":"San Juan de Gaztelugatxe","country":"Spain","role":"day trip"},"geometry":{"type":"Point","coordinates":[-2.7850,43.4470]}},
+    {"type":"Feature","properties":{"order":23,"name":"Burgos","country":"Spain"},"geometry":{"type":"Point","coordinates":[-3.6969,42.3439]}},
+    {"type":"Feature","properties":{"order":24,"name":"León","country":"Spain"},"geometry":{"type":"Point","coordinates":[-5.5671,42.5987]}},
+    {"type":"Feature","properties":{"order":25,"name":"Bragança","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-6.7567,41.8061]}},
+    {"type":"Feature","properties":{"order":26,"name":"Peso da Régua / Douro","country":"Portugal"},"geometry":{"type":"Point","coordinates":[-7.7899,41.1621]}}
+  ]
+}
