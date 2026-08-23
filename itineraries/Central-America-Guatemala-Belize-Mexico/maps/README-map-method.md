@@ -6,17 +6,11 @@ These maps are **programmatically rendered from real geographic coordinates**. T
 
 1. Keep verified stop coordinates in `stops.geojson`.
 2. Keep the full and 60:40 route semantics in `route.geojson` and `route-60-40.geojson`.
-3. Render the map to **SVG first** using real coastline/country-border geometry.
-4. Treat that SVG as the canonical visual artifact.
-5. Generate the PNG **from the exact SVG** rather than rendering PNG independently. This guarantees identical pin positions, route lines, labels, borders and crop.
+3. Render the maps as **SVG** using real coastline/country-border geometry.
+4. Treat the SVG files as the final static map artifacts.
+5. Commit/upload those SVG files directly to GitHub together with the GeoJSON source files.
 
 Current shared generator:
-
-```bash
-python ../../../tools/python/script.py ..
-```
-
-When run from this `maps/` folder, `..` resolves to the itinerary directory. From the repository root, use:
 
 ```bash
 python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
@@ -25,9 +19,9 @@ python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexic
 The script writes:
 
 - `map-full-route.svg`
-- `map-full-route.png` — rasterized from `map-full-route.svg`
 - `map-60-40-route.svg`
-- `map-60-40-route.png` — rasterized from `map-60-40-route.svg`
+
+No PNG copy is required by default.
 
 ## Geography sources
 
@@ -42,6 +36,16 @@ The saved connector lines **do not claim to follow exact road centerlines** unle
 
 When network routing is available, replace road connector geometries with OSRM, OpenRouteService or GraphHopper output while preserving the same verified stop coordinates. Keep ferry, flight and hike segments semantically distinct and visually dashed/dotted as appropriate.
 
-## SVG → PNG conversion
+## GitHub output
 
-The shared Python tool prefers `cairosvg`. It falls back to `rsvg-convert`, Inkscape, or ImageMagick if available. The important rule is that PNG must be generated from the committed SVG, not separately redrawn.
+The reproducible map package committed to GitHub is:
+
+```text
+map-full-route.svg
+map-60-40-route.svg
+stops.geojson
+route.geojson
+route-60-40.geojson
+```
+
+SVG is preferred because it is scalable, text-based, Git-friendly and can be embedded directly in Markdown. If a PNG is ever needed for another platform, it can be created later from the committed SVG without changing the repository's canonical map format.
