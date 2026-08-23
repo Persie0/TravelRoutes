@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Guatemala → Belize → Yucatán route map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    html,body,#map{height:100%;margin:0} body{font-family:system-ui,sans-serif}
+    .info{background:#fff;padding:8px 10px;border-radius:6px;box-shadow:0 1px 5px #777;font-size:13px;max-width:270px}
+    .pin{background:#d95f02;color:#fff;border:2px solid white;border-radius:50%;width:24px;height:24px;line-height:20px;text-align:center;font-weight:700;box-shadow:0 1px 4px #555}
+  </style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const stops = [
+ [1,'Guatemala City',14.640725,-90.513268],[2,'Antigua Guatemala',14.5568,-90.7337],[3,'Acatenango / Fuego hike',14.501,-90.876],[4,'Lake Atitlán',14.702408,-91.19245],[5,'Semuc Champey',15.5338,-89.9581],[6,'Flores',16.9299,-89.8915],[7,'Tikal National Park',17.216667,-89.616667],[8,'San Ignacio',17.1528,-89.0762],[9,'Belize City',17.5003,-88.1989],[10,'Caye Caulker',17.7425,-88.025],[11,'Bacalar',18.6783,-88.3923],[12,'Valladolid',20.6903,-88.2017],[13,'Chichén Itzá',20.681,-88.5681],[14,'Cancún',21.1527,-86.8426],[15,'Mexico City (optional)',19.4326,-99.1332]
+];
+const full = [1,2,3,2,4,5,6,7,6,8,9,10,9,11,12,13,12,14];
+const compact = [1,2,3,2,1,6,7,6,8,9,10,9,14,12,13,12,14];
+const map=L.map('map').setView([17.6,-89.1],6);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+ maxZoom:19, attribution:'&copy; OpenStreetMap contributors'
+}).addTo(map);
+const by=Object.fromEntries(stops.map(s=>[s[0],s]));
+const fullLayer=L.layerGroup(); const shortLayer=L.layerGroup();
+function marker(s,target,n){
+ const icon=L.divIcon({className:'',html:`<div class="pin">${n}</div>`,iconSize:[24,24],iconAnchor:[12,12]});
+ L.marker([s[2],s[3]],{icon}).bindPopup(`<b>${s[1]}</b><br>${s[2].toFixed(5)}, ${s[3].toFixed(5)}`).addTo(target);
+}
+stops.filter(s=>s[0]<=14).forEach(s=>marker(s,fullLayer,s[0]));
+const shortIds=[1,2,3,6,7,8,9,10,12,13,14]; shortIds.forEach((id,i)=>marker(by[id],shortLayer,i+1));
+function line(ids,target){
+ const latlngs=ids.map(id=>[by[id][2],by[id][3]]);
+ L.polyline(latlngs,{color:'#d95f02',weight:4,opacity:.85}).addTo(target);
+}
+line(full,fullLayer); line(compact,shortLayer);
+fullLayer.addTo(map);
+L.control.layers(null,{'Full ~28-day route':fullLayer,'60:40 highlights route':shortLayer},{collapsed:false}).addTo(map);
+const info=L.control({position:'bottomleft'}); info.onAdd=()=>{const d=L.DomUtil.create('div','info');d.innerHTML='<b>Real OSM map</b><br>Stops use the verified coordinates in <code>stops.geojson</code>.<br>Lines show itinerary sequence, not exact road tracks.';return d};info.addTo(map);
+</script>
+</body>
+</html>
