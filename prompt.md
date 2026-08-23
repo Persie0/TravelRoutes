@@ -1,6 +1,6 @@
 # Master Travel-Route Research + GitHub + Real-Map Prompt
 
-I want you to **fully research, optimize, document, and visualize a travel itinerary**.
+I want you to **fully research, optimize, document, and visualize a travel itinerary**, then write the complete result into my TravelRoutes GitHub repository.
 
 ## Inputs
 
@@ -10,57 +10,46 @@ I want you to **fully research, optimize, document, and visualize a travel itine
 - **Starting airports:** `[e.g. Vienna VIE and Budapest BUD]`
 - **Possible ending airports:** `[e.g. Cancún CUN, Mexico City MEX]`
 - **GitHub repository:** `[e.g. https://github.com/USERNAME/TravelRoutes]`
-- **Subfolder name:** `[e.g. guatemala-belize-mexico]`
+- **Itinerary slug:** `[e.g. Central-America-Guatemala-Belize-Mexico]`
 - **Priorities:** `[nature / hiking / culture / archaeology / beaches / snorkeling / food / nightlife / surfing / budget etc.]`
 
-Do not simply follow my proposed order. Treat it as a draft and **redesign it if a different order is cheaper, faster, more scenic, or avoids backtracking**.
+Do not simply follow my proposed order. Treat it as a draft and **redesign it if another order is cheaper, faster, more scenic, avoids backtracking, improves weather, or preserves more high-value sights**.
 
 ---
 
 # 1. Optimize the route aggressively
 
-Research every major transport leg.
+Research every major transport leg using available tools and current sources such as:
 
-Use available travel/transport tools such as:
+- Rome2Rio;
+- Skyscanner;
+- official train/bus/ferry operators;
+- airline websites where useful;
+- local transport authorities;
+- reliable recent travel information.
 
-- Rome2Rio
-- Skyscanner
-- official train/bus/ferry operators
-- airline websites when useful
-- local transport authorities
-- reliable recent travel information
-
-Compare:
-
-- bus
-- train
-- ferry
-- flight
-- shuttle
-- car where relevant
+Compare bus, train, ferry, flight, shuttle and car where relevant.
 
 For every important leg record:
 
-- approximate duration
-- approximate price
-- frequency if known
-- border-crossing implications
-- transfer complexity
-- whether an overnight stop makes sense
-- whether another routing saves significant time
+- approximate duration;
+- approximate price;
+- frequency if known;
+- border-crossing implications;
+- transfer complexity;
+- whether an overnight stop makes sense;
+- whether another routing saves significant time.
 
 Actively detect:
 
-- unnecessary backtracking
-- bad one-day transfers
-- inefficient border crossings
-- expensive positioning flights
-- destinations that are only worth visiting because they improve the route
-- places that are famous but low-value relative to the time required
+- unnecessary backtracking;
+- bad one-day transfers;
+- inefficient border crossings;
+- expensive positioning flights;
+- destinations that are useful because they improve an otherwise ugly transfer;
+- famous places with poor sightseeing-value-per-hour.
 
-Do not optimize only for shortest travel time.
-
-Optimize the combined objective:
+Do not optimize only for shortest travel time. Optimize the combined objective:
 
 **sightseeing value + route efficiency + cost + weather + uniqueness + travel fatigue.**
 
@@ -68,30 +57,30 @@ Optimize the combined objective:
 
 # 2. Flight optimization
 
-If the trip starts/ends with flights, search multiple route shells.
+Search multiple route shells rather than assuming a normal same-airport return is best.
 
-For example:
+Test combinations such as:
 
-- A → first destination / last destination → A
-- B → first destination / last destination → B
-- A → first destination / last destination → B
-- B → first destination / last destination → A
-- normal round trip to a cheap hub + positioning flight
-- open-jaw / multi-city
-- reversing the whole itinerary
-- adding a cheap domestic flight at the end
-- adding another city if it makes the international return substantially cheaper
+- A → first destination / last destination → A;
+- B → first destination / last destination → B;
+- A → first destination / last destination → B;
+- B → first destination / last destination → A;
+- normal round trip to a cheap hub + positioning flight;
+- open-jaw / multi-city;
+- reversed itinerary direction;
+- adding a cheap domestic flight at the end;
+- adding another city when it materially improves the international fare.
 
 Do **not assume the same airport is cheapest in both directions**.
 
 For each promising option give:
 
-- indicative airfare
-- travel dates tested
-- airline / stops if available
-- extra positioning cost
-- extra positioning time
-- true approximate door-to-door difference
+- indicative airfare;
+- dates tested;
+- airline/stops if available;
+- positioning cost;
+- positioning time;
+- realistic door-to-door difference.
 
 Clearly separate:
 
@@ -101,374 +90,395 @@ from
 
 ### Best total-value flight strategy
 
-because a €30 cheaper Budapest flight can be worse than Vienna after train/bus/hotel/luggage costs.
+because a small airfare saving can disappear after positioning transport, luggage, meals, hotel buffers and lost time.
 
-Use **Skyscanner indicative prices only as indicative data** and include attribution and links.
-
-If dates are flexible, search the cheapest days in the relevant month(s).
+Use **Skyscanner indicative prices only as indicative data**, clearly date the research snapshot and include attribution/linking. When dates are flexible, search cheapest days in the relevant month(s).
 
 ---
 
 # 3. Research ALL worthwhile sights
 
-For every destination and reasonable nearby day trip, research the important sights rather than relying only on famous names.
+For every destination and reasonable nearby day trip, research the important sights instead of relying only on famous names.
 
-Include:
+Include where relevant:
 
-- major must-see sights
-- nature
-- hiking
-- viewpoints
-- archaeology
-- museums
-- historic districts
-- beaches
-- snorkeling/diving
-- islands
-- markets
-- interesting neighborhoods
-- food experiences
-- unusual local experiences
-- worthwhile nearby day trips
-- lesser-known sights that are actually worth the time
+- major must-see sights;
+- nature;
+- hiking;
+- viewpoints;
+- archaeology;
+- museums;
+- historic districts;
+- beaches;
+- snorkeling/diving;
+- islands;
+- markets;
+- interesting neighborhoods;
+- food experiences;
+- unusual local experiences;
+- worthwhile nearby day trips;
+- genuinely worthwhile lesser-known sights.
 
 For every sight assign:
 
-- **Priority:** S / A / B / C
-- **Sightseeing value:** /10
-- **Uniqueness:** /10
-- **Time cost:** approximate hours
-- **Detour cost:** low / medium / high
-- recommended visit length
-- why it is or is not worth including
+- **Priority:** S / A / B / C;
+- **Sightseeing value:** /10;
+- **Uniqueness:** /10;
+- **Time cost:** approximate hours;
+- **Detour cost:** low / medium / high;
+- recommended visit length;
+- why it is or is not worth including.
 
-Use primary/official sources where possible:
+Use primary/official sources wherever practical:
 
-- UNESCO
-- national tourism boards
-- national parks
-- museums
-- archaeological authorities
-- official attraction websites
+- UNESCO;
+- national tourism boards;
+- national parks;
+- museums;
+- archaeological authorities;
+- official attraction websites.
 
-Also use good independent guides and recent traveler experience when it materially improves the recommendation.
+Supplement with strong independent guides and recent traveler experience when it materially improves the recommendation.
 
 Include useful **article links and image/reference links**.
 
+Store normalized sight data in a machine-readable file such as `data/sights.csv` so it can support route scoring and the 60:40 analysis.
+
 ---
 
-# 4. Create a normal ~28-day optimized itinerary
+# 4. Create a general ~28-day optimized itinerary
 
-Create a **general itinerary**, not tied to one exact calendar year.
+Create an **evergreen, date-agnostic itinerary**, not tied to one calendar year.
 
-It should be reusable whenever the trip is taken in an appropriate season.
-
-Build an approximately **28-day best-version itinerary**.
+Build approximately the best **28-day first-trip version** for the route.
 
 For each day show:
 
-- sleeping location
-- morning
-- afternoon
-- evening
-- transport
-- approximate travel time
-- major sights
-- optional extras
-- intensity level
+- sleeping location;
+- morning;
+- afternoon;
+- evening;
+- transport;
+- approximate travel time;
+- major sights;
+- optional extras;
+- intensity level.
 
 Mark days as:
 
-- 🟢 easy
-- 🟡 moderate
-- 🔴 intense
+- 🟢 easy;
+- 🟡 moderate;
+- 🔴 intense.
 
-Avoid wasting daytime on transfers where an early/late transfer produces a clearly better trip.
-
-Include sensible recovery time after major hikes or long travel days.
+Avoid wasting useful daylight on transfers where an early/late move is clearly better. Include sensible recovery/weather buffers after demanding hikes or weather-dependent activities.
 
 ---
 
-# 5. Create a 60:40 highlights itinerary
+# 5. Create a 60:40 highlights route
 
 Also create a separate **60:40 route**.
 
 Definition:
 
-> Try to capture roughly the best **60% of the total sightseeing/experience value in only about 40% of the full itinerary time**.
+> Capture roughly the best **60% of total sightseeing/experience value in only about 40% of the full itinerary time**.
 
-For a 28-day route this will usually mean roughly **10–12 days**, but choose the exact duration based on the destination.
+For a 28-day route this will often mean roughly **10–12 days**, but choose the exact duration based on route geometry and experience value.
 
-This is NOT simply “remove every second stop.”
-
-Calculate it based on sightseeing value per unit time.
+This is NOT “delete every second stop.” Optimize based on value per unit time.
 
 Prioritize experiences that are:
 
-- iconic
-- unique
-- difficult to substitute elsewhere
-- geographically efficient
-- highly memorable
-- worth the transport effort
+- iconic;
+- highly unique;
+- difficult to substitute elsewhere;
+- geographically efficient;
+- highly memorable;
+- worth their transport cost.
 
 Cut experiences that are:
 
-- repetitive
-- easy to see elsewhere
-- poor value per travel hour
-- long detours
-- mainly filler
-- similar to a better sight already included
+- repetitive;
+- easily substituted;
+- poor value per transfer hour;
+- long detours;
+- filler;
+- similar to a stronger experience already retained.
 
-Create a table showing:
+It is acceptable for the 60:40 route to spend more money on a strategic internal flight if doing so saves one or more sightseeing days.
+
+Create a comparison table:
 
 | Place | Full route | 60:40 route | Reason |
 |---|---|---|---|
 
-Also explain the biggest sacrifices made by the 60:40 version.
+Explain the biggest sacrifices and estimate how much of the normalized experience score the condensed route preserves.
 
 ---
 
-# 6. Create optional route variants
+# 6. Create worthwhile variants
 
-Research worthwhile variants such as:
+Research variants only where they materially change the trip, such as:
 
-- slower / relaxed
-- maximum sightseeing
-- budget
-- nature-heavy
-- hiking-heavy
-- beach-heavy
-- archaeology/culture-heavy
-- optional major city extension
-- alternative arrival/departure airport
+- relaxed;
+- maximum sightseeing;
+- budget;
+- nature-heavy;
+- hiking-heavy;
+- beach/reef-heavy;
+- archaeology/culture-heavy;
+- optional major-city extension;
+- alternative arrival/departure airport.
 
-Only include variants that materially improve the trip for some traveler profile.
+Do not create variants just to inflate the document count.
 
 ---
 
 # 7. Weather and season analysis
 
-Research climate for every major stop.
-
-Create a month-by-month score:
+Research climate for every major stop and create a month-by-month travel score:
 
 **1 = worst possible period**  
 **10 = almost ideal**
 
-Score based on the activities being done there, not just average temperature.
+Score weather for the activity being done there, not just temperature.
 
-For example:
+Examples:
 
-- mountain hike → rain/cloud visibility matters strongly
-- snorkeling → sea state and underwater visibility matter
-- archaeological ruins → heat matters
-- beaches → rain/wind/hurricane risk matters
+- mountain hike → cloud, rain, wind and visibility matter;
+- snorkeling/diving → sea state, storms and underwater visibility matter;
+- archaeology → heat/humidity matter;
+- beach/island route → rain, wind and cyclone risk matter.
 
-Create a table:
+Create:
 
 | Destination | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 
 Then identify:
 
-- best overall month
-- second-best month
-- best value shoulder season
-- months to avoid
-- important activity-specific weather risks
+- best overall month;
+- second-best month;
+- best-value shoulder season;
+- months to avoid;
+- important activity-specific risks.
 
 ---
 
-# 8. Make one date-specific worked example
+# 8. Create one date-specific worked example
 
-In addition to the general route, create one **date-specific booking example** for the period I gave you.
+In addition to the evergreen route, create a date-specific booking example for the period I supplied.
 
 Example:
 
 `1–28 February 2027`
 
-Use current flight/transport research for that example.
+Use current flight/transport research for that example and clearly date all fare snapshots.
 
-Keep this separate from the general itinerary so temporary fares do not make the main itinerary obsolete.
+Keep this separate from the evergreen route so temporary fares do not make the core itinerary obsolete.
 
-File name example:
+Suggested files:
 
-`booking-example-2027-02.md`
+- `booking-example-YYYY-MM.md` — fare/booking layer;
+- `itinerary.md` or another clearly named file — detailed dated schedule.
 
 ---
 
 # 9. Generate a REAL geographic route map
 
-This is important:
+This is critical:
 
 **DO NOT use an AI image generator to invent the geography.**
 
-Create the route map programmatically from real geographic coordinates.
+Create maps programmatically from verified coordinates and real cartographic data.
 
-Use an OpenStreetMap-based workflow where practical.
-
-Recommended approach:
-
-### A. Geocode each stop
+## A. Geocode every stop
 
 Retrieve verified latitude/longitude using one or more of:
 
-- OpenStreetMap / Nominatim
-- Wikidata
-- GeoNames
-- official coordinates
+- OpenStreetMap / Nominatim;
+- Wikidata;
+- GeoNames;
+- UNESCO / official coordinates;
+- authoritative specialist sources for natural features.
 
-Store the coordinates in a machine-readable file such as:
+Store the points in:
 
-`stops.geojson`
+`maps/stops.geojson`
 
-Example structure:
+GeoJSON coordinates must be `[longitude, latitude]`.
 
-```json
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "order": 1,
-        "name": "Example Stop"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [longitude, latitude]
-      }
-    }
-  ]
-}
+## B. Verify geography
+
+Before rendering, verify at minimum:
+
+- correct country;
+- relative direction from surrounding stops;
+- approximate coordinate correctness;
+- island vs mainland;
+- archaeological site vs nearby town;
+- no latitude/longitude reversal.
+
+Never place a pin by eyeballing an illustration.
+
+## C. Obtain route geometry
+
+Where possible use actual routing geometry such as:
+
+- OSRM;
+- OpenRouteService;
+- GraphHopper;
+- official/public-transit route geometry.
+
+For ferry/flight/hike segments, preserve explicit transport semantics. Do not pretend a driving road exists across water.
+
+If live routing is unavailable, straight connectors between **verified** stop coordinates are acceptable only when clearly labeled as planning connectors rather than exact road tracks.
+
+Save route data such as:
+
+- `maps/route.geojson`;
+- `maps/route-60-40.geojson`.
+
+## D. Render using real geographic data
+
+Use an appropriate real mapping workflow, for example:
+
+- Python + GeoPandas / Cartopy / Matplotlib;
+- Basemap/GSHHS;
+- Contextily with an appropriate tile provider;
+- Leaflet;
+- MapLibre;
+- QGIS-compatible output;
+- another OpenStreetMap-backed/vector geographic renderer.
+
+Respect OpenStreetMap tile usage policy. Do not bulk-render from the public tile service in a way that violates its usage requirements.
+
+The static map should include where practical:
+
+- real coastline;
+- real country borders;
+- verified stop coordinates;
+- numbered stops;
+- stop names;
+- route line;
+- visibly distinct road/rail/ferry/flight/hike segments;
+- legend;
+- north orientation;
+- scale;
+- required data attribution.
+
+## E. SVG-FIRST OUTPUT — PNG MUST COME FROM THE SVG
+
+**This is a hard requirement.**
+
+The map-generation pipeline must be:
+
+```text
+verified coordinates
+        ↓
+stops.geojson + route.geojson
+        ↓
+real geographic renderer
+        ↓
+CANONICAL SVG
+        ↓
+SVG rasterization
+        ↓
+PNG
 ```
 
-### B. Verify geography
+Rules:
 
-Before rendering, verify that each pin is geographically correct.
-
-Check at minimum:
-
-- country
-- relative direction from surrounding stops
-- approximate coordinates
-- islands versus mainland
-- archaeological sites versus nearby towns
-
-Never approximate pin placement visually.
-
-### C. Obtain route geometry
-
-Where possible use actual routing data such as:
-
-- OSRM
-- OpenRouteService
-- GraphHopper
-- public-transit route geometry
-
-For ferry/flight segments, draw appropriate straight/dashed segments if exact geometry is unavailable.
-
-Do not pretend a road route exists across water.
-
-### D. Render map using real map data
-
-Create a high-resolution PNG using a proper mapping library such as:
-
-- Python + GeoPandas + Contextily
-- Folium
-- Leaflet
-- MapLibre
-- QGIS-compatible approach
-- another OpenStreetMap-backed renderer
-
-Use OpenStreetMap tiles only according to applicable usage policies. If bulk/static tile use is inappropriate, use a suitable OSM-derived tile provider or render from geographic vector data instead.
-
-The final map must contain:
-
-- actual coastline
-- actual country borders
-- actual stop coordinates
-- numbered stops
-- stop names
-- solid main-route line
-- dashed ferry/flight/optional segments
-- start/end airport icons
-- legend
-- north arrow
-- scale if practical
+1. Generate the static map as **SVG first**.
+2. Treat that SVG as the canonical visual artifact.
+3. Generate the PNG by rasterizing **that exact SVG**.
+4. **Do not render PNG and SVG independently**, because independent rendering can create label/layout/geography drift.
+5. Verify the PNG visually matches the SVG: same stops, numbering, labels, route geometry and extent.
+6. Use CairoSVG when available; acceptable fallbacks include `rsvg-convert`, Inkscape or ImageMagick.
+7. Export PNG at high resolution (roughly 2000–3000 px wide unless another size is better).
 
 Create at least:
 
-`map-full-route.png`
+```text
+maps/
+├── map-full-route.svg
+├── map-full-route.png        # derived from map-full-route.svg
+├── map-60-40-route.svg
+├── map-60-40-route.png       # derived from map-60-40-route.svg
+├── stops.geojson
+├── route.geojson
+└── route-60-40.geojson       # when applicable
+```
 
-and
+Also create an interactive Leaflet/MapLibre map when useful, preferably from the same GeoJSON source of truth.
 
-`map-60-40-route.png`
-
-Also save:
-
-`stops.geojson`
-
-and ideally:
-
-`route.geojson`
-
-The map is an **information graphic built on real cartographic data**, not a generative illustration.
+The maps are **information graphics built on real cartographic data**, not generative illustrations.
 
 ---
 
-# 10. GitHub repository structure
+# 10. Repository structure
 
-Put everything inside the specified **subfolder**, not the repository root.
+Use the repository-wide organization when available.
 
-Use a structure similar to:
+Preferred structure:
 
 ```text
-<subfolder>/
-├── README.md
-├── itinerary-28-days.md
-├── itinerary-60-40.md
-├── transport-and-route-optimization.md
-├── flights.md
-├── sights.md
-├── weather-and-timing.md
-├── optional-variants.md
-├── booking-example-YYYY-MM.md
-├── sources.md
-├── maps/
-│   ├── map-full-route.png
-│   ├── map-60-40-route.png
-│   ├── stops.geojson
-│   └── route.geojson
-└── data/
-    └── sights.csv
+repository-root/
+├── prompt.md
+├── map-generation.md
+├── itineraries/
+│   └── <Trip-Slug>/
+│       ├── README.md
+│       ├── general-28-day-route.md
+│       ├── itinerary-28-days.md
+│       ├── itinerary-60-40.md
+│       ├── itinerary.md                    # dated example when applicable
+│       ├── booking-example-YYYY-MM.md
+│       ├── transport-and-route-optimization.md
+│       ├── flights.md
+│       ├── sights.md
+│       ├── weather-and-timing.md
+│       ├── optional-variants.md
+│       ├── sources.md
+│       ├── maps/
+│       │   ├── map-full-route.svg
+│       │   ├── map-full-route.png
+│       │   ├── map-60-40-route.svg
+│       │   ├── map-60-40-route.png
+│       │   ├── stops.geojson
+│       │   ├── route.geojson
+│       │   └── interactive-map.html
+│       └── data/
+│           └── sights.csv
+└── tools/
+    └── python/
+        ├── script.py
+        ├── svg_to_png.py
+        ├── README.md
+        └── requirements.txt
 ```
 
-If the repository already has a convention, follow it instead.
+For future routes, put itinerary/research material under `itineraries/<Trip-Slug>/` and keep reusable generation scripts under root-level `tools/` rather than copying tool code into each trip folder.
+
+Preserve unrelated repository files.
 
 ---
 
 # 11. README requirements
 
-The README should work as the main overview.
+The itinerary README should act as the main overview and include:
 
-Include:
-
-- route summary
-- route order
-- why this order is optimal
-- map
-- general 28-day recommendation
-- 60:40 version
-- best season
-- expected transport bottlenecks
-- major must-see experiences
-- optional extensions
-- quick link to every detailed file
-
-Include Markdown links to the detailed research.
+- route summary;
+- optimized route order;
+- why this order wins;
+- embedded real map (prefer SVG on GitHub, also link PNG);
+- general ~28-day recommendation;
+- 60:40 version;
+- best season;
+- transport bottlenecks;
+- major must-see experiences;
+- optional extensions;
+- quick links to every detailed file;
+- map-data/method note.
 
 ---
 
@@ -476,56 +486,53 @@ Include Markdown links to the detailed research.
 
 Keep a proper source trail.
 
-For every important factual claim, preferably record:
+For important factual claims record where useful:
 
-- title
-- organization/site
-- URL
-- what it supports
-- research date
-
-Prioritize primary sources.
+- title;
+- organization/site;
+- URL;
+- what it supports;
+- research date.
 
 Separate:
 
 ### Official / primary sources
 
-from
-
 ### Transport / fare sources
-
-from
 
 ### Useful independent guides
 
-from
-
 ### Image / visual references
 
-Do not dump hundreds of useless links. Keep sources relevant.
+Prefer strong primary sources and do not dump hundreds of low-value links.
 
 ---
 
 # 13. Quality-control pass
 
-Before committing, audit the finished route.
+Before committing, audit the finished route and files.
 
 Check:
 
-1. Is there any unnecessary geographical backtracking?
-2. Is any transfer absurdly long for the value of the destination?
-3. Could an overnight stop turn a horrible transfer into a worthwhile destination?
-4. Are any major nearby sights missing?
-5. Is any famous stop overrated relative to a better alternative?
+1. Is there unnecessary geographical backtracking?
+2. Is any transfer absurdly long for the value of the stop?
+3. Could an overnight stop improve a horrible transfer?
+4. Are major nearby sights missing?
+5. Is a famous stop overrated compared with an alternative?
 6. Are border crossings realistic?
-7. Is the weather suitable for the proposed activities?
-8. Does the route make sense on an actual map?
-9. Are all map pins geographically correct?
-10. Does the 60:40 route really preserve the highest-value experiences?
-11. Are temporary airfare results separated from evergreen route advice?
-12. Are flight prices clearly marked as indicative?
-13. Are all links valid and useful?
-14. Does the GitHub folder contain all research, not merely a summary?
+7. Is the weather appropriate for the activities?
+8. Does the route make sense on a real map?
+9. Are all pins based on verified coordinates?
+10. Does the 60:40 route really protect the highest-value experiences?
+11. Are temporary fare snapshots separated from evergreen advice?
+12. Are flight prices marked as indicative and dated?
+13. Are links valid after any repository reorganization?
+14. Does the GitHub itinerary contain the actual research, not just a short summary?
+15. Was the map generated from real geography rather than generative imagery?
+16. Was **SVG generated first**?
+17. Was **PNG rasterized from the canonical SVG**, rather than separately rendered?
+18. Do SVG and PNG show identical stops, labels, numbering and route geometry?
+19. Are reusable map scripts stored under `tools/`?
 
 Fix problems you discover before finishing.
 
@@ -533,42 +540,42 @@ Fix problems you discover before finishing.
 
 # 14. GitHub execution
 
-Use the connected GitHub tools to actually add/update the files in:
+Use connected GitHub tools to actually create/update the repository files. Do not merely print Markdown for me to copy manually.
 
-`<repository>/<subfolder>/`
+Preserve unrelated work and re-read the latest tree before major restructuring so concurrent changes are not accidentally overwritten.
 
-Do not merely show me Markdown that I then have to copy manually.
+If direct binary upload is supported, commit PNG files as well as SVG/GeoJSON.
 
-Preserve unrelated repository files.
+If binary upload is not supported:
 
-If direct binary-image upload is supported, commit the generated maps.
+1. still generate PNG locally from the SVG;
+2. commit the SVG;
+3. commit GeoJSON source data;
+4. commit reusable map-generation / SVG→PNG scripts under `tools/`;
+5. clearly report any binary file that could not be pushed.
 
-If binary upload is not supported by the GitHub connector:
-
-1. still create the real map locally,
-2. preserve the map-generation source/code,
-3. commit the GeoJSON and map-generation script,
-4. clearly tell me which binary files could not be pushed.
-
-Prefer a branch + PR if that repository normally uses PRs; otherwise commit directly if appropriate.
+Prefer the repository's existing workflow (direct main commits vs branch/PR) rather than imposing a different convention without reason.
 
 ---
 
-# 15. Final response to me
+# 15. Final response
 
-When finished, give me only a concise summary containing:
+When finished, give me a concise summary containing:
 
-- final optimized route
-- biggest changes from my original proposal
-- general ~28-day duration
-- 60:40 duration
-- best travel month(s)
-- best current flight strategy
-- GitHub folder link
-- links to the generated route maps
+- final optimized route;
+- biggest changes from my original proposal;
+- general duration;
+- 60:40 duration;
+- best travel month(s);
+- best current flight strategy;
+- GitHub itinerary-folder link;
+- links to the real SVG and PNG route maps;
+- link to the reusable tool/script folder.
 
-Do the research and implementation now rather than just giving recommendations for what I should research later.
+Do the research and implementation now rather than just telling me what I should research later.
 
 ---
 
-One improvement I’d **strongly keep exactly as written** is the map section. For itinerary maps, image generators are good for decoration but not cartography. The reliable pipeline is essentially **geocode stops → GeoJSON → actual routing geometry → OSM-derived basemap → programmatic PNG**. That eliminates fake stop placement.
+The core map rule to remember is:
+
+**geocode verified stops → GeoJSON → real routing/cartography → canonical SVG → PNG rasterized from that SVG.**
