@@ -20,7 +20,7 @@ Optional end extension: **Cancún → Mexico City → Europe** when time or airf
 
 The 60:40 route uses strategic **GUA→FRS** and **BZE→CUN** flights to retain roughly **63% of the scored experience value in ~43% of the full-route time** instead of spending short-trip days on long detours.
 
-Map data and output files live under [`maps/`](./maps/). The **SVG is canonical**, and the PNG is generated from that exact SVG so both formats have identical geography and labels. The saved route lines are planning connectors between verified stop coordinates, **not claimed road-centerline GPS tracks**; see [`maps/README-map-method.md`](./maps/README-map-method.md).
+Map data and output files live under [`maps/`](./maps/). The **SVG is the final static artifact and is committed directly to GitHub** together with its GeoJSON source data. The saved route lines are planning connectors between verified stop coordinates, **not claimed road-centerline GPS tracks**; see [`maps/README-map-method.md`](./maps/README-map-method.md).
 
 The reusable generator is kept outside itinerary data at [`../../tools/python/script.py`](../../tools/python/script.py). Run it from the repo root with:
 
@@ -196,7 +196,7 @@ TravelRoutes/
 ├── map-generation.md
 ├── tools/
 │   └── python/
-│       └── script.py                  # reusable SVG-first map generator
+│       └── script.py                  # reusable SVG map generator
 └── itineraries/
     └── Central-America-Guatemala-Belize-Mexico/
         ├── README.md
@@ -216,10 +216,8 @@ TravelRoutes/
         ├── data/
         │   └── sights.csv
         └── maps/
-            ├── map-full-route.svg     # canonical vector map
-            ├── map-full-route.png     # generated from the SVG
-            ├── map-60-40-route.svg    # canonical vector map
-            ├── map-60-40-route.png    # generated from the SVG
+            ├── map-full-route.svg     # committed vector map
+            ├── map-60-40-route.svg    # committed vector map
             ├── stops.geojson
             ├── route.geojson
             ├── route-60-40.geojson
