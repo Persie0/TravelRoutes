@@ -46,7 +46,7 @@ Actively detect:
 - bad one-day transfers;
 - inefficient border crossings;
 - expensive positioning flights;
-- destinations that are useful because they improve an otherwise ugly transfer;
+- destinations that improve an otherwise ugly transfer;
 - famous places with poor sightseeing-value-per-hour.
 
 Do not optimize only for shortest travel time. Optimize the combined objective:
@@ -57,7 +57,7 @@ Do not optimize only for shortest travel time. Optimize the combined objective:
 
 # 2. Flight optimization
 
-Search multiple route shells rather than assuming a normal same-airport return is best.
+Search multiple route shells instead of assuming a normal same-airport return is best.
 
 Test combinations such as:
 
@@ -366,7 +366,7 @@ The static map should include where practical:
 - scale;
 - required data attribution.
 
-## E. SVG-FIRST OUTPUT — PNG MUST COME FROM THE SVG
+## E. SVG OUTPUT — UPLOAD THE SVG TO GITHUB
 
 **This is a hard requirement.**
 
@@ -379,31 +379,27 @@ stops.geojson + route.geojson
         ↓
 real geographic renderer
         ↓
-CANONICAL SVG
+SVG
         ↓
-SVG rasterization
-        ↓
-PNG
+commit/upload SVG to GitHub
 ```
 
 Rules:
 
-1. Generate the static map as **SVG first**.
-2. Treat that SVG as the canonical visual artifact.
-3. Generate the PNG by rasterizing **that exact SVG**.
-4. **Do not render PNG and SVG independently**, because independent rendering can create label/layout/geography drift.
-5. Verify the PNG visually matches the SVG: same stops, numbering, labels, route geometry and extent.
-6. Use CairoSVG when available; acceptable fallbacks include `rsvg-convert`, Inkscape or ImageMagick.
-7. Export PNG at high resolution (roughly 2000–3000 px wide unless another size is better).
+1. Generate each static map directly as **SVG**.
+2. Treat the SVG as the final static map artifact.
+3. **Commit/upload the SVG itself to the itinerary's `maps/` folder in GitHub.**
+4. Do not require a PNG copy by default.
+5. Do not use an AI-generated image as a substitute for the SVG map.
+6. Verify the SVG contains the correct stops, numbering, labels, route geometry, borders and extent before committing it.
+7. Keep the corresponding GeoJSON source files in GitHub so the SVG remains reproducible.
 
 Create at least:
 
 ```text
 maps/
 ├── map-full-route.svg
-├── map-full-route.png        # derived from map-full-route.svg
 ├── map-60-40-route.svg
-├── map-60-40-route.png       # derived from map-60-40-route.svg
 ├── stops.geojson
 ├── route.geojson
 └── route-60-40.geojson       # when applicable
@@ -441,9 +437,7 @@ repository-root/
 │       ├── sources.md
 │       ├── maps/
 │       │   ├── map-full-route.svg
-│       │   ├── map-full-route.png
 │       │   ├── map-60-40-route.svg
-│       │   ├── map-60-40-route.png
 │       │   ├── stops.geojson
 │       │   ├── route.geojson
 │       │   └── interactive-map.html
@@ -451,10 +445,7 @@ repository-root/
 │           └── sights.csv
 └── tools/
     └── python/
-        ├── script.py
-        ├── svg_to_png.py
-        ├── README.md
-        └── requirements.txt
+        └── script.py
 ```
 
 For future routes, put itinerary/research material under `itineraries/<Trip-Slug>/` and keep reusable generation scripts under root-level `tools/` rather than copying tool code into each trip folder.
@@ -470,7 +461,7 @@ The itinerary README should act as the main overview and include:
 - route summary;
 - optimized route order;
 - why this order wins;
-- embedded real map (prefer SVG on GitHub, also link PNG);
+- embedded real SVG map;
 - general ~28-day recommendation;
 - 60:40 version;
 - best season;
@@ -529,9 +520,9 @@ Check:
 13. Are links valid after any repository reorganization?
 14. Does the GitHub itinerary contain the actual research, not just a short summary?
 15. Was the map generated from real geography rather than generative imagery?
-16. Was **SVG generated first**?
-17. Was **PNG rasterized from the canonical SVG**, rather than separately rendered?
-18. Do SVG and PNG show identical stops, labels, numbering and route geometry?
+16. Does the SVG render correctly?
+17. Was the **SVG itself committed/uploaded to GitHub**?
+18. Do the map's stops, numbering and route geometry match the itinerary and GeoJSON?
 19. Are reusable map scripts stored under `tools/`?
 
 Fix problems you discover before finishing.
@@ -544,15 +535,16 @@ Use connected GitHub tools to actually create/update the repository files. Do no
 
 Preserve unrelated work and re-read the latest tree before major restructuring so concurrent changes are not accidentally overwritten.
 
-If direct binary upload is supported, commit PNG files as well as SVG/GeoJSON.
+For maps:
 
-If binary upload is not supported:
+1. generate the real map as SVG;
+2. commit/upload `map-full-route.svg`;
+3. commit/upload `map-60-40-route.svg` when applicable;
+4. commit the GeoJSON source files;
+5. commit reusable map-generation code under `tools/python/script.py`;
+6. verify the committed SVG links render correctly on GitHub.
 
-1. still generate PNG locally from the SVG;
-2. commit the SVG;
-3. commit GeoJSON source data;
-4. commit reusable map-generation / SVG→PNG scripts under `tools/`;
-5. clearly report any binary file that could not be pushed.
+Do **not** skip the SVG upload and merely tell me where a local file exists.
 
 Prefer the repository's existing workflow (direct main commits vs branch/PR) rather than imposing a different convention without reason.
 
@@ -569,8 +561,8 @@ When finished, give me a concise summary containing:
 - best travel month(s);
 - best current flight strategy;
 - GitHub itinerary-folder link;
-- links to the real SVG and PNG route maps;
-- link to the reusable tool/script folder.
+- links to the committed real SVG route maps;
+- link to the reusable tool/script.
 
 Do the research and implementation now rather than just telling me what I should research later.
 
@@ -578,4 +570,4 @@ Do the research and implementation now rather than just telling me what I should
 
 The core map rule to remember is:
 
-**geocode verified stops → GeoJSON → real routing/cartography → canonical SVG → PNG rasterized from that SVG.**
+**geocode verified stops → GeoJSON → real routing/cartography → SVG → upload SVG to GitHub.**
