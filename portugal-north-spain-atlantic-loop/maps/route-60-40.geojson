@@ -1,0 +1,7 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"mode":"public_transport","note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-7.9304,37.0194],[-8.6730,37.1028],[-9.1393,38.7223],[-8.6291,41.1579]]}},
+    {"type":"Feature","properties":{"mode":"rental_car","note":"compressed highlights connector"},"geometry":{"type":"LineString","coordinates":[[-8.6291,41.1579],[-8.7207,42.2406],[-8.5448,42.8782],[-4.8170,43.3030],[-4.6200,43.1546],[-2.9350,43.2630],[-5.5671,42.5987],[-7.7899,41.1621],[-8.6291,41.1579]]}}
+  ]
+}
