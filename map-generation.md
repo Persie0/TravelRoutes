@@ -8,7 +8,7 @@ The key rules are:
 >
 > **Use verified coordinates + real cartographic data + programmatic rendering.**
 >
-> **Generate SVG first, then rasterize that exact SVG to PNG.**
+> **Generate and upload SVG as the final static map artifact.**
 
 Reusable code lives at:
 
@@ -140,7 +140,7 @@ Flights, ferries and hikes should remain explicitly classified rather than being
 
 ## 4. Real map base
 
-The Guatemala / Belize / Mexico static maps used real GSHHS coastlines and country boundaries through Python/Basemap.
+The Guatemala / Belize / Mexico static maps use real GSHHS coastlines and country boundaries through Python/Basemap.
 
 Other good approaches include:
 
@@ -156,9 +156,9 @@ Do not bulk-download or abuse the public `tile.openstreetmap.org` service as an 
 
 ---
 
-## 5. Canonical SVG → PNG pipeline
+## 5. SVG-only static map pipeline
 
-This is the standard TravelRoutes map pipeline:
+The TravelRoutes static map pipeline is:
 
 ```text
 verified coordinates
@@ -171,41 +171,28 @@ real coastline/border/routing data
         ↓
 programmatic map rendering
         ↓
-CANONICAL SVG
+SVG
         ↓
-SVG rasterization
-        ↓
-PNG
+commit/upload SVG to GitHub
 ```
 
-### Why SVG first?
+SVG is the final static artifact because it:
 
-Generating PNG and SVG independently can introduce differences in:
+- stays sharp at every zoom level;
+- is text-based and easy for GitHub to store;
+- avoids binary-image upload limitations;
+- preserves labels and route linework exactly;
+- can be embedded directly in Markdown on GitHub;
+- can still be converted to PNG later if a specific external use requires it.
 
-- label position;
-- stop numbering;
-- clipping;
-- route geometry;
-- map extent;
-- fonts/layout.
-
-Instead:
-
-1. render the complete map as SVG;
-2. inspect/accept the SVG;
-3. rasterize that same SVG to PNG;
-4. never separately re-render the PNG from raw plotting code.
-
-This guarantees that raster and vector versions represent the same map.
+Do **not** require a PNG copy by default.
 
 ### Expected outputs
 
 ```text
 maps/
 ├── map-full-route.svg
-├── map-full-route.png
 ├── map-60-40-route.svg
-├── map-60-40-route.png
 ├── stops.geojson
 ├── route.geojson
 ├── route-60-40.geojson
@@ -229,10 +216,8 @@ It:
 3. draws real coastlines/borders;
 4. places stop pins from coordinates;
 5. applies mode-specific route styling;
-6. saves the **SVG** first;
-7. rasterizes that SVG to the corresponding **PNG**.
-
-Dependencies are documented in the script header. The preferred SVG→PNG converter is CairoSVG; the script also tries `rsvg-convert`, Inkscape and ImageMagick.
+6. saves `map-full-route.svg`;
+7. saves `map-60-40-route.svg` when applicable.
 
 Typical command:
 
@@ -244,7 +229,30 @@ Reusable tooling belongs under `tools/`, not copied into every itinerary folder.
 
 ---
 
-## 7. Interactive OpenStreetMap map
+## 7. GitHub upload rule
+
+After generating a map, commit the SVG directly into the itinerary's `maps/` folder.
+
+For example:
+
+```text
+itineraries/Central-America-Guatemala-Belize-Mexico/maps/map-full-route.svg
+itineraries/Central-America-Guatemala-Belize-Mexico/maps/map-60-40-route.svg
+```
+
+Also commit the corresponding GeoJSON source files so the map remains reproducible.
+
+The preferred GitHub package is therefore:
+
+```text
+SVG + GeoJSON + map-generation script
+```
+
+not a separately generated raster image.
+
+---
+
+## 8. Interactive OpenStreetMap map
 
 The same GeoJSON source can drive Leaflet or MapLibre.
 
@@ -267,7 +275,7 @@ The interactive and static maps should use the same `stops.geojson` source so th
 
 ---
 
-## 8. Full-route vs 60:40 maps
+## 9. Full-route vs 60:40 maps
 
 Do not manually redraw a second map.
 
@@ -279,7 +287,7 @@ The 60:40 version may include strategic flights that do not appear in the slower
 
 ---
 
-## 9. Map quality-control checklist
+## 10. Map quality-control checklist
 
 Before accepting a map, verify:
 
@@ -294,13 +302,12 @@ Before accepting a map, verify:
 - [ ] full and 60:40 maps share the same coordinate source;
 - [ ] exact-road geometry is claimed only when produced by a real routing source;
 - [ ] map attribution is retained where required;
-- [ ] SVG was generated first;
-- [ ] PNG was rasterized from that SVG;
-- [ ] PNG visually matches the SVG exactly.
+- [ ] SVG renders correctly on GitHub;
+- [ ] the committed SVG matches the itinerary and GeoJSON source data.
 
 ---
 
-## 10. Repository architecture
+## 11. Repository architecture
 
 The repository-wide convention is:
 
@@ -323,4 +330,4 @@ TravelRoutes/
 
 The architectural principle is:
 
-> **Trip folders contain research/data/output; root-level `tools/` contains reusable code. GeoJSON is the geographic source of truth, SVG is the visual source of truth, and PNG is a raster derivative of the SVG.**
+> **Trip folders contain research/data/output; root-level `tools/` contains reusable code. GeoJSON is the geographic source of truth and SVG is the final visual artifact uploaded to GitHub.**
