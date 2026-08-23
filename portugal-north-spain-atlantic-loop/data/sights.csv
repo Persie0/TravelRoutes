@@ -1,0 +1,30 @@
+destination,sight,priority,value_10,uniqueness_10,time_cost_hours,detour,recommended_visit,why
+Faro,Ria Formosa,A,8,9,5,low,Half/full day,Lagoon/island ecology; stronger than spending two full city days.
+Lagos,Ponta da Piedade,S,10,10,4,low,3–5h,"Signature Algarve cliffs, caves and sea stacks."
+Lagos,Praia do Camilo/Dona Ana,A,9,8,3,low,2–4h,High scenery-per-hour beach stop.
+Lisbon,Alfama + viewpoints,S,10,9,5,low,Half day,Core city texture and views.
+Lisbon,Belém/Jerónimos riverfront,S,9,10,4,low,Half day,Portugal-specific maritime history.
+Sintra,Pena + Moorish Castle,S,10,10,7,medium,Full day,Extremely distinctive Romantic landscape/architecture.
+Coimbra,University historic core,A,9,9,4,low,Half day,High cultural value and efficient rail stop.
+Porto,Ribeira + Luís I Bridge,S,10,9,5,low,Half day,Iconic urban landscape.
+Porto,São Bento/Clérigos/Lello cluster,A,9,8,5,low,Half day,Dense walking cluster.
+Douro,Pinhão/valley viewpoints,S,10,10,7,medium,Full day,Unique cultural landscape; scenic rail/road.
+Vigo,Cíes Islands,S,10,10,8,medium,Full day,Wild Atlantic island scenery + beach/hike.
+Santiago,Cathedral + historic centre,S,10,10,6,low,Full day,Unique pilgrimage endpoint and UNESCO-scale urban fabric.
+Costa da Morte,Fisterra/Muxía coast,A,9,9,6,medium,Half/full day,Wild lighthouse coast; fits route.
+A Coruña,Tower of Hercules,A,9,10,4,low,2–3h,Roman lighthouse + coastal walk.
+Ribadeo,Praia das Catedrais,S,10,10,4,low,2–3h at low tide,Exceptional sea arches; timing-sensitive.
+Cudillero,Harbour village,A,8,8,3,low,2–3h,Compact scenic fishing village.
+Oviedo,Old town + cider culture,A,8,8,4,low,Half day,Strong food/city contrast before mountains.
+Covadonga,Lakes + sanctuary area,S,10,10,7,medium,Full day,High-value alpine/karst landscape.
+Picos,Ruta del Cares,S,10,10,8,medium,6–8h,One of the route’s best hiking experiences.
+Picos,Fuente Dé/Potes,A,9,9,5,medium,Half/full day,Mountain panorama + attractive base town.
+Santillana,Historic village + Altamira museum,A,9,9,5,low,Half day,Excellent compact heritage stop.
+Santander,Magdalena + Sardinero,A,8,8,5,low,Half/full day,Recovery city with strong coast.
+Bilbao,Guggenheim + riverside,S,10,10,5,low,Half day,Architecture/art icon and urban transformation.
+Bilbao,Casco Viejo + pintxos,A,9,8,5,low,Half day,Food/city experience.
+Basque coast,San Juan de Gaztelugatxe,S,10,10,5,medium,3–4h,Dramatic island staircase; reserve on controlled dates.
+Burgos,Cathedral/old centre,A,8,9,3,low,2–3h,Turns return drive into meaningful stop.
+León,Cathedral + Barrio Húmedo,A,9,9,5,low,Half day,Excellent overnight break on return.
+Bragança,Castle/citadel,B,7,8,3,low,2h,Useful scenic break; lower priority if late.
+Douro,Peso da Régua / viewpoints,A,9,9,5,low,Half day,Makes final return scenic rather than pure transit.
