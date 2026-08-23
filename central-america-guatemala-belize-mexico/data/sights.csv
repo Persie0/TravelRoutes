@@ -1,0 +1,20 @@
+sight,base,priority,sightseeing_value_10,uniqueness_10,time_cost_hours,detour_cost,experience_points,notes
+Acatenango/Fuego overnight,Antigua/Acatenango,S,10,10,18,medium,20,Trip-defining volcano hike/camp; weather dependent
+Tikal National Park,Petén,S,10,10,8,low,20,World-class Maya site + jungle biodiversity
+ATM Cave,San Ignacio,S,10,10,8,medium,20,Unique cave + archaeology adventure; guided only
+Hol Chan + Shark Ray Alley,Caye Caulker,S,10,9,6,low,19,Best reef/snorkel value for most travelers
+Chichén Itzá,Valladolid,S,10,10,5,low,19,Essential Maya/Toltec monumental site
+Lake Atitlán,Lake Atitlán,A,9,9,16,medium,17,Landscape + villages; requires route time
+Antigua historic centre,Antigua,A,9,9,6,low,17,UNESCO colonial city and ruins
+Caye Caulker island/base,Caye Caulker,A,9,8,8,low,16,Strong reef base + island atmosphere
+Bacalar Lagoon,Bacalar,A,9,8,7,low,16,High value because it also breaks the Belize→Yucatán transfer
+Xunantunich,San Ignacio,A,9,8,4,low,15,Strong Maya site with easy route fit
+Semuc Champey,Alta Verapaz,A,8.5,9,8,high,14,Beautiful but high transfer cost
+Great Blue Hole / Lighthouse Reef,Belize reef,A,9,10,10,medium,15,Best for divers or aerial view; snorkel-only value lower
+Yaxhá sunset,Petén,B,8,8,7,medium,12,Excellent second Petén site; cut before Tikal
+Ek Balam,Valladolid,B,8,8,5,low,12,Distinctive archaeology close to Valladolid
+Valladolid old town,Valladolid,B,8,7,4,low,11,Good colonial base + food + cenotes
+Caracol + Mountain Pine Ridge,Cayo,B,8,8,10,high,11,Excellent but large day and repetitive archaeology load
+Flores island/waterfront,Flores,B,7,6,3,low,8,Pleasant base rather than trip-defining stop
+Cancún beach/buffer,Cancún,B,7,5,5,low,8,Useful endpoint and flight buffer; not core surf destination
+Belize City sightseeing,Belize City,C,4,5,4,low,4,Transit node for this route; specific history interests only
