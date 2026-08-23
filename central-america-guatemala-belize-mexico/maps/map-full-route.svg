@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840">
+<rect width="100%" height="100%" fill="#e6f2f7"/>
+<rect x="55" y="35" width="610" height="750" fill="#f3f1df" opacity=".7"/>
+<path d="M 291,810 L243,790 L194,789 L148,776 L68,712" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 68,323 L107,318 L119,330 L102,335 L139,345 L169,333 L177,315 L163,311 L163,303 L151,309 L225,254 L227,222 L247,201 L249,122 L261,92 L283,78 L466,32 L552,53 L569,36 L587,69 L592,60 L597,80 L585,109 L530,176 L529,214 L529,197 L527,211 L503,224 L510,241 L533,234 L530,227 L534,232 L507,267 L514,271 L530,259 L494,370 L486,345 L472,341 L479,323 L474,304 L442,351 L470,353 L452,425 L462,437 L451,464 L459,490 L445,534 L425,561 L409,563 L392,595 L421,614 L426,598 L433,600 L424,588 L465,616 L484,598 L505,592 L516,591 L525,606 L538,599 L581,608 L632,606 L652,594" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 573,148 L580,137 L598,133 L573,166 L573,148" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 133,318 L150,314 L119,325 L133,318" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 628,546 L605,558 L628,542 L646,542 L628,546" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 479,397 L492,369 L496,377 L479,397" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 536,45 L562,35 L536,45" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 68,576 L99,599 L86,602 L89,593 L68,582" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 355,645 L351,632 L380,624 L402,606 L378,641 L355,645" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 188,712 L175,720 L172,711 L188,712" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 298,491 L321,487 L298,491" fill="none" stroke="#315b63" stroke-width="1"/>
+<path d="M 82,727 L91,714 L91,683 L99,675 L86,657 L131,577 L252,575 L255,544 L233,537 L225,513 L193,496 L173,469 L158,463 L200,461 L200,406 L372,406 L365,595 L394,595" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 652,782 L635,804 L600,803 L595,810" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 508,798 L499,791 L479,793 L468,781 L435,795 L432,783 L414,777 L409,767 L402,771 L383,748 L353,738" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 372,675 L365,696 L373,710 L371,723 L353,739 L332,740 L335,754" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 503,371 L476,372 L476,347 L435,340 L401,400 L382,388 L372,392 L372,406" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 337,758 L322,764 L316,777 L306,775 L290,786 L283,805" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 372,675 L459,611" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<path d="M 508,798 L504,810" fill="none" stroke="#777" stroke-width="1" stroke-dasharray="3 3"/>
+<rect x="14" y="12" width="692" height="64" rx="7" fill="white" opacity=".92"/>
+<text x="360" y="39" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#14385b">Guatemala → Belize → Yucatán</text>
+<text x="360" y="61" text-anchor="middle" font-family="Arial" font-size="11" fill="#36543d">General ~28-day optimized route</text>
+<line x1="244" y1="718" x2="224" y2="726" stroke="#d95f02" stroke-width="3"/>
+<line x1="224" y1="726" x2="210" y2="731" stroke="#d95f02" stroke-width="3" stroke-dasharray="8 3 2 3"/>
+<line x1="210" y1="731" x2="224" y2="726" stroke="#d95f02" stroke-width="3" stroke-dasharray="8 3 2 3"/>
+<line x1="224" y1="726" x2="181" y2="712" stroke="#d95f02" stroke-width="3"/>
+<line x1="181" y1="712" x2="296" y2="630" stroke="#d95f02" stroke-width="3"/>
+<line x1="296" y1="630" x2="302" y2="493" stroke="#d95f02" stroke-width="3"/>
+<line x1="302" y1="493" x2="328" y2="465" stroke="#d95f02" stroke-width="3"/>
+<line x1="328" y1="465" x2="302" y2="493" stroke="#d95f02" stroke-width="3"/>
+<line x1="302" y1="493" x2="379" y2="471" stroke="#d95f02" stroke-width="3"/>
+<line x1="379" y1="471" x2="461" y2="437" stroke="#d95f02" stroke-width="3"/>
+<line x1="461" y1="437" x2="477" y2="413" stroke="#d95f02" stroke-width="3" stroke-dasharray="2 5"/>
+<line x1="477" y1="413" x2="461" y2="437" stroke="#d95f02" stroke-width="3" stroke-dasharray="2 5"/>
+<line x1="461" y1="437" x2="443" y2="322" stroke="#d95f02" stroke-width="3"/>
+<line x1="443" y1="322" x2="460" y2="124" stroke="#d95f02" stroke-width="3"/>
+<line x1="460" y1="124" x2="426" y2="125" stroke="#d95f02" stroke-width="3"/>
+<line x1="426" y1="125" x2="460" y2="124" stroke="#d95f02" stroke-width="3"/>
+<line x1="460" y1="124" x2="587" y2="79" stroke="#d95f02" stroke-width="3"/>
+<circle cx="244" cy="718" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="244" y="721" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">1</text><text x="252" y="734" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Guatemala City</text>
+<circle cx="224" cy="726" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="224" y="729" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">2</text><text x="132" y="738" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Antigua Guatemala</text>
+<circle cx="210" cy="731" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="210" y="734" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">3</text><text x="90" y="723" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Acatenango / Fuego</text>
+<circle cx="181" cy="712" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="181" y="715" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">4</text><text x="111" y="699" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Lake Atitlán</text>
+<circle cx="296" cy="630" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="296" y="633" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">5</text><text x="304" y="624" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Semuc Champey</text>
+<circle cx="302" cy="493" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="302" y="496" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">6</text><text x="252" y="483" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Flores</text>
+<circle cx="328" cy="465" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="328" y="468" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">7</text><text x="336" y="457" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Tikal</text>
+<circle cx="379" cy="471" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="379" y="474" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">8</text><text x="387" y="486" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">San Ignacio</text>
+<circle cx="461" cy="437" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="461" y="440" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">9</text><text x="469" y="452" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Belize City</text>
+<circle cx="477" cy="413" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="477" y="416" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">10</text><text x="485" y="405" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Caye Caulker</text>
+<circle cx="443" cy="322" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="443" y="325" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">11</text><text x="451" y="316" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Bacalar</text>
+<circle cx="460" cy="124" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="460" y="127" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">12</text><text x="468" y="139" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Valladolid</text>
+<circle cx="426" cy="125" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="426" y="128" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">13</text><text x="338" y="117" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Chichén Itzá</text>
+<circle cx="587" cy="79" r="9" fill="#d95f02" stroke="white" stroke-width="1.5"/><text x="587" y="82" text-anchor="middle" font-family="Arial" font-size="8" font-weight="700" fill="white">14</text><text x="523" y="71" font-family="Arial" font-size="9" font-weight="700" fill="#222" stroke="white" stroke-width="3" paint-order="stroke">Cancún</text>
+<text x="190" y="615" font-family="Arial" font-size="15" font-weight="700" fill="#3d6a55" opacity=".75">GUATEMALA</text><text x="405" y="545" font-family="Arial" font-size="15" font-weight="700" fill="#3d6a55" opacity=".75">BELIZE</text><text x="420" y="255" font-family="Arial" font-size="15" font-weight="700" fill="#3d6a55" opacity=".75">YUCATÁN / MEXICO</text>
+<rect x="18" y="793" width="684" height="32" rx="5" fill="white" opacity=".92" stroke="#888"/><text x="28" y="811" font-family="Arial" font-size="8" fill="#333">Real GSHHS coastline/borders · verified pins · lines are planning connectors, not exact road tracks</text>
+</svg>
