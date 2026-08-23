@@ -1,0 +1,47 @@
+{
+  "full": {
+    "title": "Southern Africa · South Africa → Namibia → Botswana → Victoria Falls",
+    "subtitle": "Ideal ~42-day route · real coastlines/borders + verified stop coordinates",
+    "stop_names": [
+      "Cape Town",
+      "Stellenbosch",
+      "Hermanus",
+      "Wilderness",
+      "Tsitsikamma",
+      "Windhoek",
+      "Sossusvlei",
+      "Walvis Bay",
+      "Swakopmund",
+      "Spitzkoppe",
+      "Twyfelfontein",
+      "Etosha – Okaukuejo",
+      "Etosha – Namutoni",
+      "Rundu",
+      "Divundu / Mahango",
+      "Tsodilo Hills",
+      "Maun",
+      "Nxai Pan",
+      "Moremi – Xakanaxa",
+      "Khwai",
+      "Savuti",
+      "Kasane / Chobe",
+      "Victoria Falls"
+    ]
+  },
+  "compact": {
+    "title": "Southern Africa · 60:40 highlights",
+    "subtitle": "~17-day high-value route · strategic flights + one-way overland",
+    "stop_names": [
+      "Cape Town",
+      "Windhoek",
+      "Sossusvlei",
+      "Walvis Bay",
+      "Etosha – Okaukuejo",
+      "Divundu / Mahango",
+      "Maun",
+      "Moremi – Xakanaxa",
+      "Kasane / Chobe",
+      "Victoria Falls"
+    ]
+  }
+}
