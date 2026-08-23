@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate real-geography itinerary maps as SVG, then derive PNG from SVG.
+"""Generate real-geography itinerary maps as SVG.
 
 Usage:
     python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
@@ -7,34 +7,26 @@ Usage:
 Expected inputs under <itinerary>/maps/:
     stops.geojson
     route.geojson
-    route-60-40.geojson
+    route-60-40.geojson   # optional
 
 Outputs under <itinerary>/maps/:
     map-full-route.svg
-    map-full-route.png
-    map-60-40-route.svg
-    map-60-40-route.png
+    map-60-40-route.svg   # when a 60:40 route exists
 
-Important design rule:
-    SVG is the canonical rendered map. PNG is generated from that exact SVG,
-    never rendered independently, so both outputs have identical geography,
-    labels and route geometry.
+Design rule:
+    SVG is the canonical and uploaded map artifact. Do not generate a second,
+    independently rendered PNG version. The SVG should be committed directly to
+    GitHub together with the GeoJSON source data.
 
 Dependencies:
     matplotlib
     basemap
-    cairosvg  # preferred SVG -> PNG converter
-
-If cairosvg is unavailable, the script tries rsvg-convert, Inkscape and then
-ImageMagick's `magick` command.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-import shutil
-import subprocess
 from pathlib import Path
 from typing import Iterable
 
@@ -45,52 +37,6 @@ from mpl_toolkits.basemap import Basemap
 
 def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
-
-
-def svg_to_png(svg_path: Path, png_path: Path, width: int = 2200) -> None:
-    """Rasterize the canonical SVG to PNG using the best available converter."""
-    try:
-        import cairosvg  # type: ignore
-
-        cairosvg.svg2png(
-            url=str(svg_path),
-            write_to=str(png_path),
-            output_width=width,
-        )
-        return
-    except Exception:
-        pass
-
-    if shutil.which("rsvg-convert"):
-        subprocess.run(
-            ["rsvg-convert", "-w", str(width), "-o", str(png_path), str(svg_path)],
-            check=True,
-        )
-        return
-
-    if shutil.which("inkscape"):
-        subprocess.run(
-            [
-                "inkscape",
-                str(svg_path),
-                "--export-type=png",
-                f"--export-filename={png_path}",
-                f"--export-width={width}",
-            ],
-            check=True,
-        )
-        return
-
-    if shutil.which("magick"):
-        subprocess.run(
-            ["magick", "-density", "220", str(svg_path), str(png_path)],
-            check=True,
-        )
-        return
-
-    raise RuntimeError(
-        "No SVG→PNG converter found. Install cairosvg, librsvg, Inkscape, or ImageMagick."
-    )
 
 
 def route_mode_style(mode: str) -> str:
@@ -267,33 +213,38 @@ def main() -> None:
         "Chichén Itzá",
         "Cancún",
     ]
-    compact_names = [n for n in compact_default if any(f["properties"]["name"] == n for f in stops["features"])]
+    all_names = {f["properties"]["name"] for f in stops["features"]}
+    compact_names = [n for n in compact_default if n in all_names]
 
-    full_svg = render_svg(
-        maps_dir,
-        "route.geojson",
-        full_names,
-        "Guatemala → Belize → Yucatán",
-        "General ~28-day route · real geography + verified coordinates",
-        "map-full-route.svg",
-        sequential_numbers=False,
-    )
-    svg_to_png(full_svg, maps_dir / "map-full-route.png")
+    outputs = [
+        render_svg(
+            maps_dir,
+            "route.geojson",
+            full_names,
+            "Guatemala → Belize → Yucatán",
+            "General ~28-day route · real geography + verified coordinates",
+            "map-full-route.svg",
+            sequential_numbers=False,
+        )
+    ]
 
     compact_route = maps_dir / "route-60-40.geojson"
     if compact_route.exists() and compact_names:
-        compact_svg = render_svg(
-            maps_dir,
-            "route-60-40.geojson",
-            compact_names,
-            "Guatemala → Belize → Yucatán",
-            "60:40 highlights route · strategic time-saving transport",
-            "map-60-40-route.svg",
-            sequential_numbers=True,
+        outputs.append(
+            render_svg(
+                maps_dir,
+                "route-60-40.geojson",
+                compact_names,
+                "Guatemala → Belize → Yucatán",
+                "60:40 highlights route · strategic time-saving transport",
+                "map-60-40-route.svg",
+                sequential_numbers=True,
+            )
         )
-        svg_to_png(compact_svg, maps_dir / "map-60-40-route.png")
 
-    print(f"Generated SVG + PNG maps in {maps_dir}")
+    print("Generated SVG maps:")
+    for output in outputs:
+        print(output)
 
 
 if __name__ == "__main__":
