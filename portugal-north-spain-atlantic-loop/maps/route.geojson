@@ -1,0 +1,11 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"mode":"public_transport","note":"planning connector; not exact rail/road centreline"},"geometry":{"type":"LineString","coordinates":[[-7.9304,37.0194],[-8.6730,37.1028],[-9.1393,38.7223],[-8.4103,40.2033],[-8.6291,41.1579]]}},
+    {"type":"Feature","properties":{"mode":"train_day_trip","note":"Lisbon–Sintra return"},"geometry":{"type":"LineString","coordinates":[[-9.1393,38.7223],[-9.3817,38.8029],[-9.1393,38.7223]]}},
+    {"type":"Feature","properties":{"mode":"rental_car_coast","note":"planning connector through coastal stop sequence; use live router for exact roads"},"geometry":{"type":"LineString","coordinates":[[-8.6291,41.1579],[-8.8329,41.6932],[-8.7207,42.2406],[-8.5448,42.8782],[-9.2639,42.9049],[-8.4115,43.3623],[-7.1575,43.5539],[-6.1454,43.5623],[-5.8494,43.3619],[-5.1260,43.3500],[-4.8170,43.3030],[-4.6200,43.1546],[-4.1082,43.3896],[-3.80998,43.4623],[-2.9350,43.2630]]}},
+    {"type":"Feature","properties":{"mode":"ferry_day_trip","note":"Vigo–Cíes–Vigo schematic water connector"},"geometry":{"type":"LineString","coordinates":[[-8.7207,42.2406],[-8.9020,42.2250],[-8.7207,42.2406]]}},
+    {"type":"Feature","properties":{"mode":"gaztelugatxe_day_trip"},"geometry":{"type":"LineString","coordinates":[[-2.9350,43.2630],[-2.7850,43.4470],[-2.9350,43.2630]]}},
+    {"type":"Feature","properties":{"mode":"rental_car_return","note":"inland scenic return; planning connector"},"geometry":{"type":"LineString","coordinates":[[-2.9350,43.2630],[-3.6969,42.3439],[-5.5671,42.5987],[-6.7567,41.8061],[-7.7899,41.1621],[-8.6291,41.1579]]}}
+  ]
+}
