@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Southern Africa Route Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>html,body,#map{height:100%;margin:0}.legend{background:#fff;padding:8px;line-height:1.4}</style>
+</head><body><div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+const map=L.map('map').setView([-22,20],5);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap contributors'}).addTo(map);
+Promise.all(['stops.geojson','route.geojson','route-60-40.geojson'].map(x=>fetch(x).then(r=>r.json()))).then(([stops,full,compact])=>{
+ const pts=L.geoJSON(stops,{onEachFeature:(f,l)=>l.bindPopup(`<b>${f.properties.order}. ${f.properties.name}</b><br>${f.properties.country}`)}).addTo(map);
+ const a=L.geoJSON(full,{style:{weight:4,opacity:.8}}).addTo(map);
+ const b=L.geoJSON(compact,{style:{weight:4,opacity:.8,dashArray:'8 6'}});
+ L.control.layers(null,{'Full route':a,'60:40 route':b,'Stops':pts}).addTo(map);
+ map.fitBounds(pts.getBounds(),{padding:[20,20]});
+});
+</script></body></html>
