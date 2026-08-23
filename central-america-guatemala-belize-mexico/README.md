@@ -22,6 +22,8 @@ The 60:40 route uses strategic **GUA→FRS** and **BZE→CUN** flights to retain
 
 Map data and regeneration files live under [`maps/`](./maps/). The saved route lines are planning connectors between verified stop coordinates, **not claimed road-centerline GPS tracks**; see [`maps/README-map-method.md`](./maps/README-map-method.md).
 
+There is also an **OpenStreetMap-backed interactive source map** in [`maps/interactive-map.html`](./maps/interactive-map.html), using Leaflet + OSM tiles and toggles for the full and 60:40 routes.
+
 ---
 
 ## Best general ~28-day route
@@ -206,6 +208,7 @@ central-america-guatemala-belize-mexico/
     ├── stops.geojson
     ├── route.geojson
     ├── route-60-40.geojson
+    ├── interactive-map.html          # Leaflet + OpenStreetMap tiles
     ├── generate_maps.py
     └── README-map-method.md
 ```
