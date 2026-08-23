@@ -2,16 +2,23 @@
 """Generate real-geography itinerary maps as SVG.
 
 Usage:
-    python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
+    python tools/python/script.py itineraries/<Trip-Slug>
 
 Expected inputs under <itinerary>/maps/:
     stops.geojson
     route.geojson
     route-60-40.geojson   # optional
+    map-config.json       # optional, recommended for generic itineraries
 
 Outputs under <itinerary>/maps/:
     map-full-route.svg
     map-60-40-route.svg   # when a 60:40 route exists
+
+map-config.json format:
+    {
+      "full": {"title": "...", "subtitle": "...", "stop_names": ["..."]},
+      "compact": {"title": "...", "subtitle": "...", "stop_names": ["..."]}
+    }
 
 Design rule:
     SVG is the canonical and uploaded map artifact. Do not generate a second,
@@ -31,6 +38,7 @@ from pathlib import Path
 from typing import Iterable
 
 import matplotlib.pyplot as plt
+plt.rcParams["svg.fonttype"] = "none"
 from matplotlib.lines import Line2D
 from mpl_toolkits.basemap import Basemap
 
@@ -58,7 +66,7 @@ def make_basemap(ax, bounds: tuple[float, float, float, float], title: str, subt
         llcrnrlat=min_lat,
         urcrnrlon=max_lon,
         urcrnrlat=max_lat,
-        resolution="i",
+        resolution="l",
         ax=ax,
     )
     m.drawmapboundary(fill_color="#dfeff6", linewidth=0.8)
@@ -70,15 +78,69 @@ def make_basemap(ax, bounds: tuple[float, float, float, float], title: str, subt
     return m
 
 
-def bounds_for_features(features: Iterable[dict], padding_deg: float = 0.65):
-    coords = [f["geometry"]["coordinates"] for f in features]
+def iter_coordinates(geometry: dict) -> Iterable[tuple[float, float]]:
+    gtype = geometry.get("type")
+    coords = geometry.get("coordinates", [])
+    if gtype == "Point" and len(coords) >= 2:
+        yield float(coords[0]), float(coords[1])
+    elif gtype == "LineString":
+        for coord in coords:
+            if len(coord) >= 2:
+                yield float(coord[0]), float(coord[1])
+    elif gtype == "MultiLineString":
+        for line in coords:
+            for coord in line:
+                if len(coord) >= 2:
+                    yield float(coord[0]), float(coord[1])
+
+
+def bounds_for_features(features: Iterable[dict], padding_ratio: float = 0.08):
+    coords = []
+    for feature in features:
+        coords.extend(iter_coordinates(feature.get("geometry", {})))
+    if not coords:
+        raise ValueError("No usable coordinates found for map bounds")
     lons = [c[0] for c in coords]
     lats = [c[1] for c in coords]
+    lon_span = max(max(lons) - min(lons), 1.0)
+    lat_span = max(max(lats) - min(lats), 1.0)
+    lon_pad = max(0.55, lon_span * padding_ratio)
+    lat_pad = max(0.55, lat_span * padding_ratio)
     return (
-        min(lons) - padding_deg,
-        min(lats) - padding_deg,
-        max(lons) + padding_deg,
-        max(lats) + padding_deg,
+        min(lons) - lon_pad,
+        min(lats) - lat_pad,
+        max(lons) + lon_pad,
+        max(lats) + lat_pad,
+    )
+
+
+def draw_route_feature(ax, m, feature: dict, by_name: dict) -> None:
+    props = feature.get("properties", {})
+    mode = str(props.get("mode", "road"))
+    geometry = feature.get("geometry", {})
+    coordinates = list(iter_coordinates(geometry))
+
+    # Prefer the stored geometry. Fall back to stop-to-stop coordinates for
+    # older itinerary files that only carry from/to names.
+    if len(coordinates) < 2:
+        a, b = props.get("from"), props.get("to")
+        if a in by_name and b in by_name:
+            coordinates = [
+                tuple(by_name[a]["geometry"]["coordinates"]),
+                tuple(by_name[b]["geometry"]["coordinates"]),
+            ]
+    if len(coordinates) < 2:
+        return
+
+    xs, ys = m([c[0] for c in coordinates], [c[1] for c in coordinates])
+    ax.plot(
+        xs,
+        ys,
+        linestyle=route_mode_style(mode),
+        linewidth=2.1,
+        color="#d95f02",
+        alpha=0.92,
+        zorder=4,
     )
 
 
@@ -95,68 +157,66 @@ def render_svg(
     route_geojson = load_json(maps_dir / route_file)
     by_name = {f["properties"]["name"]: f for f in stops_geojson["features"]}
 
+    missing = [name for name in stop_names if name not in by_name]
+    if missing:
+        raise KeyError(f"Configured map stops are missing from stops.geojson: {missing}")
+
     selected_features = [by_name[n] for n in stop_names]
     bounds = bounds_for_features(selected_features)
 
-    fig, ax = plt.subplots(figsize=(10, 12.5), dpi=180)
+    # Landscape works better for cross-country routes, but keep adequate height
+    # for geographically tall itineraries.
+    min_lon, min_lat, max_lon, max_lat = bounds
+    aspect_hint = (max_lon - min_lon) / max(max_lat - min_lat, 0.01)
+    figsize = (13.0, 9.5) if aspect_hint >= 1.0 else (10.5, 12.5)
+
+    fig, ax = plt.subplots(figsize=figsize, dpi=180)
     m = make_basemap(ax, bounds, title, subtitle)
 
     def xy(name: str):
         lon, lat = by_name[name]["geometry"]["coordinates"]
         return m(lon, lat)
 
+    selected = set(stop_names)
     for feature in route_geojson["features"]:
         props = feature.get("properties", {})
-        a = props.get("from")
-        b = props.get("to")
-        mode = str(props.get("mode", "road"))
-        if not a or not b or a not in by_name or b not in by_name:
+        a, b = props.get("from"), props.get("to")
+        # If from/to metadata is present, do not draw branches outside the
+        # selected compact route. Geometry-only features are drawn as supplied.
+        if a and b and (a not in selected or b not in selected):
             continue
-        x1, y1 = xy(a)
-        x2, y2 = xy(b)
-        ax.plot(
-            [x1, x2],
-            [y1, y2],
-            linestyle=route_mode_style(mode),
-            linewidth=2.1,
-            color="#d95f02",
-            alpha=0.92,
-            zorder=4,
-        )
+        draw_route_feature(ax, m, feature, by_name)
 
+    # Offset labels deterministically to reduce collisions in dense clusters.
+    offsets = [(7, 7), (7, -12), (-7, 8), (-7, -12), (10, 0), (-10, 0)]
     for index, name in enumerate(stop_names, start=1):
         x, y = xy(name)
         order = index if sequential_numbers else by_name[name]["properties"].get("order", index)
-        ax.scatter(
-            [x], [y], s=66, color="#d95f02", edgecolor="white", linewidth=1.1, zorder=8
-        )
+        ax.scatter([x], [y], s=66, color="#d95f02", edgecolor="white", linewidth=1.1, zorder=8)
         ax.annotate(
-            str(order),
-            (x, y),
-            ha="center",
-            va="center",
-            fontsize=7.5,
-            fontweight="bold",
-            color="white",
-            zorder=9,
+            str(order), (x, y), ha="center", va="center", fontsize=7.2,
+            fontweight="bold", color="white", zorder=9,
         )
-        label = name.replace(" / Fuego hike", " / Fuego").replace(" National Park", "")
+        label = name.replace(" National Park", "").replace(" / Fuego hike", " / Fuego")
+        dx, dy = offsets[(index - 1) % len(offsets)]
+        ha = "left" if dx >= 0 else "right"
         ax.annotate(
             label,
             (x, y),
-            xytext=(7, 7),
+            xytext=(dx, dy),
             textcoords="offset points",
-            fontsize=8,
+            ha=ha,
+            fontsize=7.7,
             fontweight="bold",
-            bbox=dict(boxstyle="round,pad=.15", fc="white", alpha=.78, ec="none"),
+            bbox=dict(boxstyle="round,pad=.15", fc="white", alpha=.80, ec="none"),
             zorder=10,
         )
 
     ax.legend(
         handles=[
-            Line2D([0], [0], color="#d95f02", lw=2.2, label="road / overland"),
-            Line2D([0], [0], color="#d95f02", lw=2.2, linestyle="-.", label="hike"),
-            Line2D([0], [0], color="#d95f02", lw=2.2, linestyle=":", label="ferry"),
+            Line2D([0], [0], color="#d95f02", lw=2.2, label="road / overland / 4×4"),
+            Line2D([0], [0], color="#d95f02", lw=2.2, linestyle="-.", label="hike / walk"),
+            Line2D([0], [0], color="#d95f02", lw=2.2, linestyle=":", label="ferry / boat"),
             Line2D([0], [0], color="#d95f02", lw=2.2, linestyle="--", label="flight"),
         ],
         loc="lower left",
@@ -166,7 +226,7 @@ def render_svg(
     ax.text(
         0.995,
         0.005,
-        "Real coastlines/borders + verified coordinates. Route lines are planning connectors unless routed geometry is supplied.",
+        "GSHHS coastlines/borders + geographic stop coordinates. Route lines are planning connectors unless routed geometry is supplied.",
         transform=ax.transAxes,
         ha="right",
         va="bottom",
@@ -181,64 +241,73 @@ def render_svg(
     return svg_path
 
 
-def main() -> None:
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        "itinerary_dir",
-        type=Path,
-        help="Itinerary folder containing maps/stops.geojson and route GeoJSON files",
-    )
-    args = parser.parse_args()
-
-    itinerary_dir = args.itinerary_dir.resolve()
-    maps_dir = itinerary_dir / "maps"
-    stops = load_json(maps_dir / "stops.geojson")
-
+def legacy_central_america_config(stops: dict) -> tuple[dict, dict | None]:
+    """Preserve behavior for the repository's original itinerary."""
     full_names = [
         f["properties"]["name"]
         for f in stops["features"]
         if int(f["properties"].get("order", 999)) <= 14
     ]
-
     compact_default = [
-        "Guatemala City",
-        "Antigua Guatemala",
-        "Acatenango / Fuego hike",
-        "Flores",
-        "Tikal National Park",
-        "San Ignacio",
-        "Belize City",
-        "Caye Caulker",
-        "Valladolid",
-        "Chichén Itzá",
-        "Cancún",
+        "Guatemala City", "Antigua Guatemala", "Acatenango / Fuego hike",
+        "Flores", "Tikal National Park", "San Ignacio", "Belize City",
+        "Caye Caulker", "Valladolid", "Chichén Itzá", "Cancún",
     ]
     all_names = {f["properties"]["name"] for f in stops["features"]}
     compact_names = [n for n in compact_default if n in all_names]
+    full = {
+        "title": "Guatemala → Belize → Yucatán",
+        "subtitle": "General ~28-day route · real geography + verified coordinates",
+        "stop_names": full_names,
+    }
+    compact = None
+    if compact_names:
+        compact = {
+            "title": "Guatemala → Belize → Yucatán",
+            "subtitle": "60:40 highlights route · strategic time-saving transport",
+            "stop_names": compact_names,
+        }
+    return full, compact
+
+
+def read_map_config(maps_dir: Path, stops: dict) -> tuple[dict, dict | None]:
+    config_path = maps_dir / "map-config.json"
+    if config_path.exists():
+        config = load_json(config_path)
+        full = config.get("full")
+        if not full or not full.get("stop_names"):
+            raise ValueError("map-config.json requires full.stop_names")
+        return full, config.get("compact")
+    return legacy_central_america_config(stops)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("itinerary_dir", type=Path, help="Itinerary folder containing maps/ GeoJSON files")
+    args = parser.parse_args()
+
+    itinerary_dir = args.itinerary_dir.resolve()
+    maps_dir = itinerary_dir / "maps"
+    stops = load_json(maps_dir / "stops.geojson")
+    full_cfg, compact_cfg = read_map_config(maps_dir, stops)
 
     outputs = [
         render_svg(
-            maps_dir,
-            "route.geojson",
-            full_names,
-            "Guatemala → Belize → Yucatán",
-            "General ~28-day route · real geography + verified coordinates",
-            "map-full-route.svg",
-            sequential_numbers=False,
+            maps_dir, "route.geojson", list(full_cfg["stop_names"]),
+            str(full_cfg.get("title", itinerary_dir.name)),
+            str(full_cfg.get("subtitle", "Full route · real geography")),
+            "map-full-route.svg", sequential_numbers=False,
         )
     ]
 
     compact_route = maps_dir / "route-60-40.geojson"
-    if compact_route.exists() and compact_names:
+    if compact_route.exists() and compact_cfg and compact_cfg.get("stop_names"):
         outputs.append(
             render_svg(
-                maps_dir,
-                "route-60-40.geojson",
-                compact_names,
-                "Guatemala → Belize → Yucatán",
-                "60:40 highlights route · strategic time-saving transport",
-                "map-60-40-route.svg",
-                sequential_numbers=True,
+                maps_dir, "route-60-40.geojson", list(compact_cfg["stop_names"]),
+                str(compact_cfg.get("title", itinerary_dir.name)),
+                str(compact_cfg.get("subtitle", "60:40 highlights route")),
+                "map-60-40-route.svg", sequential_numbers=True,
             )
         )
 
