@@ -20,7 +20,13 @@ Optional end extension: **Cancún → Mexico City → Europe** when time or airf
 
 The 60:40 route uses strategic **GUA→FRS** and **BZE→CUN** flights to retain roughly **63% of the scored experience value in ~43% of the full-route time** instead of spending short-trip days on long detours.
 
-Map data and regeneration files live under [`maps/`](./maps/). The saved route lines are planning connectors between verified stop coordinates, **not claimed road-centerline GPS tracks**; see [`maps/README-map-method.md`](./maps/README-map-method.md).
+Map data and output files live under [`maps/`](./maps/). The **SVG is canonical**, and the PNG is generated from that exact SVG so both formats have identical geography and labels. The saved route lines are planning connectors between verified stop coordinates, **not claimed road-centerline GPS tracks**; see [`maps/README-map-method.md`](./maps/README-map-method.md).
+
+The reusable generator is kept outside itinerary data at [`../../tools/python/script.py`](../../tools/python/script.py). Run it from the repo root with:
+
+```bash
+python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
+```
 
 There is also an **OpenStreetMap-backed interactive source map** in [`maps/interactive-map.html`](./maps/interactive-map.html), using Leaflet + OSM tiles and toggles for the full and 60:40 routes.
 
@@ -185,32 +191,40 @@ Use **[`optional-variants.md`](./optional-variants.md)** for:
 ## Repository contents
 
 ```text
-central-america-guatemala-belize-mexico/
-├── README.md
-├── general-28-day-route.md
-├── itinerary-28-days.md
-├── itinerary-60-40.md
-├── itinerary.md                       # detailed Feb 1–28, 2027 schedule
-├── booking-example-2027-02.md
-├── sights.md
-├── weather-and-timing.md
-├── transport-and-flights.md
-├── transport-and-route-optimization.md
-├── flights.md
-├── optional-variants.md
-├── sources-and-images.md
-├── sources.md
-├── data/
-│   └── sights.csv
-└── maps/
-    ├── map-full-route.svg             # GitHub-embeddable real vector map
-    ├── map-60-40-route.svg            # real vector map
-    ├── stops.geojson
-    ├── route.geojson
-    ├── route-60-40.geojson
-    ├── interactive-map.html          # Leaflet + OpenStreetMap tiles
-    ├── generate_maps.py
-    └── README-map-method.md
+TravelRoutes/
+├── prompt.md
+├── map-generation.md
+├── tools/
+│   └── python/
+│       └── script.py                  # reusable SVG-first map generator
+└── itineraries/
+    └── Central-America-Guatemala-Belize-Mexico/
+        ├── README.md
+        ├── general-28-day-route.md
+        ├── itinerary-28-days.md
+        ├── itinerary-60-40.md
+        ├── itinerary.md               # detailed Feb 1–28, 2027 schedule
+        ├── booking-example-2027-02.md
+        ├── sights.md
+        ├── weather-and-timing.md
+        ├── transport-and-flights.md
+        ├── transport-and-route-optimization.md
+        ├── flights.md
+        ├── optional-variants.md
+        ├── sources-and-images.md
+        ├── sources.md
+        ├── data/
+        │   └── sights.csv
+        └── maps/
+            ├── map-full-route.svg     # canonical vector map
+            ├── map-full-route.png     # generated from the SVG
+            ├── map-60-40-route.svg    # canonical vector map
+            ├── map-60-40-route.png    # generated from the SVG
+            ├── stops.geojson
+            ├── route.geojson
+            ├── route-60-40.geojson
+            ├── interactive-map.html
+            └── README-map-method.md
 ```
 
 ## Source policy
