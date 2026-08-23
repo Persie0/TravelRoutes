@@ -10,11 +10,19 @@ The key rules are:
 >
 > **Generate SVG first, then rasterize that exact SVG to PNG.**
 
-Reusable code lives in [`tools/python/`](./tools/python/).
+Reusable code lives at:
+
+`tools/python/script.py`
 
 Trip-specific geographic data and outputs live in each itinerary's `maps/` folder, for example:
 
 `itineraries/Central-America-Guatemala-Belize-Mexico/maps/`
+
+Run the shared generator from repository root with:
+
+```bash
+python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
+```
 
 ---
 
@@ -57,8 +65,6 @@ GeoJSON ordering is always:
 ```text
 [longitude, latitude]
 ```
-
-### Coordinate QC
 
 Check every stop for:
 
@@ -152,7 +158,7 @@ Do not bulk-download or abuse the public `tile.openstreetmap.org` service as an 
 
 ## 5. Canonical SVG → PNG pipeline
 
-This is now the standard TravelRoutes map pipeline:
+This is the standard TravelRoutes map pipeline:
 
 ```text
 verified coordinates
@@ -188,9 +194,9 @@ Instead:
 1. render the complete map as SVG;
 2. inspect/accept the SVG;
 3. rasterize that same SVG to PNG;
-4. never separately re-render the PNG from the raw plotting code.
+4. never separately re-render the PNG from raw plotting code.
 
-This guarantees that the raster and vector versions represent the same map.
+This guarantees that raster and vector versions represent the same map.
 
 ### Expected outputs
 
@@ -208,57 +214,33 @@ maps/
 
 ---
 
-## 6. Reusable scripts
+## 6. Reusable script
 
-The reusable Python tooling is kept at repository level:
+The reusable Python tool is deliberately kept as one file:
 
 ```text
-tools/python/
-├── script.py
-├── svg_to_png.py
-├── README.md
-└── requirements.txt
+tools/python/script.py
 ```
 
-### Install
+It:
 
-From repository root:
+1. reads the itinerary's `maps/stops.geojson`;
+2. reads `route.geojson` and optional `route-60-40.geojson`;
+3. draws real coastlines/borders;
+4. places stop pins from coordinates;
+5. applies mode-specific route styling;
+6. saves the **SVG** first;
+7. rasterizes that SVG to the corresponding **PNG**.
 
-```bash
-pip install -r tools/python/requirements.txt
-```
+Dependencies are documented in the script header. The preferred SVG→PNG converter is CairoSVG; the script also tries `rsvg-convert`, Inkscape and ImageMagick.
 
-### Generate an itinerary's maps
+Typical command:
 
 ```bash
 python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
 ```
 
-`script.py`:
-
-1. reads the trip's `maps/stops.geojson`;
-2. reads `route.geojson` and the optional 60:40 route;
-3. draws real geographic coastlines/borders;
-4. places stop pins from coordinates;
-5. applies mode-specific route styling;
-6. saves the **SVG**;
-7. rasterizes that SVG to the corresponding **PNG**.
-
-### Convert existing SVG maps separately
-
-```bash
-python tools/python/svg_to_png.py \
-  itineraries/Central-America-Guatemala-Belize-Mexico/maps/map-full-route.svg \
-  itineraries/Central-America-Guatemala-Belize-Mexico/maps/map-60-40-route.svg \
-  --width 2200
-```
-
-Converter preference is:
-
-1. CairoSVG;
-2. `rsvg-convert`;
-3. Inkscape;
-4. ImageMagick `magick`.
+Reusable tooling belongs under `tools/`, not copied into every itinerary folder.
 
 ---
 
@@ -289,9 +271,11 @@ The interactive and static maps should use the same `stops.geojson` source so th
 
 Do not manually redraw a second map.
 
-Both map variants should use the same coordinate dataset. Only the selected stops and route-segment lists change.
+Both map variants should use the same coordinate dataset. Only selected stops and route-segment lists change.
 
-For the Guatemala / Belize / Mexico itinerary, the condensed map preserves the highest-value route while omitting high-transfer-cost stops. Because both maps share the same underlying coordinates, common destinations remain in exactly the same geographic positions.
+That ensures the same destination always appears at exactly the same coordinates in both maps.
+
+The 60:40 version may include strategic flights that do not appear in the slower full route when those flights save major transfer time.
 
 ---
 
@@ -334,10 +318,7 @@ TravelRoutes/
 │       └── ...
 └── tools/
     └── python/
-        ├── script.py
-        ├── svg_to_png.py
-        ├── README.md
-        └── requirements.txt
+        └── script.py
 ```
 
 The architectural principle is:
