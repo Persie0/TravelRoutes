@@ -1,41 +1,41 @@
 # Real Travel Map Generation Workflow
 
-This document explains the map-generation approach used for the Guatemala → Belize → Mexico route and provides a reusable method for future itineraries.
+This document describes the reusable map workflow used by TravelRoutes.
 
-The key rule is simple:
+The key rules are:
 
-> **Do not use an AI image generator to invent geography.**
+> **Never use an AI image generator to invent geography.**
 >
-> Use verified coordinates + real cartographic data + programmatic rendering.
+> **Use verified coordinates + real cartographic data + programmatic rendering.**
+>
+> **Generate SVG first, then rasterize that exact SVG to PNG.**
 
-The maps for the Belize / Guatemala / Mexico route live in:
+Reusable code lives in [`tools/python/`](./tools/python/).
 
-`central-america-guatemala-belize-mexico/maps/`
+Trip-specific geographic data and outputs live in each itinerary's `maps/` folder, for example:
 
-Relevant files include:
-
-- `map-full-route.png`
-- `map-full-route.svg`
-- `map-60-40-route.png`
-- `map-60-40-route.svg`
-- `stops.geojson`
-- `route.geojson`
-- `README-map-method.md`
+`itineraries/Central-America-Guatemala-Belize-Mexico/maps/`
 
 ---
 
-## 1. Verify coordinates for every stop
+## 1. Source-of-truth coordinates
 
-Every stop is represented by a real latitude/longitude pair.
+Every stop must be represented by a verified longitude/latitude pair.
 
-Coordinate sources used for this route included:
+Useful sources include:
 
-- OpenStreetMap-derived place data where practical;
-- UNESCO coordinates for World Heritage sites such as Tikal;
-- Smithsonian Global Volcanism Program coordinates for Acatenango;
-- GeoNames / other geographic cross-checks for major cities.
+- OpenStreetMap / Nominatim;
+- Wikidata;
+- GeoNames;
+- UNESCO coordinates;
+- official national-park / archaeological data;
+- authoritative specialist sources such as Smithsonian Global Volcanism Program.
 
-Example stop structure:
+Store stops in:
+
+`maps/stops.geojson`
+
+Example:
 
 ```json
 {
@@ -43,8 +43,7 @@ Example stop structure:
   "properties": {
     "order": 1,
     "name": "Guatemala City",
-    "country": "Guatemala",
-    "coordinate_source": "GeoNames / geographic cross-check"
+    "country": "Guatemala"
   },
   "geometry": {
     "type": "Point",
@@ -53,78 +52,34 @@ Example stop structure:
 }
 ```
 
-Remember that GeoJSON coordinates are always:
+GeoJSON ordering is always:
 
 ```text
 [longitude, latitude]
 ```
 
-not latitude first.
+### Coordinate QC
 
-### Validation pass
-
-Before rendering, verify each point against its neighbors.
-
-Check at minimum:
+Check every stop for:
 
 1. correct country;
-2. correct side of any international border;
+2. correct side of borders;
 3. island vs mainland;
-4. archaeological site vs nearby town;
-5. expected compass direction from previous/next stop;
-6. no accidental lat/lon reversal.
+4. city vs archaeological/natural site;
+5. expected compass direction from neighboring stops;
+6. accidental latitude/longitude reversal.
 
-For this itinerary the resulting point set is stored in:
-
-`central-america-guatemala-belize-mexico/maps/stops.geojson`
+Pins must never be positioned by eyeballing a picture.
 
 ---
 
-## 2. Store stops in GeoJSON
+## 2. Route semantics
 
-Use a `FeatureCollection` so the same data can drive:
-
-- static PNG maps;
-- SVG maps;
-- Leaflet / MapLibre web maps;
-- GIS software;
-- routing APIs;
-- future itinerary scripts.
-
-Recommended schema:
-
-```json
-{
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "order": 1,
-        "name": "Example Stop",
-        "country": "Example Country"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [12.3456, 45.6789]
-      }
-    }
-  ]
-}
-```
-
-The stop file should be the source of truth for map pins rather than manually placing pins on an image.
-
----
-
-## 3. Separate route semantics by transport type
-
-The route is not one continuous road.
-
-Segments should know what they represent, for example:
+A route is not one continuous road. Give every segment an explicit transport mode, such as:
 
 ```text
 road
+rail
 road_border
 hike
 ferry
@@ -132,370 +87,259 @@ flight
 flight_optional
 ```
 
-For this route:
+Render the modes differently, for example:
 
-- Antigua ↔ Acatenango = hike;
-- Belize City ↔ Caye Caulker = ferry;
-- optional Cancún → Mexico City = flight;
-- most other legs = road / overland connectors.
+- solid — road / normal land transport;
+- dash-dot — hike;
+- dotted — ferry;
+- dashed — flight / optional extension.
 
-This makes it possible to render each mode differently:
-
-- solid = road / normal overland segment;
-- dash-dot = hike;
-- dotted = ferry;
-- dashed = flight / optional extension.
-
-This prevents misleading lines such as drawing a normal road across open water.
+This prevents misleading graphics such as a road drawn across open water.
 
 ---
 
-## 4. Route geometry: planning connectors vs real road centerlines
+## 3. Route geometry
 
-Two levels of route geometry are useful.
+### Preferred: routed geometry
 
-### Level A — verified-stop connectors
+When available, obtain real route geometry with services such as:
 
-This is what was used for the generated static route maps when a live routing endpoint was not available in the execution environment.
+- OSRM;
+- OpenRouteService;
+- GraphHopper;
+- official public-transit geometry.
 
-Each segment is a line between two verified geographic stop coordinates.
-
-This is accurate for showing:
-
-- overall itinerary geography;
-- stop order;
-- direction of travel;
-- which segments are ferry, hike or flight;
-- relative spacing between destinations.
-
-It does **not** claim that the line follows the exact road centerline.
-
-The repository therefore explicitly describes these lines as planning connectors.
-
-### Level B — real routed geometry
-
-When network access to a routing backend is available, this should be preferred for road segments.
-
-Good options include:
-
-#### OSRM
-
-Open Source Routing Machine.
-
-Typical API concept:
+Example OSRM concept:
 
 ```text
 /route/v1/driving/<lon1>,<lat1>;<lon2>,<lat2>?overview=full&geometries=geojson
 ```
 
-Save the returned route geometry into `route.geojson`.
+Save returned geometries to files such as:
 
-#### OpenRouteService
+```text
+maps/route.geojson
+maps/route-60-40.geojson
+```
 
-Useful when API access is available and may offer richer profile options.
+### Fallback: verified-stop planning connectors
 
-#### GraphHopper
+If a routing backend is unavailable, a straight connector between two **verified stop coordinates** is acceptable for an overview map.
 
-Another good option for road routing and multiple transport profiles.
+It must be labeled honestly as a planning connector and must **not** be described as exact road-centerline geometry.
 
-### Important
-
-Do not route ferry or air segments through a driving API.
-
-Keep them explicitly classified and render them separately.
-
----
-
-## 5. Real map base used for the static maps
-
-The static route maps were rendered programmatically using real geographic coastline and country-boundary geometry.
-
-The implementation used Python mapping tools with **GSHHS** geographic data through Basemap.
-
-GSHHS provides real:
-
-- coastlines;
-- land/water boundaries;
-- national-border geometry.
-
-This avoids the problem that occurred with generative maps, where the shape of Belize, Guatemala and the Yucatán Peninsula was distorted and stops appeared in incorrect locations.
-
-### Why this is better than asking an image model for a map
-
-An image generator can create an attractive travel poster, but it does not guarantee:
-
-- correct latitude/longitude;
-- correct coastlines;
-- correct country borders;
-- correct relative location of cities;
-- correct route geometry.
-
-For travel planning, spatial correctness matters more than illustration quality.
+Flights, ferries and hikes should remain explicitly classified rather than being forced through a driving API.
 
 ---
 
-## 6. Static rendering workflow
+## 4. Real map base
 
-The practical workflow used was:
+The Guatemala / Belize / Mexico static maps used real GSHHS coastlines and country boundaries through Python/Basemap.
+
+Other good approaches include:
+
+- GeoPandas + Cartopy;
+- GeoPandas + Contextily with an appropriate OSM-derived provider;
+- MapLibre;
+- QGIS;
+- other real vector/cartographic datasets.
+
+For interactive maps, Leaflet + OpenStreetMap is appropriate when used according to OpenStreetMap's tile usage policy.
+
+Do not bulk-download or abuse the public `tile.openstreetmap.org` service as an unrestricted static rendering backend.
+
+---
+
+## 5. Canonical SVG → PNG pipeline
+
+This is now the standard TravelRoutes map pipeline:
 
 ```text
 verified coordinates
         ↓
 stops.geojson
         ↓
-route segment definitions
+route.geojson / route-60-40.geojson
         ↓
-real coastline/border data
+real coastline/border/routing data
         ↓
-programmatic projection
+programmatic map rendering
         ↓
-numbered route markers + labels
+CANONICAL SVG
         ↓
-PNG + SVG
+SVG rasterization
+        ↓
+PNG
 ```
 
-The map renderer:
+### Why SVG first?
 
-1. creates a north-up regional map extent;
-2. draws real coastlines;
-3. draws international boundaries;
-4. places pins using longitude/latitude;
-5. connects the appropriate route segments;
-6. styles each mode separately;
-7. adds labels and stop numbers;
-8. adds a legend and geographic disclaimer;
-9. exports both raster and vector versions.
+Generating PNG and SVG independently can introduce differences in:
 
-### PNG
+- label position;
+- stop numbering;
+- clipping;
+- route geometry;
+- map extent;
+- fonts/layout.
 
-Best for:
+Instead:
 
-- README preview images;
-- messaging;
-- social sharing;
-- simple web display.
+1. render the complete map as SVG;
+2. inspect/accept the SVG;
+3. rasterize that same SVG to PNG;
+4. never separately re-render the PNG from the raw plotting code.
 
-### SVG
+This guarantees that the raster and vector versions represent the same map.
 
-Best for:
-
-- GitHub;
-- scalable display;
-- editing in vector software;
-- keeping text and linework sharp at any zoom.
-
----
-
-## 7. Example Python structure
-
-A simplified version looks like this:
-
-```python
-from mpl_toolkits.basemap import Basemap
-import matplotlib.pyplot as plt
-
-stops = {
-    "Guatemala City": (14.640725, -90.513268),
-    "Antigua Guatemala": (14.5568, -90.7337),
-    "Tikal": (17.216667, -89.616667),
-    "San Ignacio": (17.1528, -89.0762),
-    "Caye Caulker": (17.7425, -88.0250),
-    "Cancún": (21.1527, -86.8426),
-}
-
-fig, ax = plt.subplots(figsize=(10, 12))
-
-m = Basemap(
-    projection="merc",
-    llcrnrlon=-92.4,
-    llcrnrlat=13.7,
-    urcrnrlon=-86.15,
-    urcrnrlat=21.65,
-    resolution="i",
-    ax=ax,
-)
-
-m.drawcoastlines()
-m.drawcountries()
-m.fillcontinents(lake_color="lightblue")
-m.drawmapboundary(fill_color="lightblue")
-
-for name, (lat, lon) in stops.items():
-    x, y = m(lon, lat)
-    ax.scatter(x, y)
-    ax.annotate(name, (x, y))
-
-plt.savefig("map.png", dpi=180, bbox_inches="tight")
-plt.savefig("map.svg", bbox_inches="tight")
-```
-
-The production version should also add mode-specific route lines, numbering, tuned label offsets and legends.
-
----
-
-## 8. OpenStreetMap / Leaflet version
-
-For an interactive map, use the same `stops.geojson` with Leaflet or MapLibre.
-
-Example Leaflet concept:
-
-```html
-<div id="map"></div>
-
-<script>
-const map = L.map('map').setView([17.5, -89.5], 6);
-
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
-
-fetch('stops.geojson')
-  .then(r => r.json())
-  .then(data => {
-    L.geoJSON(data).addTo(map);
-  });
-</script>
-```
-
-### OpenStreetMap tile warning
-
-Do not bulk-download the public `tile.openstreetmap.org` service or use it as an unrestricted static-map rendering backend.
-
-For larger/static production use, choose a suitable OSM-derived tile provider or render from geographic vector data.
-
-Always keep the required map attribution.
-
----
-
-## 9. 60:40 map generation
-
-The condensed 60:40 map is generated from the same geographic dataset, not from a separately drawn picture.
-
-Only the selected stops and segment list change.
-
-For this route the 60:40 version protects high-value experiences such as:
-
-- Acatenango / Fuego;
-- Tikal;
-- ATM Cave / San Ignacio;
-- Caye Caulker + Belize reef;
-- Chichén Itzá.
-
-It can use strategic flights for time savings where that preserves a much higher ratio of sightseeing value per travel day.
-
-Because both maps share the same coordinates, stop locations remain consistent between the full and 60:40 versions.
-
----
-
-## 10. Recommended future implementation
-
-For future TravelRoutes itineraries, use this pipeline:
-
-### Step 1
-
-Research the actual stop list.
-
-### Step 2
-
-Geocode every stop with Nominatim / OpenStreetMap, Wikidata, GeoNames or authoritative coordinates.
-
-### Step 3
-
-Verify the coordinates manually against a real map.
-
-### Step 4
-
-Write `stops.geojson`.
-
-### Step 5
-
-Classify every route leg:
-
-```text
-road / rail / ferry / flight / hike
-```
-
-### Step 6
-
-Use OSRM / OpenRouteService / GraphHopper for routable land legs where possible.
-
-### Step 7
-
-Write `route.geojson`.
-
-### Step 8
-
-Render static maps using real geographic data.
-
-Recommended libraries:
-
-- GeoPandas;
-- Cartopy;
-- Matplotlib;
-- Contextily with a suitable tile provider;
-- MapLibre;
-- QGIS for manual refinement.
-
-### Step 9
-
-Create a Leaflet/MapLibre interactive version from the same GeoJSON.
-
-### Step 10
-
-Export:
+### Expected outputs
 
 ```text
 maps/
-├── map-full-route.png
 ├── map-full-route.svg
-├── map-60-40-route.png
+├── map-full-route.png
 ├── map-60-40-route.svg
+├── map-60-40-route.png
 ├── stops.geojson
 ├── route.geojson
+├── route-60-40.geojson
 └── interactive-map.html
 ```
 
 ---
 
-## 11. Quality-control checklist
+## 6. Reusable scripts
 
-Before accepting a generated route map, verify:
+The reusable Python tooling is kept at repository level:
 
-- [ ] coastlines are real geographic shapes;
-- [ ] national borders are correct;
-- [ ] every point is based on coordinates, not visual guessing;
-- [ ] longitude and latitude are not reversed;
-- [ ] island destinations appear offshore in the correct location;
-- [ ] road lines are not drawn across water;
-- [ ] ferry segments are visibly distinct;
-- [ ] flight segments are visibly distinct;
-- [ ] stop numbering matches the itinerary;
-- [ ] the 60:40 map uses the same source coordinates;
-- [ ] exact-road geometry is only claimed when a real routing API produced it;
-- [ ] map-data attribution is retained where required.
+```text
+tools/python/
+├── script.py
+├── svg_to_png.py
+├── README.md
+└── requirements.txt
+```
+
+### Install
+
+From repository root:
+
+```bash
+pip install -r tools/python/requirements.txt
+```
+
+### Generate an itinerary's maps
+
+```bash
+python tools/python/script.py itineraries/Central-America-Guatemala-Belize-Mexico
+```
+
+`script.py`:
+
+1. reads the trip's `maps/stops.geojson`;
+2. reads `route.geojson` and the optional 60:40 route;
+3. draws real geographic coastlines/borders;
+4. places stop pins from coordinates;
+5. applies mode-specific route styling;
+6. saves the **SVG**;
+7. rasterizes that SVG to the corresponding **PNG**.
+
+### Convert existing SVG maps separately
+
+```bash
+python tools/python/svg_to_png.py \
+  itineraries/Central-America-Guatemala-Belize-Mexico/maps/map-full-route.svg \
+  itineraries/Central-America-Guatemala-Belize-Mexico/maps/map-60-40-route.svg \
+  --width 2200
+```
+
+Converter preference is:
+
+1. CairoSVG;
+2. `rsvg-convert`;
+3. Inkscape;
+4. ImageMagick `magick`.
 
 ---
 
-## 12. Best-practice architecture for this repository
+## 7. Interactive OpenStreetMap map
 
-For each future itinerary subfolder, keep the geographic files next to the route research:
+The same GeoJSON source can drive Leaflet or MapLibre.
 
-```text
-trip-name/
-├── README.md
-├── itinerary-28-days.md
-├── itinerary-60-40.md
-├── transport-and-route-optimization.md
-├── sights.md
-├── weather-and-timing.md
-└── maps/
-    ├── map-full-route.png
-    ├── map-full-route.svg
-    ├── map-60-40-route.png
-    ├── map-60-40-route.svg
-    ├── stops.geojson
-    ├── route.geojson
-    └── interactive-map.html
+Minimal Leaflet concept:
+
+```html
+<div id="map"></div>
+<script>
+const map = L.map('map').setView([17.5, -89.5], 6);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+fetch('stops.geojson')
+  .then(r => r.json())
+  .then(data => L.geoJSON(data).addTo(map));
+</script>
 ```
 
-The important architectural idea is that the **GeoJSON is the source of truth** and every visual map should be generated from it.
+The interactive and static maps should use the same `stops.geojson` source so they cannot disagree about stop locations.
+
+---
+
+## 8. Full-route vs 60:40 maps
+
+Do not manually redraw a second map.
+
+Both map variants should use the same coordinate dataset. Only the selected stops and route-segment lists change.
+
+For the Guatemala / Belize / Mexico itinerary, the condensed map preserves the highest-value route while omitting high-transfer-cost stops. Because both maps share the same underlying coordinates, common destinations remain in exactly the same geographic positions.
+
+---
+
+## 9. Map quality-control checklist
+
+Before accepting a map, verify:
+
+- [ ] coastlines are real geographic shapes;
+- [ ] country borders are real/correct;
+- [ ] every pin comes from coordinates;
+- [ ] longitude/latitude are not reversed;
+- [ ] islands are offshore in the correct location;
+- [ ] road segments are not falsely drawn across water;
+- [ ] ferry, flight and hike segments are visually distinguishable;
+- [ ] stop numbering matches the itinerary;
+- [ ] full and 60:40 maps share the same coordinate source;
+- [ ] exact-road geometry is claimed only when produced by a real routing source;
+- [ ] map attribution is retained where required;
+- [ ] SVG was generated first;
+- [ ] PNG was rasterized from that SVG;
+- [ ] PNG visually matches the SVG exactly.
+
+---
+
+## 10. Repository architecture
+
+The repository-wide convention is:
+
+```text
+TravelRoutes/
+├── prompt.md
+├── map-generation.md
+├── itineraries/
+│   ├── Central-America-Guatemala-Belize-Mexico/
+│   │   ├── README.md
+│   │   ├── *.md
+│   │   ├── data/
+│   │   └── maps/
+│   └── Another-Trip/
+│       └── ...
+└── tools/
+    └── python/
+        ├── script.py
+        ├── svg_to_png.py
+        ├── README.md
+        └── requirements.txt
+```
+
+The architectural principle is:
+
+> **Trip folders contain research/data/output; root-level `tools/` contains reusable code. GeoJSON is the geographic source of truth, SVG is the visual source of truth, and PNG is a raster derivative of the SVG.**
