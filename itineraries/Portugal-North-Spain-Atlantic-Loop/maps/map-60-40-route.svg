@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="980" viewBox="0 0 900 980">
+<rect width="100%" height="100%" fill="white"/>
+<g fill="none" stroke="#222" stroke-width="1.4" stroke-linejoin="round">
+<path d="M845.0,877.5 L833.0,890.1 L809.7,878.4 L791.4,881.1 L778.4,895.2 L756.9,887.9 L709.9,894.0 L670.5,887.7 L615.1,891.3 L593.9,913.7 L542.8,923.4 L542.0,925.0"/>
+<path d="M444.5,925.0 L434.7,911.0 L447.1,915.5 L440.3,912.9 L442.7,904.6 L427.2,900.8 L422.3,891.1 L429.3,883.3 L414.4,863.7 L376.6,842.5 L381.8,830.3 L374.9,838.8 L370.7,833.0 L373.7,843.2 L361.3,839.1 L332.9,843.2 L329.1,836.3 L331.7,843.8 L298.1,856.5 L271.1,857.9 L278.8,863.5 L224.5,845.3 L179.2,859.1 L201.9,783.6 L189.3,759.0 L199.2,720.3 L186.9,701.1 L198.2,713.2 L195.3,706.0 L213.9,710.3 L204.6,706.7 L204.8,692.6 L199.1,703.9 L188.5,698.2 L157.3,710.0 L161.0,696.3 L151.7,681.7 L164.7,679.9 L173.7,689.3 L169.7,682.8 L182.5,679.7 L173.5,679.6 L186.0,671.7 L179.1,657.8 L183.9,646.3 L167.1,677.5 L137.6,680.0 L131.1,669.6 L146.4,620.7 L139.8,605.8 L161.3,601.4 L191.6,519.9 L198.4,522.8 L187.4,514.9 L208.4,461.6 L202.5,463.8 L214.4,408.0 L205.8,404.2 L198.7,377.4 L188.1,298.0 L216.8,271.3 L190.7,282.0 L212.8,260.9 L194.0,266.8 L183.9,257.6 L195.7,258.9 L203.6,234.7 L193.8,231.9 L174.7,251.4 L175.5,230.9 L191.4,215.6 L170.4,226.1 L167.0,206.0 L160.3,200.9 L152.0,208.6 L150.0,189.4 L162.7,183.2 L161.9,173.2 L185.2,170.0 L179.3,163.5 L193.6,155.6 L206.7,162.7 L231.3,150.8 L238.1,157.4 L244.7,148.4 L254.3,158.1 L257.1,146.9 L243.7,143.8 L258.5,137.4 L241.3,142.4 L242.8,130.0 L283.0,105.7 L286.6,116.3 L303.6,103.1 L312.1,118.9 L324.4,110.9 L346.5,129.1 L365.2,130.7 L364.4,139.6 L374.3,128.7 L441.0,126.3 L456.7,133.1 L478.4,118.7 L493.5,132.2 L520.3,130.9 L519.2,136.9 L531.0,133.1 L609.3,151.5 L672.4,137.9 L673.0,149.6 L693.6,135.7 L708.8,141.7 L700.1,146.0 L705.3,151.5 L707.0,145.0 L719.1,146.9 L749.0,159.0 L754.8,144.9 L773.5,142.2 L779.6,153.1 L783.5,147.2 L832.5,163.7 L845.0,159.2"/>
+</g><g fill="none" stroke="#777" stroke-width="0.9" stroke-dasharray="3 3">
+<path d="M202.4,315.0 L207.8,312.8 L213.2,310.5 L218.6,308.2 L224.0,306.0 L229.4,303.7 L234.7,301.5 L240.1,299.2 L245.5,296.9 L250.9,294.7 L254.3,293.2 L263.7,302.2 L250.8,320.1 L260.2,330.7 L281.5,317.4 L284.8,325.4 L301.3,320.1 L311.5,323.1 L308.7,329.0 L319.9,323.5 L329.7,330.2 L352.5,320.2 L350.6,312.0 L378.3,316.5 L390.3,311.0 L412.1,316.7 L412.9,346.3 L418.4,348.2 L423.9,350.0 L429.4,351.9 L434.9,353.7 L440.4,355.6 L445.9,357.4 L446.7,357.7 L433.6,379.4 L428.4,382.2 L423.2,385.0 L418.0,387.8 L412.8,390.7 L407.6,393.5 L402.8,396.1 L387.6,419.4 L375.6,420.1 L388.4,439.2 L387.7,445.9 L387.1,452.5 L386.5,459.2 L385.9,465.9 L385.2,472.6 L384.6,479.2 L384.0,485.1 L390.4,495.1 L367.7,511.4 L381.2,533.6 L379.1,539.8 L376.9,546.0 L374.8,552.1 L372.7,558.3 L370.6,564.4 L368.6,570.2 L362.9,570.3 L357.1,570.5 L351.4,570.6 L345.7,570.7 L340.0,570.9 L334.3,571.0 L328.6,571.2 L322.9,571.3 L317.2,571.4 L317.1,571.4 L321.4,575.8 L325.7,580.2 L330.0,584.5 L334.2,588.9 L338.5,593.3 L339.4,594.1 L345.6,625.0 L370.6,640.6 L365.4,661.1 L342.0,676.5 L334.7,707.0 L338.6,711.7 L342.5,716.4 L346.5,721.2 L350.4,725.9 L354.3,730.6 L357.2,734.1 L373.6,731.3 L366.3,751.2 L343.5,757.0 L340.5,762.6 L337.5,768.1 L334.5,773.6 L331.6,779.1 L328.6,784.6 L325.6,790.1 L322.7,795.6 L319.7,801.1 L319.4,801.7 L321.0,807.9 L322.6,814.1 L324.2,820.2 L325.8,826.4 L327.4,832.5 L329.1,838.6 L329.8,841.4"/>
+</g>
+<polyline points="280.5,859.4 209.9,850.5 165.5,676.2 214.0,406.5" fill="none" stroke="#2b6cb0" stroke-width="3" stroke-dasharray="8 5"/>
+<polyline points="214.0,406.5 205.3,283.3 222.1,209.8 576.9,160.4 595.6,177.7 756.0,165.1 505.5,242.1 293.9,406.0 214.0,406.5" fill="none" stroke="#2f855a" stroke-width="3"/>
+<circle cx="280.5" cy="859.4" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="280.5" y="862.4" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">1</text>
+<text x="290.5" y="852.4" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Faro</text>
+<circle cx="209.9" cy="850.5" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="209.9" y="853.5" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">2</text>
+<text x="219.9" y="843.5" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Lagos</text>
+<circle cx="165.5" cy="676.2" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="165.5" y="679.2" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">3</text>
+<text x="175.5" y="669.2" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Lisbon</text>
+<circle cx="142.4" cy="667.4" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="142.4" y="670.4" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">4</text>
+<text x="152.4" y="660.4" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Sintra</text>
+<circle cx="234.9" cy="513.3" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="234.9" y="516.3" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">5</text>
+<text x="244.9" y="506.3" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Coimbra</text>
+<circle cx="214.0" cy="406.5" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="214.0" y="409.5" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">6</text>
+<text x="224.0" y="399.5" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Porto</text>
+<circle cx="194.6" cy="345.8" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="194.6" y="348.8" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">7</text>
+<text x="204.6" y="338.8" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Viana do Castelo</text>
+<circle cx="205.3" cy="283.3" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="205.3" y="286.3" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">8</text>
+<text x="215.3" y="276.3" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Vigo</text>
+<circle cx="188.1" cy="285.1" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="188.1" y="288.1" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">9</text>
+<text x="198.1" y="278.1" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Cíes Islands</text>
+<circle cx="222.1" cy="209.8" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="222.1" y="212.8" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">10</text>
+<text x="232.1" y="202.8" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Santiago de Compostela</text>
+<circle cx="153.6" cy="206.7" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="153.6" y="209.7" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">11</text>
+<text x="163.6" y="199.7" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Fisterra / Costa da Morte</text>
+<circle cx="234.7" cy="153.5" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="234.7" y="156.5" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">12</text>
+<text x="244.7" y="146.5" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">A Coruña</text>
+<circle cx="354.1" cy="131.1" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="354.1" y="134.1" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">13</text>
+<text x="364.1" y="124.1" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Praia das Catedrais / Ribadeo</text>
+<circle cx="450.4" cy="130.1" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="450.4" y="133.1" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">14</text>
+<text x="460.4" y="123.1" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Cudillero</text>
+<circle cx="478.6" cy="153.6" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="478.6" y="156.6" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">15</text>
+<text x="488.6" y="146.6" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Oviedo</text>
+<circle cx="547.5" cy="155.0" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="547.5" y="158.0" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">16</text>
+<text x="557.5" y="148.0" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Covadonga / Cangas de Onís</text>
+<circle cx="576.9" cy="160.4" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="576.9" y="163.4" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">17</text>
+<text x="586.9" y="153.4" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Arenas de Cabrales / Ruta del Cares</text>
+<circle cx="595.6" cy="177.7" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="595.6" y="180.7" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">18</text>
+<text x="605.6" y="170.7" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Potes / Picos de Europa</text>
+<circle cx="644.3" cy="150.3" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="644.3" y="153.3" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">19</text>
+<text x="654.3" y="143.3" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Santillana del Mar</text>
+<circle cx="672.7" cy="141.8" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="672.7" y="144.8" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">20</text>
+<text x="682.7" y="134.8" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Santander</text>
+<circle cx="756.0" cy="165.1" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="756.0" y="168.1" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">21</text>
+<text x="766.0" y="158.1" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Bilbao</text>
+<circle cx="770.3" cy="143.6" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="770.3" y="146.6" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">22</text>
+<text x="780.3" y="136.6" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">San Juan de Gaztelugatxe</text>
+<circle cx="683.5" cy="271.5" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="683.5" y="274.5" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">23</text>
+<text x="693.5" y="264.5" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Burgos</text>
+<circle cx="505.5" cy="242.1" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="505.5" y="245.1" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">24</text>
+<text x="515.5" y="235.1" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">León</text>
+<circle cx="392.3" cy="333.0" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="392.3" y="336.0" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">25</text>
+<text x="402.3" y="326.0" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Bragança</text>
+<circle cx="293.9" cy="406.0" r="8" fill="#4a5568" stroke="white" stroke-width="1.2"/>
+<text x="293.9" y="409.0" text-anchor="middle" font-family="sans-serif" font-size="8" font-weight="700" fill="white">26</text>
+<text x="303.9" y="399.0" font-family="sans-serif" font-size="10" fill="#111" style="paint-order:stroke;stroke:white;stroke-width:3px;stroke-linejoin:round">Peso da Régua / Douro</text>
+<text x="450" y="27" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="700">Faro → Porto → Santiago/Picos → Bilbao → Porto</text>
+<text x="450" y="46" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#444">60:40 highlights route · ~12 days</text>
+<g transform="translate(66,900)" font-family="sans-serif" font-size="11">
+<line x1="0" y1="0" x2="34" y2="0" stroke="#2b6cb0" stroke-width="3" stroke-dasharray="8 5"/><text x="42" y="4">public transport</text>
+<line x1="0" y1="22" x2="34" y2="22" stroke="#2f855a" stroke-width="3"/><text x="42" y="26">rental car</text>
+<line x1="0" y1="44" x2="34" y2="44" stroke="#2b6cb0" stroke-width="3" stroke-dasharray="2 5"/><text x="42" y="48">ferry</text>
+</g>
+<g transform="translate(822,90)" stroke="#111" fill="#111"><line x1="0" y1="32" x2="0" y2="0" stroke-width="2"/><path d="M0,0 l-5,10 h10 z"/><text x="0" y="48" text-anchor="middle" stroke="none" font-family="sans-serif" font-size="15" font-weight="700">N</text></g>
+</svg>
