@@ -1,0 +1,29 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Cape Town","order":1,"country":"South Africa","category":"city","compact_order":1},"geometry":{"type":"Point","coordinates":[18.4171,-33.9277]}},
+    {"type":"Feature","properties":{"name":"Stellenbosch","order":2,"country":"South Africa","category":"town"},"geometry":{"type":"Point","coordinates":[18.871,-33.934]}},
+    {"type":"Feature","properties":{"name":"Hermanus","order":3,"country":"South Africa","category":"town"},"geometry":{"type":"Point","coordinates":[19.2345,-34.4187]}},
+    {"type":"Feature","properties":{"name":"Wilderness","order":4,"country":"South Africa","category":"town"},"geometry":{"type":"Point","coordinates":[22.577,-33.993]}},
+    {"type":"Feature","properties":{"name":"Tsitsikamma","order":5,"country":"South Africa","category":"national park"},"geometry":{"type":"Point","coordinates":[23.8956,-34.0217]}},
+    {"type":"Feature","properties":{"name":"Windhoek","order":6,"country":"Namibia","category":"city","compact_order":2},"geometry":{"type":"Point","coordinates":[17.083225,-22.559409]}},
+    {"type":"Feature","properties":{"name":"Sossusvlei","order":7,"country":"Namibia","category":"natural feature","compact_order":3},"geometry":{"type":"Point","coordinates":[15.28765,-24.73983]}},
+    {"type":"Feature","properties":{"name":"Walvis Bay","order":8,"country":"Namibia","category":"city","compact_order":4},"geometry":{"type":"Point","coordinates":[14.50528,-22.9575]}},
+    {"type":"Feature","properties":{"name":"Swakopmund","order":9,"country":"Namibia","category":"city"},"geometry":{"type":"Point","coordinates":[14.52663,-22.67842]}},
+    {"type":"Feature","properties":{"name":"Spitzkoppe","order":10,"country":"Namibia","category":"mountain"},"geometry":{"type":"Point","coordinates":[15.194167,-21.824722]}},
+    {"type":"Feature","properties":{"name":"Twyfelfontein","order":11,"country":"Namibia","category":"world heritage site"},"geometry":{"type":"Point","coordinates":[14.3751,-20.59477]}},
+    {"type":"Feature","properties":{"name":"Etosha – Okaukuejo","order":12,"country":"Namibia","category":"national park camp","compact_order":5},"geometry":{"type":"Point","coordinates":[15.919,-19.1769]}},
+    {"type":"Feature","properties":{"name":"Etosha – Namutoni","order":13,"country":"Namibia","category":"national park camp"},"geometry":{"type":"Point","coordinates":[16.94,-18.806]}},
+    {"type":"Feature","properties":{"name":"Rundu","order":14,"country":"Namibia","category":"city"},"geometry":{"type":"Point","coordinates":[19.773143,-17.917965]}},
+    {"type":"Feature","properties":{"name":"Divundu / Mahango","order":15,"country":"Namibia","category":"river / park base","compact_order":6},"geometry":{"type":"Point","coordinates":[21.548321,-18.097115]}},
+    {"type":"Feature","properties":{"name":"Tsodilo Hills","order":16,"country":"Botswana","category":"world heritage site"},"geometry":{"type":"Point","coordinates":[21.7333,-18.75]}},
+    {"type":"Feature","properties":{"name":"Maun","order":17,"country":"Botswana","category":"city","compact_order":7},"geometry":{"type":"Point","coordinates":[23.416667,-19.983333]}},
+    {"type":"Feature","properties":{"name":"Nxai Pan","order":18,"country":"Botswana","category":"national park"},"geometry":{"type":"Point","coordinates":[24.768889,-20.041667]}},
+    {"type":"Feature","properties":{"name":"Moremi – Xakanaxa","order":19,"country":"Botswana","category":"game reserve","compact_order":8},"geometry":{"type":"Point","coordinates":[23.396,-19.181]}},
+    {"type":"Feature","properties":{"name":"Khwai","order":20,"country":"Botswana","category":"community concession"},"geometry":{"type":"Point","coordinates":[23.75,-19.15]}},
+    {"type":"Feature","properties":{"name":"Savuti","order":21,"country":"Botswana","category":"national park area"},"geometry":{"type":"Point","coordinates":[24.0667,-18.5667]}},
+    {"type":"Feature","properties":{"name":"Kasane / Chobe","order":22,"country":"Botswana","category":"town / national park","compact_order":9},"geometry":{"type":"Point","coordinates":[25.16024,-17.80165]}},
+    {"type":"Feature","properties":{"name":"Victoria Falls","order":23,"country":"Zimbabwe","category":"world heritage site","compact_order":10},"geometry":{"type":"Point","coordinates":[25.8531,-17.9242]}},
+    {"type":"Feature","properties":{"name":"Livingstone (optional Zambia side)","order":24,"country":"Zambia","category":"town"},"geometry":{"type":"Point","coordinates":[25.8543,-17.8419]}}
+  ]
+}
