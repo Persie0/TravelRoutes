@@ -1,0 +1,42 @@
+destination,sight,priority,value_10,uniqueness_10,time_hours,detour_cost,recommended_hours,reason
+London,Tower of London,S,10,10,3,low,3,"Iconic fortress, Crown Jewels and unusually dense history."
+London,British Museum,S,10,9,4,low,4,World-class collection; free core admission.
+London,Westminster Abbey + Parliament area,S,10,9,3,low,3,Core British political and royal history.
+London,St Paul’s + City walk,A,9,8,3,low,3,Excellent architecture and skyline context.
+London,Greenwich,A,8,8,4,low,4,Maritime history plus park and meridian.
+Oxford,University colleges + Radcliffe Camera,S,9,10,6,low,6,Very high-value rail day trip without changing northbound geometry.
+York,York Minster,S,10,10,2,low,2,One of Britain’s great Gothic cathedrals.
+York,City walls + Shambles,A,9,8,3,low,3,Compact medieval urban experience.
+York,National Railway Museum,A,8,9,2.5,low,2.5,Strong fit with a rail-themed northbound trip.
+Durham,Durham Cathedral,S,10,10,2,low,2,Exceptional Norman cathedral in dramatic river setting.
+Durham,Durham Castle / peninsula walk,A,8,8,2,low,2,Pairs naturally with cathedral on a half-day stop.
+Newcastle upon Tyne,Quayside + bridges,A,8,7,2,low,2,Distinctive industrial/modern cityscape.
+Newcastle upon Tyne,Tynemouth coast,B,7,7,4,medium,4,Good coast add-on if weather is clear.
+St Andrews,Cathedral + castle + old town,A,9,9,4,medium,4,Historic university town and coastal ruins.
+Aberdeen,Dunnottar Castle,S,10,10,4,medium,3,One of Scotland’s most dramatic castle settings.
+Aberdeen,Old Aberdeen,B,7,7,2,low,2,Pleasant granite/university quarter.
+Royal Deeside,Braemar + Deeside scenery,A,8,8,4,low,4,Natural bridge from Aberdeen into the Cairngorms.
+Cairngorms,Full mountain / loch hiking day,S,10,9,7,low,7,Core outdoor experience; weather-dependent.
+Inverness area,Culloden + Clava Cairns,A,9,9,4,low,4,High historic/archaeological value with little detour.
+Inverness area,Loch Ness + Urquhart Castle,A,8,8,4,medium,4,"Iconic, though less unique than western mountain scenery."
+Assynt,Stac Pollaidh hike,S,10,10,4,low,4,Exceptional value-to-effort panorama.
+Assynt,Achmelvich Bay,A,8,9,2,low,2,White-sand coast in a mountain landscape.
+Assynt,Ardvreck Castle,A,8,8,1,low,1,Very efficient scenic roadside ruin.
+Assynt,Suilven hike,S,10,10,9,medium,9,World-class but long; choose over Stac Pollaidh only with time/weather.
+Torridon,Torridon hike / Beinn Eighe area,S,10,10,7,low,7,Among the route’s strongest mountain days.
+Applecross,Bealach na Bà + Applecross,S,10,10,4,low,4,Iconic pass and west-coast driving.
+Skye,Quiraing,S,10,10,4,low,4,Highest-value Skye landscape.
+Skye,Old Man of Storr,S,10,10,4,low,4,Iconic hike; go early for crowds/weather.
+Skye,Elgol / Loch Coruisk / Cuillin,S,10,10,6,medium,6,More unique and less substitute-able than many roadside Skye stops.
+Skye,Neist Point,A,9,9,3,medium,3,Strong sea-cliff sunset option.
+Skye,Fairy Pools + Cuillin,A,8,8,3,low,3,Beautiful but can be busy.
+Skye,Dunvegan Castle,A,8,8,3,medium,3,Strong history/heritage counterpoint to hikes.
+Glenfinnan,Viaduct + monument,A,8,9,2,low,2,Efficient stop on Skye–Glencoe leg via Mallaig.
+Glencoe,Lost Valley / Glencoe hike,S,10,10,5,low,5,Essential Highlands day.
+Glencoe,Glen Etive / Rannoch Moor,A,9,9,3,low,3,Excellent roadside landscape.
+Stirling,Stirling Castle,S,9,10,3,low,3,High-value historic stop en route to Edinburgh.
+Edinburgh,Old Town + Royal Mile,S,10,10,4,low,4,Essential urban finale.
+Edinburgh,Edinburgh Castle,S,10,10,3,low,3,Major national historic site with city views.
+Edinburgh,Arthur’s Seat + Salisbury Crags,S,9,9,3,low,3,Rare high-value hike inside a capital city.
+Edinburgh,National Museum of Scotland,A,9,8,3,low,3,Excellent bad-weather anchor.
+Edinburgh,August Festivals / Fringe,S,10,10,5,low,5,Unique cultural payoff if August crowds/cost are intentional.
