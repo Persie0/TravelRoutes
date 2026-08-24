@@ -1,0 +1,14 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","properties":{"from":"London","to":"York","mode":"rail","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-0.1276,51.5072],[-1.0827,53.9583]]}},
+{"type":"Feature","properties":{"from":"York","to":"Aberdeen","mode":"rail","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-1.0827,53.9583],[-2.0938,57.1497]]}},
+{"type":"Feature","properties":{"from":"Aberdeen","to":"Aviemore / Cairngorms","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-2.0938,57.1497],[-3.8282,57.195]]}},
+{"type":"Feature","properties":{"from":"Aviemore / Cairngorms","to":"Inverness","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-3.8282,57.195],[-4.2247,57.4778]]}},
+{"type":"Feature","properties":{"from":"Inverness","to":"Torridon","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-4.2247,57.4778],[-5.5142,57.5469]]}},
+{"type":"Feature","properties":{"from":"Torridon","to":"Applecross","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-5.5142,57.5469],[-5.818,57.4336]]}},
+{"type":"Feature","properties":{"from":"Applecross","to":"Portree / Isle of Skye","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-5.818,57.4336],[-6.1942,57.4125]]}},
+{"type":"Feature","properties":{"from":"Portree / Isle of Skye","to":"Elgol / Cuillin","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-6.1942,57.4125],[-6.1649,57.1445]]}},
+{"type":"Feature","properties":{"from":"Elgol / Cuillin","to":"Armadale","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-6.1649,57.1445],[-5.8945,57.0647]]}},
+{"type":"Feature","properties":{"from":"Armadale","to":"Mallaig","mode":"ferry","geometry_note":"planning connector across CalMac ferry leg"},"geometry":{"type":"LineString","coordinates":[[-5.8945,57.0647],[-5.8272,57.0056]]}},
+{"type":"Feature","properties":{"from":"Mallaig","to":"Glencoe","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-5.8272,57.0056],[-5.1027,56.6826]]}},
+{"type":"Feature","properties":{"from":"Glencoe","to":"Edinburgh","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[-5.1027,56.6826],[-3.1883,55.9533]]}}
+],"properties":{"geometry_note":"60:40 route; lines connect place centres and are not exact road or railway tracks."}}
