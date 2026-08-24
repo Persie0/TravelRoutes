@@ -1,0 +1,12 @@
+{
+  "full": {
+    "title": "London → East Coast → Scottish Highlands → Edinburgh",
+    "subtitle": "30-day route · rail north, one-way Highland road trip south-west",
+    "stop_names": ["London","Oxford","York","Durham","Newcastle upon Tyne","St Andrews","Aberdeen","Braemar / Royal Deeside","Aviemore / Cairngorms","Inverness","Lochinver / Assynt","Ullapool","Torridon","Applecross","Portree / Isle of Skye","Elgol / Cuillin","Armadale","Mallaig","Glenfinnan","Glencoe","Stirling","Edinburgh"]
+  },
+  "compact": {
+    "title": "London → Highlands → Edinburgh",
+    "subtitle": "13-day 60:40 highlights route",
+    "stop_names": ["London","York","Aberdeen","Aviemore / Cairngorms","Inverness","Torridon","Applecross","Portree / Isle of Skye","Elgol / Cuillin","Armadale","Mallaig","Glencoe","Edinburgh"]
+  }
+}
