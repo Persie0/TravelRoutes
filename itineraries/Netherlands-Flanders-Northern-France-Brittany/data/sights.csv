@@ -1,0 +1,37 @@
+place,sight,priority,value_10,uniqueness_10,time_hours,detour,recommended_hours,include_reason
+Haarlem,Old centre and Teylers Museum,A,8.0,7.5,7,low,7,Strong compact Dutch city without repeating Amsterdam
+Leiden,Canals and university core,A-,7.7,7.2,6,low,6,Efficient historic city on southbound rail line
+Delft,Historic centre,A-,7.6,7.2,5,low,5,Classic Dutch small-city experience
+Rotterdam,Modern architecture and harbour,A-,7.8,8.0,6,low,6,Useful contrast to medieval cities
+Kinderdijk,Windmill network,S,9.2,9.3,5,low,5,UNESCO hydraulic landscape
+Ghent,Graslei Korenlei historic core,S,9.4,9.1,8,low,8,Top-tier medieval waterfront
+Ghent,Gravensteen,A,8.4,8.4,2,low,2,Distinctive central castle
+Ghent,St Bavo and Mystic Lamb,A,8.6,9.0,2,low,2,Major Flemish art landmark
+Bruges,Historic centre,S,9.7,9.5,12,low,12,UNESCO medieval ensemble
+Bruges,Flemish Primitives museums,A,8.5,8.8,3,low,3,Adds art depth beyond canals
+Ypres,In Flanders Fields and Menin Gate,A,8.3,9.0,6,low,6,Distinctive WWI memory landscape
+Ypres,Tyne Cot Passchendaele,A,8.1,9.1,4,medium,4,Best for strong WWI interest
+Lille,Vieux Lille and Grand Place,A,8.2,7.8,6,low,6,Natural Franco-Flemish bridge city
+Lille,Palais des Beaux Arts,A-,7.9,7.7,3,low,3,Major art collection
+Amiens,Amiens Cathedral,S/A,8.8,9.0,2,low,2,High-value Gothic through-stop
+Rouen,Cathedral and medieval centre,A,8.7,8.3,7,low,7,Strong city and ideal car pivot
+Etretat,Cliffs and coastal walk,S,9.5,9.6,5,low,5,Iconic Channel coast
+Honfleur,Vieux Bassin,A,8.3,8.0,4,low,4,Efficient pair with Etretat
+Bayeux,Bayeux Tapestry,S/A,9.0,9.7,2,low,2,Globally unique medieval object
+Normandy,D-Day landing coast,S,9.6,10.0,9,low,9,Historically unique landscape
+Mont-Saint-Michel,Abbey and bay,S,10.0,10.0,7,low,7,Route-defining tidal monument
+Saint-Malo,Ramparts and intra-muros,S,9.2,9.0,6,low,6,Exceptional fortified maritime city
+Dinan,Historic centre,A,8.4,8.2,4,low,4,Outstanding medieval streets
+Cap Frehel,Cliffs and Fort La Latte,S/A,9.0,9.2,5,low,5,High-value fortress and nature pairing
+Perros-Guirec,Ploumanach Pink Granite Coast,S,9.6,9.7,7,low,7,Visually unique nature
+Morlaix,Historic town,B+,7.4,7.4,3,low,3,Useful buffer stop
+Crozon,Pointe de Pen-Hir and coast,S,9.7,9.6,8,low,8,Strongest wild-coast hiking day
+Brest,City and harbour,C+/B-,6.4,6.7,4,low,4,Useful hub but weaker than surrounding coast
+Brest,Pointe Saint-Mathieu,A,8.4,8.8,3,low,3,Dramatic lighthouse and abbey coast
+Locronan,Historic village,A,8.5,8.5,3,low,3,Very high visual value per hour
+Quimper,Old town and cathedral,A,8.1,7.8,5,low,5,Strong Breton urban stop
+Carnac,Megalithic alignments,S/A,9.0,9.8,4,low,4,Prehistoric landscape unique on route
+Vannes,Walled old town and harbour,A,8.2,7.8,5,low,5,Excellent south-Brittany base
+Nantes,Chateau and Machines district,A-,7.9,8.0,6,low,6,Substantive final airport city
+Maastricht,Old town and fortifications,A,8.3,8.1,12,high,12,Good city but wrong direction for main route
+Utrecht,Canals and historic centre,A,8.5,8.1,8,medium,8,Best extra Dutch city
