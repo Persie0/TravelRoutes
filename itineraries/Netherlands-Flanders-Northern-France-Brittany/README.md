@@ -64,7 +64,7 @@ See [weather-and-timing.md](weather-and-timing.md).
 **One-way/open-jaw:** **VIE/BUD → AMS**, then **NTE → VIE/BUD**.
 
 - Inbound Amsterdam is easy to price-shop and avoids wasting time positioning to a smaller airport.
-- Current Volotea inventory markets **Nantes ↔ Vienna nonstop**; their public offers page currently shows Nantes→Vienna from roughly €103 return-equivalent promotional pricing, but this is not a guarantee for your dates.
+- Current Volotea inventory markets **Nantes ↔ Vienna nonstop**; their public offers page currently shows a promotional Nantes→Vienna fare from roughly €103, but this is not a guarantee for your dates.
 - Nantes↔Budapest is also currently served nonstop by easyJet on a limited weekly schedule, which can be worth checking if the fare is much lower and the Budapest→Austria positioning is acceptable.
 - **Brest→Vienna currently has no nonstop service**, so finishing in Brest usually means a connection or a 3–4 hour train repositioning first.
 
@@ -101,6 +101,7 @@ Full scoring: [sights.md](sights.md) and [data/sights.csv](data/sights.csv).
 
 - [28-day route](general-28-day-route.md)
 - [60:40 route](itinerary-60-40.md)
+- [Worked July 2027 booking example](booking-example-2027-07.md)
 - [Transport optimization](transport-and-route-optimization.md)
 - [Flights / homebound strategy](flights.md)
 - [Sight scoring](sights.md)
