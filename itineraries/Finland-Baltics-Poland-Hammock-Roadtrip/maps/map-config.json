@@ -1,0 +1,12 @@
+{
+  "full": {
+    "title": "Finland - Baltics - Poland",
+    "subtitle": "28-day nature-first route · rail + rental cars + ferry · real geography",
+    "stop_names": ["Helsinki","Rovaniemi","Oulanka National Park","Riisitunturi National Park","Pyha-Luosto National Park","Saariselka","Inari","Tallinn","Lahemaa National Park","Parnu","Riga","Gauja National Park","Kuldiga","Klaipeda","Nida","Kaunas","Trakai","Vilnius","Warsaw","Krakow"]
+  },
+  "compact": {
+    "title": "Finland - Baltics",
+    "subtitle": "60:40 highlights route · ~14 days",
+    "stop_names": ["Helsinki","Rovaniemi","Oulanka National Park","Riisitunturi National Park","Pyha-Luosto National Park","Saariselka","Inari","Tallinn","Lahemaa National Park","Riga","Gauja National Park","Vilnius"]
+  }
+}
