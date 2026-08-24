@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"order":1,"name":"Helsinki","country":"Finland","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[24.9384,60.1699]}},
+    {"type":"Feature","properties":{"order":2,"name":"Rovaniemi","country":"Finland","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[25.7294,66.5039]}},
+    {"type":"Feature","properties":{"order":3,"name":"Oulanka National Park","country":"Finland","category":"national park","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[29.3386,66.3731]}},
+    {"type":"Feature","properties":{"order":4,"name":"Riisitunturi National Park","country":"Finland","category":"national park","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[28.4753,66.2287]}},
+    {"type":"Feature","properties":{"order":5,"name":"Pyha-Luosto National Park","country":"Finland","category":"national park","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[26.9629,67.0709]}},
+    {"type":"Feature","properties":{"order":6,"name":"Saariselka","country":"Finland","category":"outdoor base","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[27.4197,68.4197]}},
+    {"type":"Feature","properties":{"order":7,"name":"Inari","country":"Finland","category":"village / Sami culture","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[27.0288,68.9059]}},
+    {"type":"Feature","properties":{"order":8,"name":"Tallinn","country":"Estonia","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[24.7536,59.437]}},
+    {"type":"Feature","properties":{"order":9,"name":"Lahemaa National Park","country":"Estonia","category":"national park","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[25.801,59.572]}},
+    {"type":"Feature","properties":{"order":10,"name":"Parnu","country":"Estonia","category":"coastal city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[24.4971,58.3859]}},
+    {"type":"Feature","properties":{"order":11,"name":"Riga","country":"Latvia","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[24.1052,56.9496]}},
+    {"type":"Feature","properties":{"order":12,"name":"Gauja National Park","country":"Latvia","category":"national park","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[24.852,57.18]}},
+    {"type":"Feature","properties":{"order":13,"name":"Kuldiga","country":"Latvia","category":"historic town","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[21.9689,56.968]}},
+    {"type":"Feature","properties":{"order":14,"name":"Klaipeda","country":"Lithuania","category":"city / ferry gateway","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[21.1443,55.7033]}},
+    {"type":"Feature","properties":{"order":15,"name":"Nida","country":"Lithuania","category":"Curonian Spit","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[21.0067,55.3033]}},
+    {"type":"Feature","properties":{"order":16,"name":"Kaunas","country":"Lithuania","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[23.9036,54.8985]}},
+    {"type":"Feature","properties":{"order":17,"name":"Trakai","country":"Lithuania","category":"castle / lakes","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[24.9347,54.6379]}},
+    {"type":"Feature","properties":{"order":18,"name":"Vilnius","country":"Lithuania","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[25.2797,54.6872]}},
+    {"type":"Feature","properties":{"order":19,"name":"Warsaw","country":"Poland","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[21.0122,52.2297]}},
+    {"type":"Feature","properties":{"order":20,"name":"Krakow","country":"Poland","category":"city","coordinate_source":"verified planning coordinate; see sources.md"},"geometry":{"type":"Point","coordinates":[19.945,50.0647]}}
+  ]
+}
