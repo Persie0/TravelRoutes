@@ -1,0 +1,14 @@
+country,base,sight,priority,value_10,uniqueness_10,time_hours,detour,reason
+Kazakhstan,Almaty,Medeu + Shymbulak,A,8,7,5,low,Best easy alpine access from city
+Kazakhstan,Charyn,Charyn Canyon,S,9,9,4,medium,Most distinctive Kazakhstan landscape on route
+Kazakhstan,Kolsai,Kolsai Lakes hike,S,9,9,7,medium,High-value alpine lake hiking
+Kazakhstan,Kolsai,Kaindy Lake,A,8,9,4,medium,"Sunken forest lake, unusual"
+Kyrgyzstan,Karakol,Ala-Kul / Altyn Arashan,S,10,10,10,medium,Signature Tian Shan hike
+Kyrgyzstan,Issyk-Kul,Skazka Canyon,A,8,8,3,low,High scenery per hour
+Kyrgyzstan,Song-Kul,Song-Kul yurt stay,S,9,10,20,high,Nomadic high-lake landscape
+Kyrgyzstan,Bishkek,Ala-Archa,A,8,8,6,low,Easy mountain day trip
+Uzbekistan,Tashkent,Chorsu + metro,A,8,7,5,low,Distinctive capital experience
+Uzbekistan,Samarkand,Registan,S,10,10,4,low,Core Silk Road architecture
+Uzbekistan,Samarkand,Shah-i-Zinda,S,10,10,3,low,Exceptional tilework ensemble
+Uzbekistan,Bukhara,Po-i-Kalyan + old city,S,10,10,7,low,Best coherent historic-city atmosphere
+Uzbekistan,Khiva,Ichan Kala,S,10,10,8,low,Walled Silk Road city; strongest sunset/night setting
