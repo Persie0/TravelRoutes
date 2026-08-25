@@ -1,0 +1,12 @@
+{
+  "full": {
+    "title": "Kazakhstan → Kyrgyzstan → Uzbekistan",
+    "subtitle": "28-day Central Asia route · real geography + verified stop coordinates",
+    "stop_names": ["Almaty","Charyn Canyon","Kolsai Lakes / Saty","Karakol","Skazka Canyon / South Issyk-Kul","Song-Kul","Bishkek","Tashkent","Samarkand","Bukhara","Khiva","Urgench Airport"]
+  },
+  "compact": {
+    "title": "Kazakhstan → Kyrgyzstan → Uzbekistan",
+    "subtitle": "60:40 highlights route · 12 days",
+    "stop_names": ["Almaty","Charyn Canyon","Kolsai Lakes / Saty","Karakol","Bishkek","Tashkent","Samarkand","Bukhara","Khiva","Urgench Airport"]
+  }
+}
