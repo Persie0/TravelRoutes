@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {"type":"Feature","properties":{"name":"Almaty","order":1,"country":"Kazakhstan"},"geometry":{"type":"Point","coordinates":[76.886,43.238]}},
+    {"type":"Feature","properties":{"name":"Charyn Canyon","order":2,"country":"Kazakhstan"},"geometry":{"type":"Point","coordinates":[79.086,43.362]}},
+    {"type":"Feature","properties":{"name":"Kolsai Lakes / Saty","order":3,"country":"Kazakhstan"},"geometry":{"type":"Point","coordinates":[78.31,42.952]}},
+    {"type":"Feature","properties":{"name":"Karakol","order":4,"country":"Kyrgyzstan"},"geometry":{"type":"Point","coordinates":[78.393,42.491]}},
+    {"type":"Feature","properties":{"name":"Skazka Canyon / South Issyk-Kul","order":5,"country":"Kyrgyzstan"},"geometry":{"type":"Point","coordinates":[77.34,42.17]}},
+    {"type":"Feature","properties":{"name":"Song-Kul","order":6,"country":"Kyrgyzstan"},"geometry":{"type":"Point","coordinates":[75.15,41.84]}},
+    {"type":"Feature","properties":{"name":"Bishkek","order":7,"country":"Kyrgyzstan"},"geometry":{"type":"Point","coordinates":[74.605,42.875]}},
+    {"type":"Feature","properties":{"name":"Tashkent","order":8,"country":"Uzbekistan"},"geometry":{"type":"Point","coordinates":[69.24,41.312]}},
+    {"type":"Feature","properties":{"name":"Samarkand","order":9,"country":"Uzbekistan"},"geometry":{"type":"Point","coordinates":[66.959,39.654]}},
+    {"type":"Feature","properties":{"name":"Bukhara","order":10,"country":"Uzbekistan"},"geometry":{"type":"Point","coordinates":[64.421,39.768]}},
+    {"type":"Feature","properties":{"name":"Khiva","order":11,"country":"Uzbekistan"},"geometry":{"type":"Point","coordinates":[60.36,41.378]}},
+    {"type":"Feature","properties":{"name":"Urgench Airport","order":12,"country":"Uzbekistan"},"geometry":{"type":"Point","coordinates":[60.641,41.584]}}
+  ]
+}
