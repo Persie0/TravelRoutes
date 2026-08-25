@@ -1,0 +1,13 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","properties":{"from":"Almaty","to":"Charyn Canyon","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[76.886,43.238],[79.086,43.362]]}},
+{"type":"Feature","properties":{"from":"Charyn Canyon","to":"Kolsai Lakes / Saty","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[79.086,43.362],[78.31,42.952]]}},
+{"type":"Feature","properties":{"from":"Kolsai Lakes / Saty","to":"Karakol","mode":"road / border","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[78.31,42.952],[78.393,42.491]]}},
+{"type":"Feature","properties":{"from":"Karakol","to":"Skazka Canyon / South Issyk-Kul","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[78.393,42.491],[77.34,42.17]]}},
+{"type":"Feature","properties":{"from":"Skazka Canyon / South Issyk-Kul","to":"Song-Kul","mode":"road / 4x4","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[77.34,42.17],[75.15,41.84]]}},
+{"type":"Feature","properties":{"from":"Song-Kul","to":"Bishkek","mode":"road / 4x4","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[75.15,41.84],[74.605,42.875]]}},
+{"type":"Feature","properties":{"from":"Bishkek","to":"Tashkent","mode":"flight","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[74.605,42.875],[69.24,41.312]]}},
+{"type":"Feature","properties":{"from":"Tashkent","to":"Samarkand","mode":"train","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[69.24,41.312],[66.959,39.654]]}},
+{"type":"Feature","properties":{"from":"Samarkand","to":"Bukhara","mode":"train","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[66.959,39.654],[64.421,39.768]]}},
+{"type":"Feature","properties":{"from":"Bukhara","to":"Khiva","mode":"train","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[64.421,39.768],[60.36,41.378]]}},
+{"type":"Feature","properties":{"from":"Khiva","to":"Urgench Airport","mode":"road","geometry_note":"planning connector"},"geometry":{"type":"LineString","coordinates":[[60.36,41.378],[60.641,41.584]]}}
+]}
