@@ -1,0 +1,25 @@
+place,country,sight,priority,value_10,uniqueness_10,time_hours,detour_cost,recommended_length,normalized_score,notes
+Uyuni,Bolivia,Salar de Uyuni wet-season mirror,S,10,10,9,low,1 full day,100,Core objective; recent rain + shallow water + low wind required
+Sur Lipez,Bolivia,Eduardo Avaroa / Sur Lipez 4x4 circuit,S,10,10,72,low,3 days,98,Core one-way expedition to Chile
+Laguna Colorada,Bolivia,Laguna Colorada,S,9.5,10,2,low,1-2 hours,96,Flamingos and surreal red lake on core circuit
+Sol de Manana,Bolivia,Sol de Manana geothermal field,S,9,9,1,low,1 hour,90,Best around dawn; very high altitude
+San Pedro de Atacama,Chile,Piedras Rojas + Altiplanic Lagoons,S,9.5,9,9,low,1 day,93,High-altitude landscape day
+San Pedro de Atacama,Chile,Valle de la Luna sunset,S,9,9,4,low,half day,91,Very efficient close-to-town landscape
+Tiwanaku,Bolivia,Tiwanaku archaeological site,A/S,9,9,6,low,half/full day,90,UNESCO; little detour from La Paz
+Colca Canyon,Peru,Colca Canyon + condors,A/S,9,9,24,medium,2 days,87,Major canyon and Andean condors
+Sucre,Bolivia,Historic City of Sucre,A,8.5,8,12,low,1-2 days,82,UNESCO colonial-city core
+Potosi,Bolivia,Historic Potosi + Casa de la Moneda,A,8.5,9,8,low,1 day,85,UNESCO; globally important silver history
+Copacabana,Bolivia,Isla del Sol + Copacabana,A,8.5,8,10,low,1 day,81,Titicaca scenery and Andean/Inca context
+La Paz,Bolivia,Mi Teleferico panorama + urban geography,A,8.5,8,4,low,half day,82,Distinctive city experience and acclimatization-friendly
+Arequipa,Peru,Historic centre + Santa Catalina,A,8.5,8,10,low,1-2 days,82,Strong architecture and useful altitude step
+San Pedro de Atacama,Chile,El Tatio geysers,A,9,8,6,medium,half day,84,Sunrise geothermal field at >4300 m
+Puno,Peru,Taquile Island,A/B,8,7,9,low,1 day,73,Best-value Titicaca island day
+Sucre,Bolivia,Cal Orcko dinosaur tracks,B+,8,9,4,low,half day,79,Highly unusual dinosaur footprint wall
+San Pedro de Atacama,Chile,Stargazing,B+,8,8,3,low,evening,76,Excellent when cloud and moon phase cooperate
+La Paz,Bolivia,Valle de las Animas,B+,7.5,8,5,low,half day,72,Strong nearby erosion landscape
+San Pedro de Atacama,Chile,Pukara de Quitor,B,7,7,3,low,2-3 hours,65,Easy archaeology complement
+Lima,Peru,Historic Centre of Lima,B,7.5,7,5,low,half day,68,Good gateway sightseeing; expendable if delayed
+Lima,Peru,Larco Museum,B,8,8,3,low,3 hours,77,Excellent pre-Columbian context
+Puno,Peru,Uros floating islands,B/C,6.5,9,3,low,2-3 hours,64,Visually unique but highly packaged; pair with Taquile
+Potosi,Bolivia,Cerro Rico mine tour,B optional,7.5,10,4,low,3-4 hours,69,Unique but significant safety ethical and altitude costs
+Santiago,Chile,Santiago buffer city day,B,7,6,8,low,1 day,60,Useful finale and disruption buffer
