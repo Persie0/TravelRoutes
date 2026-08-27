@@ -1,0 +1,19 @@
+{"type":"FeatureCollection","features":[
+{"type":"Feature","properties":{"from":"Lima","to":"Arequipa","mode":"flight","note":"strategic domestic flight"},"geometry":{"type":"LineString","coordinates":[[-77.0428,-12.0464],[-71.5375,-16.3989]]}},
+{"type":"Feature","properties":{"from":"Arequipa","to":"Chivay / Colca Canyon","mode":"bus/road"},"geometry":{"type":"LineString","coordinates":[[-71.5375,-16.3989],[-71.6038,-15.6383]]}},
+{"type":"Feature","properties":{"from":"Chivay / Colca Canyon","to":"Puno","mode":"bus/road"},"geometry":{"type":"LineString","coordinates":[[-71.6038,-15.6383],[-70.0219,-15.8402]]}},
+{"type":"Feature","properties":{"from":"Puno","to":"Copacabana","mode":"bus"},"geometry":{"type":"LineString","coordinates":[[-70.0219,-15.8402],[-69.0833,-16.15]]}},
+{"type":"Feature","properties":{"from":"Copacabana","to":"La Paz","mode":"bus"},"geometry":{"type":"LineString","coordinates":[[-69.0833,-16.15],[-68.1193,-16.4897]]}},
+{"type":"Feature","properties":{"from":"La Paz","to":"Tiwanaku","mode":"road"},"geometry":{"type":"LineString","coordinates":[[-68.1193,-16.4897],[-68.673278,-16.555003]]}},
+{"type":"Feature","properties":{"from":"Tiwanaku","to":"La Paz","mode":"road"},"geometry":{"type":"LineString","coordinates":[[-68.673278,-16.555003],[-68.1193,-16.4897]]}},
+{"type":"Feature","properties":{"from":"La Paz","to":"Sucre","mode":"flight","note":"recommended over night bus for time/safety; recheck operating schedule"},"geometry":{"type":"LineString","coordinates":[[-68.1193,-16.4897],[-65.2619,-19.0196]]}},
+{"type":"Feature","properties":{"from":"Sucre","to":"Potosí","mode":"bus"},"geometry":{"type":"LineString","coordinates":[[-65.2619,-19.0196],[-65.749813,-19.599112]]}},
+{"type":"Feature","properties":{"from":"Potosí","to":"Uyuni","mode":"bus"},"geometry":{"type":"LineString","coordinates":[[-65.749813,-19.599112],[-66.825,-20.4604]]}},
+{"type":"Feature","properties":{"from":"Uyuni","to":"Salar de Uyuni","mode":"4x4"},"geometry":{"type":"LineString","coordinates":[[-66.825,-20.4604],[-67.7,-20.3333]]}},
+{"type":"Feature","properties":{"from":"Salar de Uyuni","to":"Laguna Colorada","mode":"4x4"},"geometry":{"type":"LineString","coordinates":[[-67.7,-20.3333],[-67.7811,-22.1986]]}},
+{"type":"Feature","properties":{"from":"Laguna Colorada","to":"Sol de Mañana","mode":"4x4"},"geometry":{"type":"LineString","coordinates":[[-67.7811,-22.1986],[-67.75739,-22.42916]]}},
+{"type":"Feature","properties":{"from":"Sol de Mañana","to":"Hito Cajón","mode":"4x4"},"geometry":{"type":"LineString","coordinates":[[-67.75739,-22.42916],[-67.79867,-22.88083]]}},
+{"type":"Feature","properties":{"from":"Hito Cajón","to":"San Pedro de Atacama","mode":"road/4x4"},"geometry":{"type":"LineString","coordinates":[[-67.79867,-22.88083],[-68.2001,-22.9108]]}},
+{"type":"Feature","properties":{"from":"San Pedro de Atacama","to":"Calama","mode":"bus"},"geometry":{"type":"LineString","coordinates":[[-68.2001,-22.9108],[-68.9294,-22.4544]]}},
+{"type":"Feature","properties":{"from":"Calama","to":"Santiago","mode":"flight"},"geometry":{"type":"LineString","coordinates":[[-68.9294,-22.4544],[-70.6693,-33.4489]]}}
+]}
