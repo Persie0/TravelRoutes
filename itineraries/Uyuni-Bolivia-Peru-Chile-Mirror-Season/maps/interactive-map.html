@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Uyuni mirror-season route</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<style>html,body,#map{height:100%;margin:0}body{font-family:system-ui,sans-serif}.legend{background:#fff;padding:8px 10px;border-radius:6px;box-shadow:0 1px 5px #777;font-size:12px;line-height:1.55}.dot{display:inline-block;width:12px;height:3px;margin-right:6px;vertical-align:middle}.num{background:#c83e2d;color:#fff;border:2px solid #fff;border-radius:50%;width:24px;height:24px;text-align:center;line-height:20px;font-weight:700;box-shadow:0 1px 4px #555}</style>
+</head>
+<body><div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script>
+const map=L.map('map').setView([-20,-69],5);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const styles={flight:{color:'#1b9e77',dashArray:'8 6'},road:{color:'#e6550d'},bus:{color:'#377eb8',dashArray:'7 5'},'bus/road':{color:'#377eb8',dashArray:'7 5'},'4x4':{color:'#e6550d'},'road/4x4':{color:'#e6550d'}};
+Promise.all([fetch('stops.geojson').then(r=>r.json()),fetch('route.geojson').then(r=>r.json())]).then(([stops,route])=>{
+ const bounds=[];
+ route.features.forEach(f=>{const s=styles[f.properties.mode]||styles.road;L.geoJSON(f,{style:{...s,weight:4,opacity:.85}}).bindTooltip(`${f.properties.from} → ${f.properties.to} · ${f.properties.mode}`).addTo(map)});
+ stops.features.forEach(f=>{const [lon,lat]=f.geometry.coordinates,o=f.properties.order;bounds.push([lat,lon]);const icon=L.divIcon({className:'',html:`<div class="num">${o}</div>`,iconSize:[24,24],iconAnchor:[12,12]});L.marker([lat,lon],{icon}).bindPopup(`<b>${o}. ${f.properties.name}</b><br>${f.properties.country}<br><small>${f.properties.source||''}</small>`).addTo(map)});
+ map.fitBounds(bounds,{padding:[24,24]});
+});
+const legend=L.control({position:'bottomleft'});legend.onAdd=()=>{const d=L.DomUtil.create('div','legend');d.innerHTML='<b>~30-day mirror-season route</b><br><span class="dot" style="background:#1b9e77"></span>flight<br><span class="dot" style="background:#377eb8"></span>bus / coach<br><span class="dot" style="background:#e6550d"></span>road / 4×4<br><small>Route lines are planning connectors; points use verified geographic coordinates.</small>';return d};legend.addTo(map);
+</script></body></html>
