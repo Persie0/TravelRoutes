@@ -1,6 +1,6 @@
 # Guatemala → Belize → Mexico — optimized route research
 
-A researched, route-optimized travel plan for **Guatemala → Belize → Yucatán**, built around a general **~28-day first-trip route**, a separate **60:40 highlights route**, and a concrete **February 1–28, 2027 booking example**.
+A researched, route-optimized travel plan for **Guatemala → Belize → Yucatán**, built around three distinct route modes — a general **~28-day first-trip route**, a **60:40 highlights route**, and a **Speedrun route** that keeps essentially all important S/A-tier sights in the minimum practical time — plus a concrete **February 1–28, 2027 booking example**.
 
 Research snapshot: **2026-08-23**.
 
@@ -90,6 +90,34 @@ Detailed schedule + cut logic: **[`itinerary-60-40.md`](./itinerary-60-40.md)**.
 
 ---
 
+## Speedrun route — 16 days theoretical / 17 recommended
+
+The **Speedrun is a third optimization mode**, not another name for 60:40.
+
+> **60:40 deletes sights to save time. Speedrun deletes slack to save time.**
+
+The Speedrun tries to keep essentially **every S-tier and A-tier experience** from the full route while reducing each city/base to the minimum useful stay. It uses early starts, arrival-evening sightseeing, late transfers when realistic, luggage storage, tightly clustered sight order and faster transport when paying more genuinely saves sightseeing time.
+
+It still keeps **Lake Atitlán, Semuc Champey, Xunantunich, Bacalar and the major Belize reef experiences** that the 60:40 version may cut.
+
+- **16 days:** theoretical minimum when international flights line up well, transport behaves and weather is usable.
+- **17 days:** recommended Speedrun because one floating day protects Acatenango/Fuego, reef conditions, border delays or a late international arrival.
+- **+1 day:** recommended for divers who want a proper full-day Great Blue Hole / Lighthouse Reef dive rather than the time-efficient scenic-flight version.
+
+Detailed day-by-day schedule, minimum viable stay per base, compression rules and full-vs-60:40-vs-Speedrun comparison: **[`itinerary-speedrun.md`](./itinerary-speedrun.md)**.
+
+---
+
+## Which itinerary mode?
+
+| Mode | Approx. time | Core idea | Main sacrifice |
+|---|---:|---|---|
+| **Full** | ~28 days | best overall trip | very little |
+| **Speedrun** | **16 theoretical / 17 recommended** | see essentially all important S/A sights in minimum practical time | comfort, spare afternoons, most B/C sights, redundancy |
+| **60:40** | ~12 days | maximize experience value per day | entire destinations/sights when detour cost is too high |
+
+---
+
 ## Best season
 
 For this exact combination of volcano views, overland travel, reef days and archaeology:
@@ -137,14 +165,14 @@ Skyscanner attribution: https://skyscanner.net/g/referrals/v1/flights/home?media
 
 | Leg | Planning result | Route decision |
 |---|---|---|
-| Semuc → Flores | ~7h20 bus / ~8h shuttle | accept as full transfer day only in long route |
+| Semuc → Flores | ~7h20 bus / ~8h shuttle | accept as full transfer day only in long route / Speedrun because Semuc is retained there |
 | Flores → San Ignacio | ~2h30 transport + border buffer | efficient international land crossing |
 | San Ignacio → Belize City | ~2–2.5h | continue same day to Caye Caulker |
 | Belize City → Caye Caulker | ~45m ferry | no Belize City overnight by default |
-| Caye Caulker → Valladolid | ~10h chain | avoid in full route by stopping Bacalar |
-| Caye Caulker → Bacalar | fastest overview ~5h12 | useful full-route split |
+| Caye Caulker → Valladolid | ~10h chain | avoid in full/Speedrun by stopping Bacalar |
+| Caye Caulker → Bacalar | fastest overview ~5h12 | useful split and A-tier stop |
 | Bacalar → Valladolid | ~4h44 | manageable second leg |
-| Caye Caulker → Cancún | fly ~4h43 overall vs ~9h21 ferry+train | use flight only for 60:40/time-first version |
+| Caye Caulker → Cancún | fly ~4h43 overall vs ~9h21 ferry+train | use flight for 60:40/time-first version; Speedrun keeps Bacalar |
 
 Detailed mode logic: **[`transport-and-route-optimization.md`](./transport-and-route-optimization.md)**.
 
@@ -183,8 +211,9 @@ Use **[`optional-variants.md`](./optional-variants.md)** for:
 - archaeology-heavy route;
 - reef/beach-heavy route;
 - Mexico City ending;
-- El Paredón surf detour;
-- 60:40/high-speed version.
+- El Paredón surf detour.
+
+The 60:40 and Speedrun modes now have their own dedicated itinerary files rather than being buried as optional variants.
 
 ---
 
@@ -203,6 +232,7 @@ TravelRoutes/
         ├── general-28-day-route.md
         ├── itinerary-28-days.md
         ├── itinerary-60-40.md
+        ├── itinerary-speedrun.md
         ├── itinerary.md               # detailed Feb 1–28, 2027 schedule
         ├── booking-example-2027-02.md
         ├── sights.md
