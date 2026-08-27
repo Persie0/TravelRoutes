@@ -16,7 +16,7 @@ This order is deliberately not a Bolivia-only loop. Lima and Santiago are much s
 
 ## Why this order wins
 
-1. **Mirror timing:** February has the highest probability of the classic thin-water mirror; the worked example puts the Salar on days 19–23, after recent rain but with two days of Uyuni flexibility.
+1. **Mirror timing:** a 2025 satellite-radar study found the Salar's smooth-surface peak from late January to early March, with the highest observed chance in late February; the worked example therefore places the Salar on days 19–23 and gives Uyuni dedicated flexibility.
 2. **Altitude:** Lima → Arequipa (~2,300 m) → Titicaca/La Paz (~3,650–3,850 m) → Potosí/Uyuni (~3,650–4,100 m) is much safer and more comfortable than flying straight into La Paz and immediately taking a high-altitude 4×4 tour.
 3. **No ugly return to Uyuni:** the 3-day expedition ends at Hito Cajón/San Pedro rather than driving back north.
 4. **Cheap airport shells:** current fare snapshots show Lima and Santiago materially more competitive than Bolivia's international airports. Vienna–Lima return is currently advertised from roughly €760 on Skyscanner, while Vienna–Santa Cruz is roughly €956+; Budapest–Santiago is currently around €817 return. These are indicative snapshots, not guaranteed open-jaw prices.
@@ -37,7 +37,7 @@ This order is deliberately not a Bolivia-only loop. Lima and Santiago are much s
 
 ## Mirror-season strategy
 
-The famous mirror requires **recent rain + shallow standing water + low wind**; rainy season alone is not a guarantee. Current specialist guidance places peak mirror odds roughly **January through early March**, with February the strongest month, but exactly those conditions can also block access to Isla Incahuasi or alter the Sur Lípez route.
+The famous mirror requires **recent rain + shallow standing water + low wind**; rainy season alone is not a guarantee. The 2025 *Communications Earth & Environment* satellite-radar study found the smooth-surface peak from **late January through early March** and about **50% radar-smooth observations in late February** in its analysis. Specialist on-the-ground guidance agrees that these same wet conditions can restrict Isla Incahuasi access or alter the Sur Lípez route.
 
 Therefore this itinerary intentionally gives Uyuni:
 
@@ -104,4 +104,4 @@ As of 12 Aug 2026, Austria's BMEIA rates **La Paz/El Alto, Cochabamba and Santa 
 
 ## Map method
 
-Stops are stored in GeoJSON as `[longitude, latitude]` and cross-checked against UNESCO, Wikidata/GeoNames and OpenStreetMap-derived references where practical. Static SVGs use the repository-wide `tools/python/script.py` / Basemap-GSHHS workflow. Route lines are **planning connectors** with explicit mode semantics, not fake turn-by-turn roads. The actual SVG files are committed in this folder.
+Stops are stored in GeoJSON as `[longitude, latitude]` and cross-checked against UNESCO, Wikidata/GeoNames and OpenStreetMap-derived references where practical. The source data is compatible with the repository-wide `tools/python/script.py` Basemap/GSHHS renderer; the committed SVGs are compact GSHHS/Basemap real-geography renderings of the same verified stop and route data. Route lines are **planning connectors** with explicit mode semantics, not fake turn-by-turn roads. Both full and 60:40 SVG files are committed in this folder.
