@@ -142,7 +142,7 @@ Supplement with strong independent guides and recent traveler experience when it
 
 Include useful **article links and image/reference links**.
 
-Store normalized sight data in a machine-readable file such as `data/sights.csv` so it can support route scoring and the 60:40 analysis.
+Store normalized sight data in a machine-readable file such as `data/sights.csv` so it can support route scoring, the 60:40 analysis and the Speedrun analysis.
 
 ---
 
@@ -171,6 +171,10 @@ Mark days as:
 - 🔴 intense.
 
 Avoid wasting useful daylight on transfers where an early/late move is clearly better. Include sensible recovery/weather buffers after demanding hikes or weather-dependent activities.
+
+Save this as something like:
+
+`itinerary-28-days.md`
 
 ---
 
@@ -213,9 +217,111 @@ Create a comparison table:
 
 Explain the biggest sacrifices and estimate how much of the normalized experience score the condensed route preserves.
 
+Save this as:
+
+`itinerary-60-40.md`
+
 ---
 
-# 6. Create worthwhile variants
+# 6. Create a Speedrun cities/sights itinerary
+
+Also create a third itinerary mode:
+
+`itinerary-speedrun.md`
+
+The Speedrun has a **different objective from the 60:40 route**.
+
+> **60:40 saves time by cutting sights. Speedrun saves time by cutting slack.**
+
+The Speedrun should visit **as many important cities/sights as realistically possible in the minimum amount of time needed to see all important stuff**.
+
+## Core Speedrun rule
+
+Try to preserve:
+
+- **all S-tier sights**;
+- **essentially all A-tier sights**;
+- B-tier sights when they add little marginal travel time or fit naturally into the same walking/transport cluster.
+
+Do **not** remove an S/A destination merely to hit an arbitrary day count. Instead compress the stay at that destination to its **minimum viable sightseeing time**.
+
+## Speedrun optimization methods
+
+Use aggressive but realistic scheduling:
+
+- first practical opening times;
+- sunrise / early starts when useful;
+- sightseeing immediately after arrival;
+- late-afternoon/evening transfers after the core attraction;
+- luggage storage instead of waiting for hotel check-in;
+- geographically clustered walking/transit order;
+- timed-entry optimization;
+- visit outdoor/public sights before/after indoor attraction hours;
+- transfer while attractions are closed when possible;
+- direct shuttle/train/flight when the extra cost saves a meaningful amount of sightseeing time;
+- overnight transport only when it is actually safe, realistic and does not destroy the next sightseeing day;
+- no unnecessary resort/rest days;
+- no duplicate experiences unless each is genuinely important.
+
+Do **not** produce impossible spreadsheet itineraries. Account for:
+
+- attraction opening/closing and last entry;
+- meals;
+- luggage;
+- hotel check-in/check-out;
+- realistic station/airport transfer time;
+- border crossings;
+- ferry frequency;
+- daylight where relevant;
+- physical fatigue after major hikes;
+- weather dependence;
+- required reservation slots.
+
+## Required Speedrun analysis
+
+For every base/city, provide a table like:
+
+| Base / city | Minimum useful time | S/A sights covered | Compression tactic | What gets skipped |
+|---|---:|---|---|---|
+
+Then create:
+
+### Theoretical minimum
+
+The shortest physically plausible version if flights/transport/opening hours line up unusually well.
+
+### Recommended Speedrun minimum
+
+Usually theoretical minimum + a small amount of protection against one major schedule/weather failure.
+
+For weather-dependent routes, identify where the floating buffer should be used first.
+
+For each Speedrun day include **more precise timing than the normal itinerary** when useful, e.g.:
+
+- 06:30 depart hotel;
+- 07:00 attraction opening;
+- 10:30 move to next cluster;
+- 14:00 collect luggage;
+- 15:00 train/shuttle to next city.
+
+## Speedrun vs 60:40 comparison
+
+Create a table showing at least:
+
+| Experience | Full route | Speedrun | 60:40 | Why |
+|---|---:|---:|---:|---|
+
+The expected distinction is:
+
+- **Full:** most comfortable / complete;
+- **Speedrun:** nearly all important S/A sights, minimum dwell time;
+- **60:40:** fewer sights/destinations but maximum value per day.
+
+If the Speedrun route is geographically identical to the full route, it does not need a separate map. If it materially changes route order or transport mode, create an additional Speedrun route GeoJSON/SVG.
+
+---
+
+# 7. Create worthwhile variants
 
 Research variants only where they materially change the trip, such as:
 
@@ -229,11 +335,11 @@ Research variants only where they materially change the trip, such as:
 - optional major-city extension;
 - alternative arrival/departure airport.
 
-Do not create variants just to inflate the document count.
+Do not create variants just to inflate the document count. The Full, 60:40 and Speedrun itineraries are core outputs, not optional variants.
 
 ---
 
-# 7. Weather and season analysis
+# 8. Weather and season analysis
 
 Research climate for every major stop and create a month-by-month travel score:
 
@@ -262,9 +368,11 @@ Then identify:
 - months to avoid;
 - important activity-specific risks.
 
+For the Speedrun specifically, flag weather-dependent activities that make a no-buffer schedule risky.
+
 ---
 
-# 8. Create one date-specific worked example
+# 9. Create one date-specific worked example
 
 In addition to the evergreen route, create a date-specific booking example for the period I supplied.
 
@@ -283,7 +391,7 @@ Suggested files:
 
 ---
 
-# 9. Generate a REAL geographic route map
+# 10. Generate a REAL geographic route map
 
 This is critical:
 
@@ -336,7 +444,8 @@ If live routing is unavailable, straight connectors between **verified** stop co
 Save route data such as:
 
 - `maps/route.geojson`;
-- `maps/route-60-40.geojson`.
+- `maps/route-60-40.geojson`;
+- `maps/route-speedrun.geojson` only if the Speedrun materially differs from the full route.
 
 ## D. Render using real geographic data
 
@@ -405,13 +514,20 @@ maps/
 └── route-60-40.geojson       # when applicable
 ```
 
+If the Speedrun route is materially different, additionally create:
+
+```text
+maps/map-speedrun-route.svg
+maps/route-speedrun.geojson
+```
+
 Also create an interactive Leaflet/MapLibre map when useful, preferably from the same GeoJSON source of truth.
 
 The maps are **information graphics built on real cartographic data**, not generative illustrations.
 
 ---
 
-# 10. Repository structure
+# 11. Repository structure
 
 Use the repository-wide organization when available.
 
@@ -427,6 +543,7 @@ repository-root/
 │       ├── general-28-day-route.md
 │       ├── itinerary-28-days.md
 │       ├── itinerary-60-40.md
+│       ├── itinerary-speedrun.md
 │       ├── itinerary.md                    # dated example when applicable
 │       ├── booking-example-YYYY-MM.md
 │       ├── transport-and-route-optimization.md
@@ -454,7 +571,7 @@ Preserve unrelated repository files.
 
 ---
 
-# 11. README requirements
+# 12. README requirements
 
 The itinerary README should act as the main overview and include:
 
@@ -463,7 +580,9 @@ The itinerary README should act as the main overview and include:
 - why this order wins;
 - embedded real SVG map;
 - general ~28-day recommendation;
+- **Speedrun version + theoretical/recommended minimum duration**;
 - 60:40 version;
+- a clear comparison of Full vs Speedrun vs 60:40;
 - best season;
 - transport bottlenecks;
 - major must-see experiences;
@@ -473,7 +592,7 @@ The itinerary README should act as the main overview and include:
 
 ---
 
-# 12. Sources
+# 13. Sources
 
 Keep a proper source trail.
 
@@ -499,7 +618,7 @@ Prefer strong primary sources and do not dump hundreds of low-value links.
 
 ---
 
-# 13. Quality-control pass
+# 14. Quality-control pass
 
 Before committing, audit the finished route and files.
 
@@ -515,34 +634,45 @@ Check:
 8. Does the route make sense on a real map?
 9. Are all pins based on verified coordinates?
 10. Does the 60:40 route really protect the highest-value experiences?
-11. Are temporary fare snapshots separated from evergreen advice?
-12. Are flight prices marked as indicative and dated?
-13. Are links valid after any repository reorganization?
-14. Does the GitHub itinerary contain the actual research, not just a short summary?
-15. Was the map generated from real geography rather than generative imagery?
-16. Does the SVG render correctly?
-17. Was the **SVG itself committed/uploaded to GitHub**?
-18. Do the map's stops, numbering and route geometry match the itinerary and GeoJSON?
-19. Are reusable map scripts stored under `tools/`?
+11. Does the **Speedrun keep all/essentially all S/A sights rather than merely becoming another 60:40 route**?
+12. Is each Speedrun city's/base's stay actually the minimum practical time rather than an arbitrary number of nights?
+13. Are Speedrun opening hours, transfers, luggage, border/ferry times and physical constraints realistic?
+14. Is a theoretical minimum clearly separated from the recommended Speedrun minimum?
+15. Are temporary fare snapshots separated from evergreen advice?
+16. Are flight prices marked as indicative and dated?
+17. Are links valid after any repository reorganization?
+18. Does the GitHub itinerary contain the actual research, not just a short summary?
+19. Was the map generated from real geography rather than generative imagery?
+20. Does the SVG render correctly?
+21. Was the **SVG itself committed/uploaded to GitHub**?
+22. Do the map's stops, numbering and route geometry match the itinerary and GeoJSON?
+23. Are reusable map scripts stored under `tools/`?
 
 Fix problems you discover before finishing.
 
 ---
 
-# 14. GitHub execution
+# 15. GitHub execution
 
 Use connected GitHub tools to actually create/update the repository files. Do not merely print Markdown for me to copy manually.
 
 Preserve unrelated work and re-read the latest tree before major restructuring so concurrent changes are not accidentally overwritten.
+
+Required core itinerary Markdown outputs:
+
+1. `itinerary-28-days.md`
+2. `itinerary-60-40.md`
+3. `itinerary-speedrun.md`
 
 For maps:
 
 1. generate the real map as SVG;
 2. commit/upload `map-full-route.svg`;
 3. commit/upload `map-60-40-route.svg` when applicable;
-4. commit the GeoJSON source files;
-5. commit reusable map-generation code under `tools/python/script.py`;
-6. verify the committed SVG links render correctly on GitHub.
+4. commit a Speedrun SVG only if its route materially differs from the full route;
+5. commit the GeoJSON source files;
+6. commit reusable map-generation code under `tools/python/script.py`;
+7. verify the committed SVG links render correctly on GitHub.
 
 Do **not** skip the SVG upload and merely tell me where a local file exists.
 
@@ -550,13 +680,14 @@ Prefer the repository's existing workflow (direct main commits vs branch/PR) rat
 
 ---
 
-# 15. Final response
+# 16. Final response
 
 When finished, give me a concise summary containing:
 
 - final optimized route;
 - biggest changes from my original proposal;
 - general duration;
+- **Speedrun theoretical + recommended duration**;
 - 60:40 duration;
 - best travel month(s);
 - best current flight strategy;
@@ -567,6 +698,10 @@ When finished, give me a concise summary containing:
 Do the research and implementation now rather than just telling me what I should research later.
 
 ---
+
+The core itinerary distinction to remember is:
+
+**Full = best overall experience. Speedrun = nearly all important sights in minimum practical time. 60:40 = highest value per day even if entire destinations are cut.**
 
 The core map rule to remember is:
 
