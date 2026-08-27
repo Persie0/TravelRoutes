@@ -1,0 +1,22 @@
+{
+  "type":"FeatureCollection",
+  "features":[
+    {"type":"Feature","properties":{"order":1,"name":"Lima","country":"Peru","source":"city centre / OpenStreetMap-Wikidata cross-check"},"geometry":{"type":"Point","coordinates":[-77.0428,-12.0464]}},
+    {"type":"Feature","properties":{"order":2,"name":"Arequipa","country":"Peru","source":"city centre / OpenStreetMap-Wikidata cross-check"},"geometry":{"type":"Point","coordinates":[-71.5375,-16.3989]}},
+    {"type":"Feature","properties":{"order":3,"name":"Chivay / Colca Canyon","country":"Peru","source":"Chivay gateway town"},"geometry":{"type":"Point","coordinates":[-71.6038,-15.6383]}},
+    {"type":"Feature","properties":{"order":4,"name":"Puno","country":"Peru","source":"city centre"},"geometry":{"type":"Point","coordinates":[-70.0219,-15.8402]}},
+    {"type":"Feature","properties":{"order":5,"name":"Copacabana","country":"Bolivia","source":"OSM/GeoNames cross-check"},"geometry":{"type":"Point","coordinates":[-69.0833,-16.1500]}},
+    {"type":"Feature","properties":{"order":6,"name":"La Paz","country":"Bolivia","source":"city centre"},"geometry":{"type":"Point","coordinates":[-68.1193,-16.4897]}},
+    {"type":"Feature","properties":{"order":7,"name":"Tiwanaku","country":"Bolivia","source":"UNESCO S16 33 18.011 W68 40 23.801"},"geometry":{"type":"Point","coordinates":[-68.673278,-16.555003]}},
+    {"type":"Feature","properties":{"order":8,"name":"Sucre","country":"Bolivia","source":"city centre"},"geometry":{"type":"Point","coordinates":[-65.2619,-19.0196]}},
+    {"type":"Feature","properties":{"order":9,"name":"Potosí","country":"Bolivia","source":"UNESCO S19 35 56.803 W65 44 59.327"},"geometry":{"type":"Point","coordinates":[-65.749813,-19.599112]}},
+    {"type":"Feature","properties":{"order":10,"name":"Uyuni","country":"Bolivia","source":"town centre"},"geometry":{"type":"Point","coordinates":[-66.8250,-20.4604]}},
+    {"type":"Feature","properties":{"order":11,"name":"Salar de Uyuni","country":"Bolivia","source":"Wikidata/GeoNames 20°20'S 67°42'W"},"geometry":{"type":"Point","coordinates":[-67.7000,-20.3333]}},
+    {"type":"Feature","properties":{"order":12,"name":"Laguna Colorada","country":"Bolivia","source":"Wikidata 22°11'55'S 67°46'52'W"},"geometry":{"type":"Point","coordinates":[-67.7811,-22.1986]}},
+    {"type":"Feature","properties":{"order":13,"name":"Sol de Mañana","country":"Bolivia","source":"OSM/Wikidata"},"geometry":{"type":"Point","coordinates":[-67.75739,-22.42916]}},
+    {"type":"Feature","properties":{"order":14,"name":"Hito Cajón","country":"Bolivia/Chile","source":"OSM node 4556183102"},"geometry":{"type":"Point","coordinates":[-67.79867,-22.88083]}},
+    {"type":"Feature","properties":{"order":15,"name":"San Pedro de Atacama","country":"Chile","source":"Wikidata/OSM"},"geometry":{"type":"Point","coordinates":[-68.2001,-22.9108]}},
+    {"type":"Feature","properties":{"order":16,"name":"Calama","country":"Chile","source":"city centre"},"geometry":{"type":"Point","coordinates":[-68.9294,-22.4544]}},
+    {"type":"Feature","properties":{"order":17,"name":"Santiago","country":"Chile","source":"city centre"},"geometry":{"type":"Point","coordinates":[-70.6693,-33.4489]}}
+  ]
+}
