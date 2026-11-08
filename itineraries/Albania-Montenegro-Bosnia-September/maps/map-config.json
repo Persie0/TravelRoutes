@@ -1,0 +1,47 @@
+{
+  "full": {
+    "title": "Bosnia → Montenegro → Albania + Corfu",
+    "subtitle": "Evergreen full route, 28 days · GSHHS/OSM-grounded geography · connectors are indicative",
+    "stop_names": [
+      "Dubrovnik Airport",
+      "Mostar",
+      "Konjic",
+      "Sarajevo",
+      "Pluzine",
+      "Zabljak",
+      "Kotor",
+      "Ulcinj",
+      "Shkoder",
+      "Koman",
+      "Fierze",
+      "Valbona",
+      "Theth",
+      "Tirana",
+      "Berat",
+      "Permet",
+      "Gjirokaster",
+      "Himare",
+      "Saranda",
+      "Corfu"
+    ]
+  },
+  "compact": {
+    "title": "Balkan three-country highlights",
+    "subtitle": "12-day 60:40 highlights · heritage + Kotor + Albanian Alps + Riviera",
+    "stop_names": [
+      "Dubrovnik Airport",
+      "Mostar",
+      "Kotor",
+      "Shkoder",
+      "Koman",
+      "Fierze",
+      "Valbona",
+      "Theth",
+      "Berat",
+      "Gjirokaster",
+      "Himare",
+      "Saranda",
+      "Corfu"
+    ]
+  }
+}
