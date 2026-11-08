@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Albania Montenegro Bosnia — real interactive route</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBh9uC+hmNHrzxv+5XxukLw21OOpakBAtMMLU=" crossorigin=""/>
+<style>html,body{margin:0;height:100%;font-family:system-ui,sans-serif;color:#163244}header{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;background:#f7fafc;padding:10px 16px}header strong{font-size:17px}button{cursor:pointer;border:1px solid #aebcc3;border-radius:8px;background:white;padding:7px 13px}button.active{background:#173e5a;color:white}#map{height:calc(100% - 92px);min-height:420px}.note{background:#fff9e6;padding:6px 16px;font-size:12px;border-bottom:1px solid #ddd}</style>
+</head><body><header><strong>Bosnia → Montenegro → Albania → Corfu</strong><button id="full" class="active">Full · 28 days</button><button id="compact">60:40 · 12 days</button></header><div class="note">Real OSM base map. Lines are straight planning connectors, <b>not exact routable road/ferry/hiking geometry</b>. Check borders and schedules.</div><div id="map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+const stops=[["Dubrovnik Airport",18.268,42.561],["Mostar",17.812,43.343],["Konjic",17.961,43.652],["Sarajevo",18.413,43.856],["Pluzine",18.844,43.157],["Zabljak",19.126,43.155],["Kotor",18.771,42.424],["Ulcinj",19.204,41.929],["Shkoder",19.512,42.068],["Koman",19.811,42.095],["Fierze",20.029,42.265],["Valbona",19.927,42.451],["Theth",19.773,42.401],["Tirana",19.818,41.327],["Berat",19.952,40.705],["Permet",20.352,40.235],["Gjirokaster",20.138,40.075],["Himare",19.744,40.1],["Saranda",20.005,39.875],["Corfu",19.921,39.626]];
+const full=[["Dubrovnik Airport","Mostar","road"],["Mostar","Konjic","road"],["Konjic","Sarajevo","rail"],["Sarajevo","Pluzine","road"],["Pluzine","Zabljak","road"],["Zabljak","Kotor","road"],["Kotor","Ulcinj","road"],["Ulcinj","Shkoder","road"],["Shkoder","Koman","road"],["Koman","Fierze","ferry"],["Fierze","Valbona","road"],["Valbona","Theth","hike"],["Theth","Shkoder","road"],["Shkoder","Tirana","road"],["Tirana","Berat","road"],["Berat","Permet","road"],["Permet","Gjirokaster","road"],["Gjirokaster","Himare","road"],["Himare","Saranda","road"],["Saranda","Corfu","ferry"]];
+const compact=[["Dubrovnik Airport","Mostar","road"],["Mostar","Kotor","road"],["Kotor","Shkoder","road"],["Shkoder","Koman","road"],["Koman","Fierze","ferry"],["Fierze","Valbona","road"],["Valbona","Theth","hike"],["Theth","Shkoder","road"],["Shkoder","Berat","road"],["Berat","Gjirokaster","road"],["Gjirokaster","Himare","road"],["Himare","Saranda","road"],["Saranda","Corfu","ferry"]];
+const byName=Object.fromEntries(stops.map(s=>[s[0],[s[2],s[1]]]));
+const map=L.map('map',{scrollWheelZoom:true}).setView([41.75,19.25],7);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>',maxZoom:18}).addTo(map);
+let layer;
+function render(compactMode){
+ if(layer)map.removeLayer(layer); layer=L.layerGroup().addTo(map);
+ let edges=compactMode?compact:full;
+ const visited=[...new Set(edges.flatMap(x=>[x[0],x[1]]))];
+ const COLORS={road:'#ce6038',rail:'#3478a4',ferry:'#7550ad',hike:'#9b632e'};
+ edges.forEach(([a,b,mode])=>{
+   const dash=mode==='ferry'?'3 7':mode==='hike'?'7 5':mode==='rail'?'8 5':undefined;
+   L.polyline([byName[a],byName[b]],{color:COLORS[mode],weight:3,dashArray:dash,opacity:.85}).bindPopup(a+' → '+b+' · '+mode+' (planning connector)').addTo(layer);
+ });
+ visited.forEach((name,i)=>L.circleMarker(byName[name],{radius:8,weight:2,color:'white',fillColor:'#173e5a',fillOpacity:1}).bindTooltip((i+1)+'. '+name,{direction:'top'}).addTo(layer));
+ map.fitBounds(L.latLngBounds(visited.map(n=>byName[n])).pad(.1),{maxZoom:8});
+ document.querySelector('#full').classList.toggle('active',!compactMode);
+ document.querySelector('#compact').classList.toggle('active',compactMode);
+}
+document.querySelector('#full').onclick=()=>render(false);
+document.querySelector('#compact').onclick=()=>render(true);
+render(false);
+</script></body></html>
