@@ -1,0 +1,38 @@
+id,country,base,sight,priority,sightseeing_value_10,uniqueness_10,time_hours,detour,reason,source_url
+AZ01,Azerbaijan,Baku,Icherisheher Old City / Shirvanshah / Maiden Tower,S,9,9,4,low,Historic urban ensemble,https://whc.unesco.org/en/list/958
+AZ02,Azerbaijan,Baku,Gobustan rock art,S,9,10,3,medium,Prehistoric engraved landscape; UNESCO,https://whc.unesco.org/en/list/1076
+AZ03,Azerbaijan,Baku,Mud volcanoes near Gobustan,A,8,9,2,medium,Unusual geology; 4x4 and access-dependent,https://whc.unesco.org/en/list/1076
+AZ04,Azerbaijan,Baku,Flame Towers / skyline viewpoint,B,7,6,1,low,Evening only; does not need full day,https://azerbaijan.travel/
+AZ05,Azerbaijan,Baku,Ateshgah fire temple / Yanar Dag,B,7,8,4,medium,Good alternative if interested in fire worship/geology,https://azerbaijan.travel/
+AZ06,Azerbaijan,Lahij,Lahij copper crafts and mountain road,A,8,8,4,medium,Village textures; worthwhile en route to Sheki,https://azerbaijan.travel/
+AZ07,Azerbaijan,Sheki,Sheki Khan's Palace + historic centre,S,10,9,4,low,UNESCO Silk Road town,https://whc.unesco.org/en/list/1549
+AZ08,Azerbaijan,Sheki,Kish church / nearby hillside villages,B,7,7,3,low,"Short side trip, can trim in speedrun",https://azerbaijan.travel/
+AZ09,Azerbaijan,North,Khinalig + transhumance landscape,A,9,10,10,high,"UNESCO high mountain village, but 1–2 day detour from outbound Sheki line",https://whc.unesco.org/en/list/1694
+GE01,Georgia,Kakheti,Sighnaghi walls / Alazani valley,A,8,7,3,low,Efficient from Balakan exit,https://georgia.travel/
+GE02,Georgia,Kakheti,Kakheti wine tasting,B,7,7,2,low,"Regional signature, no extra night necessary",https://georgia.travel/
+GE03,Georgia,Tbilisi,Tbilisi Old Town / Narikala / baths,S,9,8,6,low,Most rewarding capital-city cluster,https://georgia.travel/
+GE04,Georgia,Mtskheta,Svetitskhoveli + Jvari,A,8,9,3,low,UNESCO on Kazbegi road,https://whc.unesco.org/en/list/708
+GE05,Georgia,Ananuri,Ananuri Fortress / Zhinvali,B,7,7,1,low,Excellent en-route stop,https://georgia.travel/
+GE06,Georgia,Kazbegi,Gergeti Trinity Church + Kazbek panorama,S,10,10,4,low,Top mountain view; weather-dependent,https://georgia.travel/
+GE07,Georgia,Kazbegi,Juta / Chaukhi valley hike,S,10,10,6,medium,Distinct jagged alpine scenery,https://www.geotour.ge/blog/truso-or-juta-valley
+GE08,Georgia,Kazbegi,Truso Valley hike,A,9,9,7,medium,Excellent alternative to Juta if conditions/fitness suit,https://www.geotour.ge/blog/truso-or-juta-valley
+GE09,Georgia,Kutaisi,Gelati Monastery,A,8,9,2,low,UNESCO site near onward Svaneti transfer,https://whc.unesco.org/en/list/710
+GE10,Georgia,Kutaisi,Prometheus Cave / Martvili Canyon,B,7,7,4,medium,Good if rain or spare day; less unique than big mountain days,https://georgia.travel/
+GE11,Georgia,Mestia,Mestia towers / Svaneti Museum,A,9,9,3,low,Upper Svaneti culture,https://whc.unesco.org/en/list/709
+GE12,Georgia,Svaneti,Mestia–Ushguli multi-day trek,S,10,10,28,high,"Four real hiking days, river crossing safety",https://visit-svaneti.ge/en/treks/mestia-to-ushguli
+GE13,Georgia,Ushguli,Ushguli medieval towers and Shkhara backdrop,S,10,10,4,low,UNESCO Upper Svaneti; reachable by hiking or 4x4,https://whc.unesco.org/en/list/709
+GE14,Georgia,Borjomi,Borjomi park/mineral springs,C,6,5,2,low,Transfer break rather than essential destination,https://georgia.travel/
+GE15,Georgia,Akhaltsikhe,Rabati Castle,B,7,7,2,low,Good sunset stop before Vardzia,https://georgia.travel/
+GE16,Georgia,Vardzia,Vardzia rock-cut cave town,S,9,10,4,medium,Unique cliff city near Armenia crossing,https://georgia.travel/
+AM01,Armenia,Gyumri,Gyumri Kumayri old town,B,7,8,3,low,Historic architecture en route,https://armenia.travel/
+AM02,Armenia,Lori,Haghpat and Sanahin monasteries,A,9,9,4,medium,"UNESCO complex, detour on north-Armenia crossing route",https://whc.unesco.org/en/list/777
+AM03,Armenia,Dilijan,Dilijan forest / Haghartsin monastery,A,8,8,4,low,Nature break between mountainous Georgia and Yerevan,https://armenia.travel/
+AM04,Armenia,Lake Sevan,Lake Sevan / Sevanavank,A,8,8,3,low,Scenic highland lake on route,https://armenia.travel/
+AM05,Armenia,Yerevan,"Cascade, Republic Square, city life",A,8,7,5,low,Excellent compact city circuit,https://armenia.travel/
+AM06,Armenia,Garni,Garni classical temple / Symphony of Stones,A,9,9,3,low,Unusual classical temple and geological columns,https://armenia.travel/
+AM07,Armenia,Geghard,Geghard rock-cut monastery,S,10,10,3,low,UNESCO; pair with Garni,https://whc.unesco.org/en/list/960
+AM08,Armenia,Khor Virap,Khor Virap with Ararat viewpoint,A,9,9,2,low,Iconic mountain/monastery composition,https://armenia.travel/
+AM09,Armenia,Vayots Dzor,Areni-1 cave and wine,B,7,8,2,low,Historic wine / archaeology between stops,https://armenia.travel/
+AM10,Armenia,Noravank,Noravank red-cliff monastery,S,9,10,3,low,High scenery-to-time ratio,https://discoveryarmenia.am/en/destination/noravank
+AM11,Armenia,Goris,Old Khndzoresk cave settlement,B,7,8,3,medium,"Optional, time/route/safety dependent",https://armenia.travel/
+AM12,Armenia,Tatev,Tatev Monastery and Vorotan Gorge,S,10,10,4,high,"Armenia's premier dramatic cliff monastery, long drive",https://armenia.travel/
