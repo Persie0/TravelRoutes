@@ -19,7 +19,7 @@ Map numbers reflect visit order; coastlines and borders come from real GSHHS geo
 | **Full** | **28 days** | All three countries and 4-day Svaneti trek; [daily plan](itinerary-28-days.md) | Many long transfers; allow 30 for comfort |
 | **Speedrun theoretical** | **22–23 days** | Preserve S and nearly all A sights; minimum physical sightseeing dwell | Extremely little resilience |
 | **Speedrun recommended** | **24–25 days** | Same iconic sites and entire four-day walking trek, plus 1–2 backup days; [details](itinerary-speedrun.md) | Fatiguing; drivers necessary |
-| **60:40** | **12 days** | ~59–64% heuristic scored experience in 43% of full time; [details](itinerary-60-40.md) | Skips all Azerbaijan, full trek, Tatev |
+| **60:40** | **12 days** | ~54% modeled experience in 43% of full time (the aspirational 60% needs ~14–15 days); [details](itinerary-60-40.md) | Skips all Azerbaijan, full trek, Tatev |
 
 ## Why this order is materially better
 
