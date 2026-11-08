@@ -1,0 +1,322 @@
+{
+  "type": "FeatureCollection",
+  "name": "Albania-Montenegro-Bosnia 28-day stops",
+  "source_note": "WGS84 place-centre coordinates checked against Visit Albania Atlas, Mapcarta/OpenStreetMap gazetteer and public map references; approximate centres, not precise entrances.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dubrovnik Airport",
+        "order": 1,
+        "country": "HR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.268,
+          42.561
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mostar",
+        "order": 2,
+        "country": "BA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.812,
+          43.343
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Konjic",
+        "order": 3,
+        "country": "BA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.961,
+          43.652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sarajevo",
+        "order": 4,
+        "country": "BA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.413,
+          43.856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pluzine",
+        "order": 5,
+        "country": "ME"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.844,
+          43.157
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Zabljak",
+        "order": 6,
+        "country": "ME"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.126,
+          43.155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kotor",
+        "order": 7,
+        "country": "ME"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.771,
+          42.424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ulcinj",
+        "order": 8,
+        "country": "ME"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.204,
+          41.929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shkoder",
+        "order": 9,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.512,
+          42.068
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Koman",
+        "order": 10,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.811,
+          42.095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fierze",
+        "order": 11,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.029,
+          42.265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Valbona",
+        "order": 12,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.927,
+          42.451
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Theth",
+        "order": 13,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.773,
+          42.401
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tirana",
+        "order": 14,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.818,
+          41.327
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berat",
+        "order": 15,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952,
+          40.705
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Permet",
+        "order": 16,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.352,
+          40.235
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gjirokaster",
+        "order": 17,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.138,
+          40.075
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Himare",
+        "order": 18,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.744,
+          40.1
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saranda",
+        "order": 19,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.005,
+          39.875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Butrint",
+        "order": 20,
+        "country": "AL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.02,
+          39.745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Corfu",
+        "order": 21,
+        "country": "GR"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.921,
+          39.626
+        ]
+      }
+    }
+  ]
+}
