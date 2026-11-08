@@ -1,0 +1,488 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Tbilisi",
+        "to": "Mtskheta",
+        "mode": "road",
+        "notes": "via Mtskheta",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.8015,
+            41.6935
+          ],
+          [
+            44.7188,
+            41.845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Mtskheta",
+        "to": "Stepantsminda",
+        "mode": "road",
+        "notes": "Military Road",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.7188,
+            41.845
+          ],
+          [
+            44.6411,
+            42.6567
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Stepantsminda",
+        "to": "Juta",
+        "mode": "road",
+        "notes": "day hike",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.6411,
+            42.6567
+          ],
+          [
+            44.71,
+            42.592
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Juta",
+        "to": "Stepantsminda",
+        "mode": "road",
+        "notes": "return",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.71,
+            42.592
+          ],
+          [
+            44.6411,
+            42.6567
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Stepantsminda",
+        "to": "Tbilisi",
+        "mode": "road",
+        "notes": "return",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.6411,
+            42.6567
+          ],
+          [
+            44.8015,
+            41.6935
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Tbilisi",
+        "to": "Kutaisi",
+        "mode": "rail",
+        "notes": "rail/bus",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.8015,
+            41.6935
+          ],
+          [
+            42.705,
+            42.2679
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Kutaisi",
+        "to": "Mestia",
+        "mode": "road",
+        "notes": "shuttle",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.705,
+            42.2679
+          ],
+          [
+            42.7237,
+            43.0436
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Mestia",
+        "to": "Ushguli",
+        "mode": "road",
+        "notes": "4x4 one-day/overnight option, NOT trekking route",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.7237,
+            43.0436
+          ],
+          [
+            43.0189,
+            42.9158
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Ushguli",
+        "to": "Mestia",
+        "mode": "road",
+        "notes": "4x4 return",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.0189,
+            42.9158
+          ],
+          [
+            42.7237,
+            43.0436
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Mestia",
+        "to": "Kutaisi",
+        "mode": "road",
+        "notes": "shuttle",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.7237,
+            43.0436
+          ],
+          [
+            42.705,
+            42.2679
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Kutaisi",
+        "to": "Akhaltsikhe",
+        "mode": "road",
+        "notes": "via Borjomi",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.705,
+            42.2679
+          ],
+          [
+            42.9906,
+            41.639
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Akhaltsikhe",
+        "to": "Vardzia",
+        "mode": "road",
+        "notes": "visit",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            42.9906,
+            41.639
+          ],
+          [
+            43.285,
+            41.381
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Vardzia",
+        "to": "Bavra border",
+        "mode": "road_border",
+        "notes": "cross via Ninotsminda",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.285,
+            41.381
+          ],
+          [
+            43.803,
+            41.108
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Bavra border",
+        "to": "Gyumri",
+        "mode": "road",
+        "notes": "Gyumri",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.803,
+            41.108
+          ],
+          [
+            43.8453,
+            40.7894
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Gyumri",
+        "to": "Yerevan",
+        "mode": "road",
+        "notes": "north-south main route",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            43.8453,
+            40.7894
+          ],
+          [
+            44.5152,
+            40.1792
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Yerevan",
+        "to": "Garni",
+        "mode": "road",
+        "notes": "day trip",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.5152,
+            40.1792
+          ],
+          [
+            44.729,
+            40.1126
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Garni",
+        "to": "Geghard",
+        "mode": "road",
+        "notes": "day trip",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.729,
+            40.1126
+          ],
+          [
+            44.7975,
+            40.1402
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Geghard",
+        "to": "Yerevan",
+        "mode": "road",
+        "notes": "return",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.7975,
+            40.1402
+          ],
+          [
+            44.5152,
+            40.1792
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Yerevan",
+        "to": "Khor Virap",
+        "mode": "road",
+        "notes": "day trip",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.5152,
+            40.1792
+          ],
+          [
+            44.57615,
+            39.87836
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Khor Virap",
+        "to": "Noravank",
+        "mode": "road",
+        "notes": "day trip",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            44.57615,
+            39.87836
+          ],
+          [
+            45.2329,
+            39.6847
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Noravank",
+        "to": "Yerevan",
+        "mode": "road",
+        "notes": "return",
+        "geometry_quality": "straight-line planning connector, NOT road/hiking track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            45.2329,
+            39.6847
+          ],
+          [
+            44.5152,
+            40.1792
+          ]
+        ]
+      }
+    }
+  ]
+}
