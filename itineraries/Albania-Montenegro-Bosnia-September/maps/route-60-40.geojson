@@ -1,0 +1,305 @@
+{
+  "type": "FeatureCollection",
+  "description": "Planning connectors between verified stop centres, not routable road tracks. Ferry and hike explicitly identified.",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Dubrovnik Airport",
+        "to": "Mostar",
+        "mode": "road / border",
+        "order": 1,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.268,
+            42.561
+          ],
+          [
+            17.812,
+            43.343
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Mostar",
+        "to": "Kotor",
+        "mode": "bus / border",
+        "order": 2,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            17.812,
+            43.343
+          ],
+          [
+            18.771,
+            42.424
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Kotor",
+        "to": "Shkoder",
+        "mode": "bus / border",
+        "order": 3,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            18.771,
+            42.424
+          ],
+          [
+            19.512,
+            42.068
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Shkoder",
+        "to": "Koman",
+        "mode": "minibus",
+        "order": 4,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.512,
+            42.068
+          ],
+          [
+            19.811,
+            42.095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Koman",
+        "to": "Fierze",
+        "mode": "ferry",
+        "order": 5,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.811,
+            42.095
+          ],
+          [
+            20.029,
+            42.265
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Fierze",
+        "to": "Valbona",
+        "mode": "minibus",
+        "order": 6,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            20.029,
+            42.265
+          ],
+          [
+            19.927,
+            42.451
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Valbona",
+        "to": "Theth",
+        "mode": "hike",
+        "order": 7,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.927,
+            42.451
+          ],
+          [
+            19.773,
+            42.401
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Theth",
+        "to": "Shkoder",
+        "mode": "minibus",
+        "order": 8,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.773,
+            42.401
+          ],
+          [
+            19.512,
+            42.068
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Shkoder",
+        "to": "Berat",
+        "mode": "bus via Tirana",
+        "order": 9,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.512,
+            42.068
+          ],
+          [
+            19.952,
+            40.705
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Berat",
+        "to": "Gjirokaster",
+        "mode": "road / bus",
+        "order": 10,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.952,
+            40.705
+          ],
+          [
+            20.138,
+            40.075
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Gjirokaster",
+        "to": "Himare",
+        "mode": "road / transfer",
+        "order": 11,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            20.138,
+            40.075
+          ],
+          [
+            19.744,
+            40.1
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Himare",
+        "to": "Saranda",
+        "mode": "bus",
+        "order": 12,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            19.744,
+            40.1
+          ],
+          [
+            20.005,
+            39.875
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Saranda",
+        "to": "Corfu",
+        "mode": "ferry",
+        "order": 13,
+        "geometry_accuracy": "straight planning connector; not navigation"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            20.005,
+            39.875
+          ],
+          [
+            19.921,
+            39.626
+          ]
+        ]
+      }
+    }
+  ]
+}
