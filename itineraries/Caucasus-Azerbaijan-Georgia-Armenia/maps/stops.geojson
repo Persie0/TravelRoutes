@@ -1,0 +1,532 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 1,
+        "name": "Baku",
+        "country": "Azerbaijan",
+        "coordinate_source": "GeoNames / city centre",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.8671,
+          40.4093
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 2,
+        "name": "Gobustan",
+        "country": "Azerbaijan",
+        "coordinate_source": "UNESCO Gobustan site",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          49.373,
+          40.087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 3,
+        "name": "Lahij",
+        "country": "Azerbaijan",
+        "coordinate_source": "GeoNames / Lahij",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          48.398,
+          40.85
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 4,
+        "name": "Sheki",
+        "country": "Azerbaijan",
+        "coordinate_source": "GeoNames / Sheki",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          47.1706,
+          41.1919
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 5,
+        "name": "Lagodekhi border",
+        "country": "Azerbaijan / Georgia",
+        "coordinate_source": "OpenStreetMap border checkpoint node 2325407146",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.3093,
+          41.79192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 6,
+        "name": "Sighnaghi",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Sighnaghi",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.9203,
+          41.6168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 7,
+        "name": "Tbilisi",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Tbilisi",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8015,
+          41.6935
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 8,
+        "name": "Mtskheta",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Mtskheta",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7188,
+          41.845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 9,
+        "name": "Stepantsminda",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Stepantsminda",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.6411,
+          42.6567
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 10,
+        "name": "Juta",
+        "country": "Georgia",
+        "coordinate_source": "OpenStreetMap / Juta",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.71,
+          42.592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 11,
+        "name": "Kutaisi",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Kutaisi",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.705,
+          42.2679
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 12,
+        "name": "Mestia",
+        "country": "Georgia",
+        "coordinate_source": "Trek'n'Trails trailhead",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.7237,
+          43.0436
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 13,
+        "name": "Zhabeshi",
+        "country": "Georgia",
+        "coordinate_source": "OpenStreetMap trek waypoints",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.845,
+          43.025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 14,
+        "name": "Adishi",
+        "country": "Georgia",
+        "coordinate_source": "OpenStreetMap trek waypoints",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.897,
+          42.987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 15,
+        "name": "Iprari",
+        "country": "Georgia",
+        "coordinate_source": "OpenStreetMap trek waypoints",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.96,
+          42.94
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 16,
+        "name": "Ushguli",
+        "country": "Georgia",
+        "coordinate_source": "Trek'n'Trails trail end",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.0189,
+          42.9158
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 17,
+        "name": "Borjomi",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Borjomi",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.3922,
+          41.8415
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 18,
+        "name": "Akhaltsikhe",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Akhaltsikhe",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          42.9906,
+          41.639
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 19,
+        "name": "Vardzia",
+        "country": "Georgia",
+        "coordinate_source": "GeoNames / Vardzia monastery",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.285,
+          41.381
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 20,
+        "name": "Bavra border",
+        "country": "Georgia / Armenia",
+        "coordinate_source": "Ninotsminda-Bavra crossing, planning waypoint",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.803,
+          41.108
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 21,
+        "name": "Gyumri",
+        "country": "Armenia",
+        "coordinate_source": "GeoNames / Gyumri",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          43.8453,
+          40.7894
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 22,
+        "name": "Haghpat",
+        "country": "Armenia",
+        "coordinate_source": "UNESCO Haghpat monastery",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7117,
+          41.0954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 23,
+        "name": "Dilijan",
+        "country": "Armenia",
+        "coordinate_source": "GeoNames / Dilijan",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.8636,
+          40.7404
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 24,
+        "name": "Lake Sevan",
+        "country": "Armenia",
+        "coordinate_source": "Lake Sevan lake-centre approximate",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.014,
+          40.555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 25,
+        "name": "Yerevan",
+        "country": "Armenia",
+        "coordinate_source": "GeoNames / Yerevan",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.5152,
+          40.1792
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 26,
+        "name": "Garni",
+        "country": "Armenia",
+        "coordinate_source": "OpenStreetMap / Garni temple",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.729,
+          40.1126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 27,
+        "name": "Geghard",
+        "country": "Armenia",
+        "coordinate_source": "UNESCO / Geghard monastery",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.7975,
+          40.1402
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 28,
+        "name": "Khor Virap",
+        "country": "Armenia",
+        "coordinate_source": "OpenStreetMap / Khor Virap",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          44.57615,
+          39.87836
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 29,
+        "name": "Noravank",
+        "country": "Armenia",
+        "coordinate_source": "Discover Armenia site coordinates",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          45.2329,
+          39.6847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 30,
+        "name": "Goris",
+        "country": "Armenia",
+        "coordinate_source": "GeoNames / Goris",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.337,
+          39.511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "order": 31,
+        "name": "Tatev",
+        "country": "Armenia",
+        "coordinate_source": "OpenStreetMap / Tatev monastery",
+        "coordinate_precision": "approximate itinerary waypoint; check independently before navigation"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          46.2477,
+          39.3792
+        ]
+      }
+    }
+  ]
+}
