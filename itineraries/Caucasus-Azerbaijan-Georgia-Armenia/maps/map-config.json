@@ -1,0 +1,61 @@
+{
+  "full": {
+    "title": "Caucasus | Azerbaijan → Georgia → Armenia",
+    "subtitle": "28-day journey · all lines are planning connectors (not routable tracks)",
+    "stop_names": [
+      "Baku",
+      "Gobustan",
+      "Lahij",
+      "Sheki",
+      "Lagodekhi border",
+      "Sighnaghi",
+      "Tbilisi",
+      "Mtskheta",
+      "Stepantsminda",
+      "Juta",
+      "Kutaisi",
+      "Mestia",
+      "Zhabeshi",
+      "Adishi",
+      "Iprari",
+      "Ushguli",
+      "Borjomi",
+      "Akhaltsikhe",
+      "Vardzia",
+      "Bavra border",
+      "Gyumri",
+      "Haghpat",
+      "Dilijan",
+      "Lake Sevan",
+      "Yerevan",
+      "Garni",
+      "Geghard",
+      "Khor Virap",
+      "Noravank",
+      "Goris",
+      "Tatev"
+    ]
+  },
+  "compact": {
+    "title": "Caucasus | Georgia + Armenia highlights",
+    "subtitle": "12-day 60:40 · replaces four-day trek with Ushguli 4×4",
+    "stop_names": [
+      "Tbilisi",
+      "Mtskheta",
+      "Stepantsminda",
+      "Juta",
+      "Kutaisi",
+      "Mestia",
+      "Ushguli",
+      "Akhaltsikhe",
+      "Vardzia",
+      "Bavra border",
+      "Gyumri",
+      "Yerevan",
+      "Garni",
+      "Geghard",
+      "Khor Virap",
+      "Noravank"
+    ]
+  }
+}
