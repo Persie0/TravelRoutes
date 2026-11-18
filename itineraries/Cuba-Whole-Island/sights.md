@@ -53,7 +53,7 @@
 
 ## Interpretation and methodological limitations
 
-- Full itinerary covers **39** of the 46 catalogued experiences, while the 12-day 60:40 covers **16** and the 21-day Speedrun covers **39**. Optional specialist/remote activities are deliberately outside every fixed schedule.
+- Full itinerary covers **39** of the 46 catalogued experiences, while the 12-day 60:40 covers **22** and the 23-day Speedrun covers **39**. Optional specialist/remote activities are deliberately outside every fixed schedule.
 - Subjective normalized score: each visited attraction contributes `value × uniqueness / 10 × tier multiplier`; multipliers S=1.4, A=1, B=0.55, C=0.2. Sum of full selections: **271.6**; 60:40: **164.6 (60.6% of full)**; Speedrun: **271.6 (100.0%)**. These are itinerary comparison proxies, not empirical tourist-satisfaction measurements.
 - 12 days / 28 days = 42.9% of full time, slightly above an exact 40% target; adding a long route-day backtrack to reach exactly 11 would be counterproductive.
 - **Safety overrides rankings.** The eastern Guantánamo/Santiago/Granma/parts of Holguín provinces were singled out in the Austrian official travel advice in November 2026. All eastern S/A entries are conditional until official guidance and reliable transport permit travel.
