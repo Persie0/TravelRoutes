@@ -1,0 +1,365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Havana",
+        "to": "Viñales",
+        "mode": "road",
+        "sequence": 1,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.3666,
+            23.1136
+          ],
+          [
+            -83.70694,
+            22.61892
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Viñales",
+        "to": "Las Terrazas",
+        "mode": "road",
+        "sequence": 2,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.70694,
+            22.61892
+          ],
+          [
+            -82.94306,
+            22.845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Las Terrazas",
+        "to": "Havana",
+        "mode": "road",
+        "sequence": 3,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.94306,
+            22.845
+          ],
+          [
+            -82.3666,
+            23.1136
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Havana",
+        "to": "Playa Larga",
+        "mode": "road",
+        "sequence": 4,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.3666,
+            23.1136
+          ],
+          [
+            -81.19912,
+            22.28045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Playa Larga",
+        "to": "Playa Girón",
+        "mode": "road",
+        "sequence": 5,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.19912,
+            22.28045
+          ],
+          [
+            -81.033,
+            22.067
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Playa Girón",
+        "to": "Cienfuegos",
+        "mode": "road",
+        "sequence": 6,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.033,
+            22.067
+          ],
+          [
+            -80.45,
+            22.15
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Cienfuegos",
+        "to": "Trinidad",
+        "mode": "road",
+        "sequence": 7,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.45,
+            22.15
+          ],
+          [
+            -79.98,
+            21.8
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Trinidad",
+        "to": "Santa Clara",
+        "mode": "road",
+        "sequence": 8,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.98,
+            21.8
+          ],
+          [
+            -79.9658,
+            22.4071
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Santa Clara",
+        "to": "Remedios",
+        "mode": "road",
+        "sequence": 9,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.9658,
+            22.4071
+          ],
+          [
+            -79.54536,
+            22.49493
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Remedios",
+        "to": "Camagüey",
+        "mode": "road",
+        "sequence": 10,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.54536,
+            22.49493
+          ],
+          [
+            -77.916944,
+            21.380833
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Camagüey",
+        "to": "Bayamo",
+        "mode": "road",
+        "sequence": 11,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.916944,
+            21.380833
+          ],
+          [
+            -76.64272,
+            20.37368
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Bayamo",
+        "to": "Santiago de Cuba",
+        "mode": "road",
+        "sequence": 12,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -76.64272,
+            20.37368
+          ],
+          [
+            -75.83,
+            20.02
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Santiago de Cuba",
+        "to": "Baracoa",
+        "mode": "road",
+        "sequence": 13,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.83,
+            20.02
+          ],
+          [
+            -74.49714,
+            20.34801
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Baracoa",
+        "to": "Santiago de Cuba",
+        "mode": "road",
+        "sequence": 14,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -74.49714,
+            20.34801
+          ],
+          [
+            -75.83,
+            20.02
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Santiago de Cuba",
+        "to": "Havana",
+        "mode": "flight-conditional",
+        "sequence": 15,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -75.83,
+            20.02
+          ],
+          [
+            -82.3666,
+            23.1136
+          ]
+        ]
+      }
+    }
+  ]
+}

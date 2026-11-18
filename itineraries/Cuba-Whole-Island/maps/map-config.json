@@ -1,0 +1,32 @@
+{
+  "full": {
+    "title": "Cuba | 28-day full island",
+    "subtitle": "Heritage, mountains and coast; eastern route contingent on safety and fuel recovery",
+    "stop_names": [
+      "Havana",
+      "Viñales",
+      "Las Terrazas",
+      "Playa Larga",
+      "Playa Girón",
+      "Cienfuegos",
+      "Trinidad",
+      "Santa Clara",
+      "Remedios",
+      "Camagüey",
+      "Bayamo",
+      "Santiago de Cuba",
+      "Baracoa"
+    ]
+  },
+  "compact": {
+    "title": "Cuba | 12-day 60:40 route",
+    "subtitle": "Western and central highlights; prioritized for travel efficiency",
+    "stop_names": [
+      "Havana",
+      "Viñales",
+      "Playa Larga",
+      "Cienfuegos",
+      "Trinidad"
+    ]
+  }
+}

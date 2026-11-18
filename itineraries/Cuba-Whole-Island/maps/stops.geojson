@@ -1,0 +1,240 @@
+{
+  "type": "FeatureCollection",
+  "name": "Cuba whole-island route stops",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Havana",
+        "order": 1,
+        "category": "capital",
+        "coordinate_source": "https://www.geonames.org/3553478/havana.html",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.3666,
+          23.1136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viñales",
+        "order": 2,
+        "category": "valley",
+        "coordinate_source": "https://www.geonames.org/search.html?country=CU&q=Vinales",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -83.70694,
+          22.61892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Las Terrazas",
+        "order": 3,
+        "category": "nature",
+        "coordinate_source": "https://en.wikipedia.org/wiki/Las_Terrazas",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.94306,
+          22.845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Playa Larga",
+        "order": 4,
+        "category": "coast",
+        "coordinate_source": "https://www.cifplayas.org/",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.19912,
+          22.28045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Playa Girón",
+        "order": 5,
+        "category": "coast",
+        "coordinate_source": "https://www.openstreetmap.org/search?query=Playa%20Gir%C3%B3n%20Cuba",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -81.033,
+          22.067
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cienfuegos",
+        "order": 6,
+        "category": "heritage",
+        "coordinate_source": "https://time-ok.com/coordinates/cuba",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.45,
+          22.15
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Trinidad",
+        "order": 7,
+        "category": "heritage",
+        "coordinate_source": "https://time-ok.com/coordinates/cuba",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.98,
+          21.8
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santa Clara",
+        "order": 8,
+        "category": "city",
+        "coordinate_source": "https://www.geocountries.com/map/cuba",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.9658,
+          22.4071
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Remedios",
+        "order": 9,
+        "category": "heritage",
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/cuba/remedios",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.54536,
+          22.49493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camagüey",
+        "order": 10,
+        "category": "heritage",
+        "coordinate_source": "https://www.geonames.org/advanced-search.html?country=CU&q=Camaguey",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.916944,
+          21.380833
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bayamo",
+        "order": 11,
+        "category": "heritage",
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/cuba/bayamo",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.64272,
+          20.37368
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Santiago de Cuba",
+        "order": 12,
+        "category": "city",
+        "coordinate_source": "https://time-ok.com/coordinates/cuba",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.83,
+          20.02
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Baracoa",
+        "order": 13,
+        "category": "nature",
+        "coordinate_source": "https://www.geodatos.net/en/coordinates/cuba/baracoa",
+        "country": "Cuba",
+        "precision": "approximate settlement centre, not attraction gate"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.49714,
+          20.34801
+        ]
+      }
+    }
+  ]
+}

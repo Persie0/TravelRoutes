@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Havana",
+        "to": "Viñales",
+        "mode": "road",
+        "sequence": 1,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.3666,
+            23.1136
+          ],
+          [
+            -83.70694,
+            22.61892
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Viñales",
+        "to": "Havana",
+        "mode": "road",
+        "sequence": 2,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -83.70694,
+            22.61892
+          ],
+          [
+            -82.3666,
+            23.1136
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Havana",
+        "to": "Playa Larga",
+        "mode": "road",
+        "sequence": 3,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.3666,
+            23.1136
+          ],
+          [
+            -81.19912,
+            22.28045
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Playa Larga",
+        "to": "Cienfuegos",
+        "mode": "road",
+        "sequence": 4,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.19912,
+            22.28045
+          ],
+          [
+            -80.45,
+            22.15
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Cienfuegos",
+        "to": "Trinidad",
+        "mode": "road",
+        "sequence": 5,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -80.45,
+            22.15
+          ],
+          [
+            -79.98,
+            21.8
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Trinidad",
+        "to": "Havana",
+        "mode": "road",
+        "sequence": 6,
+        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
+        "operational_status": "not checked; confirm active service prior to travel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -79.98,
+            21.8
+          ],
+          [
+            -82.3666,
+            23.1136
+          ]
+        ]
+      }
+    }
+  ]
+}
