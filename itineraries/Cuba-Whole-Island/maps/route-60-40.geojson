@@ -6,10 +6,10 @@
       "properties": {
         "from": "Havana",
         "to": "Viñales",
-        "mode": "road",
         "sequence": 1,
-        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
-        "operational_status": "not checked; confirm active service prior to travel"
+        "mode": "road",
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
       },
       "geometry": {
         "type": "LineString",
@@ -29,11 +29,11 @@
       "type": "Feature",
       "properties": {
         "from": "Viñales",
-        "to": "Havana",
-        "mode": "road",
+        "to": "Las Terrazas",
         "sequence": 2,
-        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
-        "operational_status": "not checked; confirm active service prior to travel"
+        "mode": "road",
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
       },
       "geometry": {
         "type": "LineString",
@@ -41,6 +41,30 @@
           [
             -83.70694,
             22.61892
+          ],
+          [
+            -82.94306,
+            22.845
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Las Terrazas",
+        "to": "Havana",
+        "sequence": 3,
+        "mode": "road",
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -82.94306,
+            22.845
           ],
           [
             -82.3666,
@@ -54,10 +78,10 @@
       "properties": {
         "from": "Havana",
         "to": "Playa Larga",
+        "sequence": 4,
         "mode": "road",
-        "sequence": 3,
-        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
-        "operational_status": "not checked; confirm active service prior to travel"
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
       },
       "geometry": {
         "type": "LineString",
@@ -78,10 +102,10 @@
       "properties": {
         "from": "Playa Larga",
         "to": "Cienfuegos",
+        "sequence": 5,
         "mode": "road",
-        "sequence": 4,
-        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
-        "operational_status": "not checked; confirm active service prior to travel"
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
       },
       "geometry": {
         "type": "LineString",
@@ -102,10 +126,10 @@
       "properties": {
         "from": "Cienfuegos",
         "to": "Trinidad",
+        "sequence": 6,
         "mode": "road",
-        "sequence": 5,
-        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
-        "operational_status": "not checked; confirm active service prior to travel"
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
       },
       "geometry": {
         "type": "LineString",
@@ -126,10 +150,10 @@
       "properties": {
         "from": "Trinidad",
         "to": "Havana",
+        "sequence": 7,
         "mode": "road",
-        "sequence": 6,
-        "geometry_accuracy": "straight-line geographic planning connector; NOT an actual road or flight path",
-        "operational_status": "not checked; confirm active service prior to travel"
+        "geometry_accuracy": "straight-line geographic planning connector; NOT actual road geometry",
+        "operational_status": "unconfirmed; verify 2027 service"
       },
       "geometry": {
         "type": "LineString",
