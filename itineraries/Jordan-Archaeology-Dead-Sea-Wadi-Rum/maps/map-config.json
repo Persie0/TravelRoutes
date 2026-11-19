@@ -1,0 +1,49 @@
+{
+  "full": {
+    "title": "Jordan — Archaeology, Dead Sea and Desert",
+    "subtitle": "28-day complete route · real borders and WGS84 pins · connectors are NOT roads",
+    "stop_names": [
+      "Amman",
+      "Qasr Kharana",
+      "Quseir Amra",
+      "Azraq Wetlands",
+      "Jerash",
+      "Ajloun Castle",
+      "Umm Qais",
+      "Pella",
+      "As-Salt",
+      "Bethany Baptism Site",
+      "Madaba",
+      "Mount Nebo",
+      "Dead Sea",
+      "Wadi Mujib",
+      "Umm ar-Rasas",
+      "Karak Castle",
+      "Dana Village",
+      "Shobak Castle",
+      "Little Petra",
+      "Petra",
+      "Wadi Rum",
+      "Aqaba"
+    ]
+  },
+  "compact": {
+    "title": "Jordan — 60:40 Highlights",
+    "subtitle": "11-day route · real geographic borders · connectors are NOT roads",
+    "stop_names": [
+      "Amman",
+      "Jerash",
+      "Ajloun Castle",
+      "Madaba",
+      "Mount Nebo",
+      "Dead Sea",
+      "Wadi Mujib",
+      "Karak Castle",
+      "Dana Village",
+      "Little Petra",
+      "Petra",
+      "Wadi Rum",
+      "Aqaba"
+    ]
+  }
+}

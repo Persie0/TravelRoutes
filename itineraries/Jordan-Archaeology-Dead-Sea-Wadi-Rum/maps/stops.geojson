@@ -1,0 +1,380 @@
+{
+  "type": "FeatureCollection",
+  "name": "Jordan TravelRoutes verified planning stops",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amman",
+        "order": 1,
+        "tier": "A",
+        "source_url": "https://doa.gov.jo/EN/ListDetails/Archeological_Sites/1157/2",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.93486821,
+          31.95401697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Qasr Kharana",
+        "order": 2,
+        "tier": "B",
+        "source_url": "https://mapcarta.com/12840870",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.46282,
+          31.72897
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Quseir Amra",
+        "order": 3,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/Qasr_Amra",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.5875,
+          31.8018
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Azraq Wetlands",
+        "order": 4,
+        "tier": "B",
+        "source_url": "https://mapcarta.com/N1095589279",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.82129,
+          31.83377
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jerash",
+        "order": 5,
+        "tier": "S",
+        "source_url": "https://mapcarta.com/W91339020",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.89085,
+          32.27844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ajloun Castle",
+        "order": 6,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/W35200794",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.72734,
+          32.32522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Umm Qais",
+        "order": 7,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/Umm_Qais",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.6845,
+          32.654
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pella",
+        "order": 8,
+        "tier": "B",
+        "source_url": "https://mapcarta.com/35137748",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.61512,
+          32.44877
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "As-Salt",
+        "order": 9,
+        "tier": "A",
+        "source_url": "https://www.geodatos.net/en/coordinates/jordan/salt",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.72722,
+          32.03917
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bethany Baptism Site",
+        "order": 10,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/N2898077792",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.55009,
+          31.83736
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madaba",
+        "order": 11,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/Madaba",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.7944,
+          31.7166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mount Nebo",
+        "order": 12,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/N547993845",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.72527,
+          31.76817
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dead Sea",
+        "order": 13,
+        "tier": "S",
+        "source_url": "https://mapcarta.com/N7021846517",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.58154,
+          31.70109
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Mujib",
+        "order": 14,
+        "tier": "A",
+        "source_url": "https://en.wikipedia.org/wiki/Wadi_Mujib",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.57333,
+          31.46583
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Umm ar-Rasas",
+        "order": 15,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/Um_er-Rasas",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.921,
+          31.5054
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karak Castle",
+        "order": 16,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/W350877997",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.70167,
+          31.18048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dana Village",
+        "order": 17,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/W303608680",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.61007,
+          30.67518
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shobak Castle",
+        "order": 18,
+        "tier": "B",
+        "source_url": "https://mapcarta.com/35161388",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.56097,
+          30.53133
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Little Petra",
+        "order": 19,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/32699456",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.45091,
+          30.37511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Petra",
+        "order": 20,
+        "tier": "S",
+        "source_url": "https://mapcarta.com/N9244088802",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.46858,
+          30.32506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wadi Rum",
+        "order": 21,
+        "tier": "S",
+        "source_url": "https://mapcarta.com/W133897691",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.42177,
+          29.57595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Aqaba",
+        "order": 22,
+        "tier": "A",
+        "source_url": "https://mapcarta.com/Aqaba",
+        "coordinate_note": "WGS84 geographic POI; Wadi Mujib point identifies river/canyon vicinity, not guaranteed visitor entrance"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          35.0075,
+          29.5266
+        ]
+      }
+    }
+  ]
+}

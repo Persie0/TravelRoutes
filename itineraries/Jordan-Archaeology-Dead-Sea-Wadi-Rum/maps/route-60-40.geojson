@@ -1,0 +1,318 @@
+{
+  "type": "FeatureCollection",
+  "name": "Straight geographic planning connectors; NOT road navigation",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Amman",
+        "to": "Jerash",
+        "mode": "road",
+        "sequence": 1,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.93486821,
+            31.95401697
+          ],
+          [
+            35.89085,
+            32.27844
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Jerash",
+        "to": "Ajloun Castle",
+        "mode": "road",
+        "sequence": 2,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.89085,
+            32.27844
+          ],
+          [
+            35.72734,
+            32.32522
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Ajloun Castle",
+        "to": "Madaba",
+        "mode": "road",
+        "sequence": 3,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.72734,
+            32.32522
+          ],
+          [
+            35.7944,
+            31.7166
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Madaba",
+        "to": "Mount Nebo",
+        "mode": "road",
+        "sequence": 4,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.7944,
+            31.7166
+          ],
+          [
+            35.72527,
+            31.76817
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Mount Nebo",
+        "to": "Dead Sea",
+        "mode": "road",
+        "sequence": 5,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.72527,
+            31.76817
+          ],
+          [
+            35.58154,
+            31.70109
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Dead Sea",
+        "to": "Wadi Mujib",
+        "mode": "road",
+        "sequence": 6,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.58154,
+            31.70109
+          ],
+          [
+            35.57333,
+            31.46583
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Wadi Mujib",
+        "to": "Karak Castle",
+        "mode": "road",
+        "sequence": 7,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.57333,
+            31.46583
+          ],
+          [
+            35.70167,
+            31.18048
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Karak Castle",
+        "to": "Dana Village",
+        "mode": "road",
+        "sequence": 8,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.70167,
+            31.18048
+          ],
+          [
+            35.61007,
+            30.67518
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Dana Village",
+        "to": "Little Petra",
+        "mode": "road",
+        "sequence": 9,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.61007,
+            30.67518
+          ],
+          [
+            35.45091,
+            30.37511
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Little Petra",
+        "to": "Petra",
+        "mode": "road",
+        "sequence": 10,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.45091,
+            30.37511
+          ],
+          [
+            35.46858,
+            30.32506
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Petra",
+        "to": "Wadi Rum",
+        "mode": "road",
+        "sequence": 11,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.46858,
+            30.32506
+          ],
+          [
+            35.42177,
+            29.57595
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Wadi Rum",
+        "to": "Aqaba",
+        "mode": "road",
+        "sequence": 12,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": ""
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.42177,
+            29.57595
+          ],
+          [
+            35.0075,
+            29.5266
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "from": "Aqaba",
+        "to": "Amman",
+        "mode": "road",
+        "sequence": 13,
+        "geometry_type": "straight planning connector; NOT a road routing polyline",
+        "note": "Return to Amman airport corridor; drive time/flight must be reconfirmed"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            35.0075,
+            29.5266
+          ],
+          [
+            35.93486821,
+            31.95401697
+          ]
+        ]
+      }
+    }
+  ]
+}
